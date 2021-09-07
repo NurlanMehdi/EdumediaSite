@@ -1,0 +1,1 @@
+<p>Mob : +994 (55) 505 53 30</p><p><span style="font-size: 8.5pt; font-family: 'Verdana',sans-serif; color: black;"><br /> Tel  : +994 (12) 530 8295<br /> Fax : +994 (12) 530 8178<br /> Mob : +994 (50) 250 1415</span></p>
