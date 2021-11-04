@@ -316,18 +316,18 @@ li {
     background-color: #303030;
 }
 .customer_btn_dark {
-    background-size: 100% 200%; 
+    background-size: 100% 200%;
     background-image: linear-gradient(to bottom, #151515 50%, #00AEEF 50%);
-    transition: 
-      background-position .3s ease-in-out, 
-      color .3s ease-in-out;
+    transition:
+        background-position .3s ease-in-out,
+        color .3s ease-in-out;
 }
 .customer_btn_light{
-    background-size: 100% 200%; 
+    background-size: 100% 200%;
     background-image: linear-gradient(to bottom, #FFFFFF 50%, #00AEEF 50%);
-    transition: 
-      background-position .3s ease-in-out, 
-      color .3s ease-in-out;
+    transition:
+        background-position .3s ease-in-out,
+        color .3s ease-in-out;
 }
 .customer_btn_dark:hover,
 .customer_btn_dark:focus {
@@ -540,6 +540,7 @@ li {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    align-items: flex-start;
     height: 100%;
 }
 .header_desc {
@@ -553,7 +554,7 @@ li {
 }
 .arrow {
     z-index: 8900;
-    /* margin-bottom: 60px; */
+    cursor: pointer;
 }
 .header_link {
     display: none;
@@ -680,6 +681,7 @@ li {
 .banner_content_item {
     display: flex;
     flex: 0 0 50%;
+    max-width: 50%;
     color: var(--color-d9d9d9);
     /* height: 100%; */
     padding: 25px 0px;
@@ -691,6 +693,7 @@ li {
     width: 65%;
     /* opacity: .25; */
     cursor: pointer;
+    word-wrap: break-word;
 }
 .banner_content_item_body h2 {
     /* width: 30%; */
@@ -721,7 +724,7 @@ li {
     counter-increment: section;
     content: "0"counter(section);
     font-size: 36px;
-    font-family: AvenirNext Azeri Bold;    
+    font-family: AvenirNext Azeri Bold;
     color: var(--color-00aeef);
 }
 .banner_content_item:nth-child(4n-3) .banner_content_item_body {
@@ -886,16 +889,24 @@ li {
 .case_studies_content {
     overflow: hidden;
 }
-.case_studies_slider {
+/* .case_studies_slider {
     margin-left: -515px;
-}
+} */
 .case_studies_slider .slick-track{
     transition: none;
 }
 .case_studies_content_item {
-    padding: 0px 15px;
-    /* transition: all 0.4s; */
+    padding-right: 15px;
+    width: 100%;
+    display: inline-block;
+    margin: 0 0 0 -300px;
 }
+.case_studies_slider_item > div {
+    height: 100%;
+}
+/* .case_studies_slider_item{
+    margin-left: -300px;
+} */
 .case_studies_content_item_body{
     overflow: hidden;
 }
@@ -937,7 +948,7 @@ li {
 .case_studies_footer {
     display: flex;
     align-items: center;
-    padding: 30px 0px 30px 0px; 
+    padding: 30px 0px 30px 0px;
 }
 .case_studies_arrow {
     padding: 15px;
@@ -1279,6 +1290,7 @@ li {
     flex: 0 0 auto;
     color: var(--color-b9b9b9);
     line-height: 22px;
+    max-width: 240px;
     font-size: 14px;
     padding: 0px 10px;
 }
@@ -1354,6 +1366,7 @@ li {
 
 .page_header {
     padding: 124px 70px 0px 70px;
+    /* height: 100vh; */
 }
 .page_breadcrumb {
     display: flex;
@@ -1606,7 +1619,7 @@ li {
 .service_left_content_nav_item a:hover + .nav_arrow {
     opacity: 1;
     transition: all 0.3s;
-} 
+}
 /* .service_left_content_nav_item a:active + .nav_arrow {
     opacity: 1;
     transition: all 0.3s;
@@ -1801,6 +1814,10 @@ li {
 }
 .team_slideshow_item {
     padding: 0px 20px;
+    cursor: grab;
+}
+.team_slideshow_item:active{
+    cursor: grabbing;
 }
 /* .team_slideshow_item_body {
     margin: 0px 20px;
@@ -2149,6 +2166,7 @@ li {
     margin: 0px 10px;
 }
 .filter_content_item_img {
+    width: 100%;
     height: 100%;
 }
 .filter_content_item_desc {
@@ -2209,9 +2227,6 @@ li {
     max-width: 60%;
 }
 .careers_main_nav_item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: relative;
     border-bottom: 1px solid var(--color-303030);
 }
@@ -2222,6 +2237,9 @@ li {
     padding: 33px 0px;
     display: block;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .careers_main_nav_item:hover a{
     color: var(--color-00aeef);
@@ -2512,7 +2530,7 @@ textarea::placeholder {
     color: #F6F6F6;
     transition: all 0.2s;
 } */
-/* 
+/*
 .filter_header_nav_item_link_clr {
     background-color: #F6F6F6;
     color: #151515;
@@ -2899,11 +2917,11 @@ input.about_yourself_content_form_control {
     padding: 30px 65px 80px;
 }
 .BI_system_header_text .overlay {
-   height: 50%;
-   top: 50%;
-   background-color: unset;
-   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
-   opacity: 0.5;
+    height: 50%;
+    top: 50%;
+    background-color: unset;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    opacity: 0.5;
 }
 
 .BI_system_header_text_date {

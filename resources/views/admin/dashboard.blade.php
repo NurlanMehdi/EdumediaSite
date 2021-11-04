@@ -2,11 +2,44 @@
 @section('content')
     <div class="container-lg">
         <div class="page_head">
-            <div class="page_head--header page_head--header_after">
-                Dashboard
-            </div>
+            <form id="headerText" class="section_articleInner_body_content--description" method="post" action="{{route('header.text')}}">
+                {{csrf_field()}}
+                <div class="page_head--header page_head--header_after">
+                    Dashboard
+                </div>
+                <div class="page_head--description">
+                    Əsas başlıq
+                </div>
+                <div class="form-group required">
+                    <label class="customLabel" for="page_name">Səhifə</label>
+                    <select class="customSelect" name="page_name" id="pagesHeaders" required="" title="Dil" >
+                        <option value="home" selected>Home</option>
+                        <option value="services">Services</option>
+                        <option value="case_studies">Case Studies</option>
+                        <option value="about_us">About Us</option>
+                        <option value="blog">Blog</option>
+                        <option value="careers">Careers</option>
+                    </select>
+                </div>
+                <div class="form-group required">
+                    <input type="hidden" class="headerId" name="headerId" value="{{$header['id'] ?? 0}}">
+                    <label class="customLabel" for="title">Başlıq</label>
+                    <input class="formControl" name="header_text" value="{{$header['header_text'] ?? ''}}"  id="title" type="text" placeholder="Başlıq" required="">
+                </div>
+                <button type="button" class="customBtn quickBtn save-header-text">
+                    Redaktə et
+                </button>
+            </form>
+            <hr/>
+        </div>
+        <div class="page_head">
             <div class="page_head--description">
-                Blogların listi
+                Servis listi
+            </div>
+            <div class="quickLinks">
+                <a href="{{route('create.blog.page',0)}}" class="customBtn quickBtn">
+                    Əlavə et
+                </a>
             </div>
             <hr/>
 
@@ -16,9 +49,10 @@
                 <table class="table dataTable table-borderless">
                     <thead>
                     <tr>
-                        <th>Blogun adı</th>
+                        <th>Servis adı</th>
                         <th>Status</th>
-                        <th class="no-sort">Dillər</th>
+                        <th class="no-sort">Düzəliş</th>
+                        <th class="no-sort">Content</th>
                         <th class="no-sort" style="width: 30px;">Silmək</th>
                     </tr>
                     </thead>
@@ -26,22 +60,23 @@
                     @foreach($blogs as $blog)
                         <tr>
 
-                            <td>{{$blog->name_az ?? ''}}</td>
-                            <td>{{($blog->name_az ?? 0) == 1 ? 'Bağlı' : 'Açıq'}} </td>
+                            <td>{{$blog->blog_name ?? ''}}</td>
+                            <td>{{($blog->status ?? 0) == 1 ? 'Bağlı' : 'Açıq'}} </td>
+
                             <td>
-                                <div class="buttonGroup buttonGroup--table">
-                                    <a href="{{route('edit.dashboard.blogs','az')}}" class="customBtn applyBtn applyBtn-white applyBtn-squared_lang" data-original-title="Operations">
-                                        az
-                                    </a>
-                                    <a href="{{route('edit.dashboard.blogs','en')}}" class="customBtn applyBtn applyBtn-white applyBtn-squared_lang" data-original-title="Operations">
-                                        en
-                                    </a>
-                                </div>
+                                <a href="{{route('create.blog.page',$blog->id)}}" class="customBtn applyBtn applyBtn-white">
+                                    <i class="xin-icon xin-pencil"></i>
+                                </a>
                             </td>
                             <td>
-                                <button class="customBtn applyBtn applyBtn-trash_lang applyBtn-trash" aria-label="silmek buttonu">
+                                <a href="{{route('services.content',$blog->id)}}" class="customBtn applyBtn applyBtn-white">
+                                    <i class="xin-icon xin-pencil"></i>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="{{route('remove.blog.page',$blog->id)}}" class="customBtn applyBtn applyBtn-trash_lang applyBtn-trash" aria-label="silmek buttonu">
                                     <i class="xin-icon xin-trash"></i>
-                                </button>
+                                </a>
                             </td>
                         </tr>
                     @endforeach
@@ -51,4 +86,30 @@
             </div>
         </div>
     </div>
+@stop
+@section('js')
+    <script>
+
+        $(document).ready(function (){
+            $('#pagesHeaders').on('change',function (){
+                $('[name="header_text"]').val('');
+                let url = "{{route('selected.header.text',':key')}}";
+                url = url.replace(':key', $(this).val());
+
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    dataType: 'JSON',
+                    success: function (response) {
+                        $('.headerId').val(response.data.id)
+                    }
+                })
+            });
+            $('.save-header-text').on('click',function (e){
+                e.preventDefault();
+                e.stopPropagation();
+                $('#headerText').get(0).submit();
+            });
+        })
+    </script>
 @endsection

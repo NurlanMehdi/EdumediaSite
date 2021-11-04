@@ -4,16 +4,16 @@
         <div class="page_header_top">
             <ul class="page_breadcrumb">
                 <li class="page_breadcrumb_item">
-                    <a href="index.html">home</a>
+                    <a href="{{route('index')}}">home</a>
                 </li>
                 <li class="page_breadcrumb_item">
-                    <a href="careers.html">careers</a>
+                    <a href="{{route('careers')}}">careers</a>
                 </li>
             </ul>
         </div>
         <div class="page_header_bottom">
             <p class="page_header_topic">
-                Careers
+                {{$header['header_text'] ?? ''}}
             </p>
             <div class="page_header_desc careers_header_desc">
                 <p>Make great things in Edumedia.</p>
@@ -35,36 +35,44 @@
         </div>
         <ul class="careers_main_nav">
             <li class="careers_main_nav_item">
-                <a href="graphic_designer.html">Graphic Designer</a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
-                    <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
-                        <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)"></path>
-                    </g>
-                </svg>
+                <a href="graphic_designer.html">Graphic Designer
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
+                        <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
+                            <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)"></path>
+                        </g>
+                    </svg>
+                </a>
+
             </li>
             <li class="careers_main_nav_item">
-                <a href="graphic_designer.html">Front-End Developer</a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
-                    <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
-                        <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)"></path>
-                    </g>
-                </svg>
+                <a href="graphic_designer.html">Front-End Developer
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
+                        <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
+                            <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)"></path>
+                        </g>
+                    </svg>
+                </a>
+
             </li>
             <li class="careers_main_nav_item">
-                <a href="graphic_designer.html">Graphic Designer</a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
-                    <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
-                        <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)"></path>
-                    </g>
-                </svg>
+                <a href="graphic_designer.html">Graphic Designer
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
+                        <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
+                            <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)"></path>
+                        </g>
+                    </svg>
+                </a>
+
             </li>
             <li class="careers_main_nav_item">
-                <a href="graphic_designer.html">Front-End Developer</a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
-                    <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
-                        <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)"></path>
-                    </g>
-                </svg>
+                <a href="graphic_designer.html">Front-End Developer
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
+                        <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
+                            <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)"></path>
+                        </g>
+                    </svg>
+                </a>
+
             </li>
         </ul>
     </div>
@@ -104,19 +112,5 @@
             </div>
         </div>
     </div>
-    <div class="section project bgColor fadeUp pd_mobile_0" data-color="black">
-        <div class="project_content">
-            <div class="project_content_desc">
-                <h2>Have a project in mind?</h2>
-                <a href="contact.html" class="btn border_clr_btn">
-                    Get in touch
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
-                        <g id="noun_Left_1920800" transform="translate(9.967 23.407) rotate(180)">
-                            <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(-8 0)"/>
-                        </g>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </div>
+    @include('layouts.projectInMind')
 @endsection

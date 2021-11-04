@@ -20,10 +20,7 @@
                             <div class="section_socialBanner_content_item_content">
                                 <a href="{{route('dashboardPage')}}" class="section_socialBanner_content_item_content_profile">
                                     <div class="section_socialBanner_content_item_content_profile--name text-uppercase">
-                                        Dashboard
-                                    </div>
-                                    <div class="section_socialBanner_content_item_content_profile--username">
-                                        - 13
+                                        Servislər
                                     </div>
                                 </a>
                             </div>
@@ -32,12 +29,9 @@
                     <div class="col-lg-4">
                         <div class="section_socialBanner_content_item">
                             <div class="section_socialBanner_content_item_content">
-                                <a href="categories.html" class="section_socialBanner_content_item_content_profile">
+                                <a href="{{route('cocoPostPage')}}" class="section_socialBanner_content_item_content_profile">
                                     <div class="section_socialBanner_content_item_content_profile--name text-uppercase">
-                                        Səhifələr
-                                    </div>
-                                    <div class="section_socialBanner_content_item_content_profile--username">
-                                        - 7
+                                        Postlar
                                     </div>
                                 </a>
                             </div>
@@ -45,13 +39,35 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="section_socialBanner_content_item">
+
                             <div class="section_socialBanner_content_item_content">
-                                <a href="categories.html" class="section_socialBanner_content_item_content_profile">
+                                <a href="{{route('cocoStudiesPage')}}" class="section_socialBanner_content_item_content_profile">
                                     <div class="section_socialBanner_content_item_content_profile--name text-uppercase">
-                                        Xəbərlər
+                                        İşlərimiz
                                     </div>
-                                    <div class="section_socialBanner_content_item_content_profile--username">
-                                        - 17
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="section_socialBanner_content_item">
+
+                            <div class="section_socialBanner_content_item_content">
+                                <a href="{{route('aboutUsPage')}}" class="section_socialBanner_content_item_content_profile">
+                                    <div class="section_socialBanner_content_item_content_profile--name text-uppercase">
+                                        About Us
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="section_socialBanner_content_item">
+
+                            <div class="section_socialBanner_content_item_content">
+                                <a href="{{route('about.and.careers')}}" class="section_socialBanner_content_item_content_profile">
+                                    <div class="section_socialBanner_content_item_content_profile--name text-uppercase">
+                                        About Us / Careers
                                     </div>
                                 </a>
                             </div>
@@ -63,23 +79,6 @@
                                 <a href="{{route('contactPage')}}" class="section_socialBanner_content_item_content_profile">
                                     <div class="section_socialBanner_content_item_content_profile--name text-uppercase">
                                         Əlaqə
-                                    </div>
-                                    <div class="section_socialBanner_content_item_content_profile--username">
-                                        - 3
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="section_socialBanner_content_item">
-                            <div class="section_socialBanner_content_item_content">
-                                <a href="categories.html" class="section_socialBanner_content_item_content_profile">
-                                    <div class="section_socialBanner_content_item_content_profile--name text-uppercase">
-                                        Menyu
-                                    </div>
-                                    <div class="section_socialBanner_content_item_content_profile--username">
-                                        - 52
                                     </div>
                                 </a>
                             </div>

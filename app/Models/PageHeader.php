@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Dashboard extends Model
+class PageHeader extends Model
 {
     use HasFactory;
 
-    protected $table = "dashboard_items";
+    protected $table = "headers_translate";
 
     protected $guarded = [];
 

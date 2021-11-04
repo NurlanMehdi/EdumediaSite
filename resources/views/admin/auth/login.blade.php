@@ -40,9 +40,9 @@
                             <button type="submit" class="login customBtn quickBtn">
                                 Login
                             </button>
-                            <a href="#" class="customBtn quickBtn quickBtn--minor">
-                                Forgot Your Password
-                            </a>
+{{--                            <a href="#" class="customBtn quickBtn quickBtn--minor">--}}
+{{--                                Forgot Your Password--}}
+{{--                            </a>--}}
                         </div>
                     </form>
                 </div>

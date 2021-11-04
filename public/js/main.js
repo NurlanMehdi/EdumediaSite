@@ -1,6 +1,10 @@
 let lastScrollTop;
 // var $body = $('body');
 
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
 $(document).on('click', '.sidebar_btn', function (e) {
     e.preventDefault()
     $(this).toggleClass('active')
@@ -17,52 +21,54 @@ $(document).on('click', '.sidebar_btn', function (e) {
 
 
 function handleScrollAnimation() {
-	var $window         = $(window),
-		// $app            = $('.app'),
-		scrollElements  = $('[data-color]'),
-		scrollIn        = $window.scrollTop() + ($window.height() - ($window.height() / 5)),
-		scrollOut       = $window.scrollTop() + ($window.height())
-		scrollOutScrolled = $window.scrollTop() + ($window.height())
+    var $window         = $(window),
+        // $app            = $('.app'),
+        scrollElements  = $('[data-color]'),
+        scrollIn        = $window.scrollTop() + ($window.height() - ($window.height() / 5)),
+        scrollOut       = $window.scrollTop() + ($window.height())
+    scrollOutScrolled = $window.scrollTop() + ($window.height())
 
-	scrollElements.each(function () {
-		var $this = $(this);
-		if ($this.position().top <= scrollIn && $this.position().top + $this.height() > scrollIn ) {
-			$this.addClass("scrolled");
-		}
-		else if ($this.position().top <= scrollOut + $this.height() - 3 && $this.position().top + $this.height() > scrollOut + $this.height() - 3 ) {
-			$this.removeClass("scrolled");
-		}
-	});
+    scrollElements.each(function () {
+        var $this = $(this);
+        if ($this.position().top <= scrollIn && $this.position().top + $this.height() > scrollIn ) {
+            $this.addClass("scrolled");
+        }
+        else if ($this.position().top <= scrollOut + $this.height() - 3 && $this.position().top + $this.height() > scrollOut + $this.height() - 3 ) {
+            $this.removeClass("scrolled");
+        }
+    });
 }
 
 $.fn.scrollEnd = function(callback, timeout) {
-	$(this).on('scroll', function(){
-		var $this = $(this);
-		if ($this.data('scrollTimeout')) {
-			clearTimeout($this.data('scrollTimeout'));
-		}
-		$this.data('scrollTimeout', setTimeout(callback,timeout));
-	});
+    $(this).on('scroll', function(){
+        var $this = $(this);
+        if ($this.data('scrollTimeout')) {
+            clearTimeout($this.data('scrollTimeout'));
+        }
+        $this.data('scrollTimeout', setTimeout(callback,timeout));
+    });
 };
 
-function navbarScrollEndFn() {
-	$('.sidebar').removeClass('add')
-	$(window).scrollEnd(function () {
-		$('.sidebar').addClass('add')
-	}, 100);
-}
 
 $(document).on('scroll', function () {
-    
-	handleScrollAnimation();
 
-	var st = window.pageYOffset || document.documentElement.scrollTop;
+    handleScrollAnimation();
 
-	if (st > lastScrollTop){
+    var st = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (st > lastScrollTop){
         navbarScrollEndFn()
-	}
+    }
     lastScrollTop = st <= 0 ? 0 : st;
 })
+
+
+function navbarScrollEndFn() {
+    $('.sidebar').removeClass('add')
+    $(window).scrollEnd(function () {
+        $('.sidebar').addClass('add')
+    }, 100);
+}
 
 
 
@@ -70,19 +76,22 @@ $(document).ready(function(){
     $("#button").click(function() {
         $('html, body').animate({
             scrollTop: $(".banner").offset().top
-        }, 800);
+        }, 1000);
+    });
+    $(document).ready(function(){
+        $(this).scrollTop(0);
     });
 });
 
 
 
 $('.banner_content_item').mouseenter(function () {
-	$('.banner_content_item').removeClass('active')
-	$(this).addClass('active')
+    $('.banner_content_item').removeClass('active')
+    $(this).addClass('active')
 })
 $('.banner_content_item').mouseleave(function () {
-	$(this).removeClass('active')
-	$('.banner_content_item').addClass('active')
+    $(this).removeClass('active')
+    $('.banner_content_item').addClass('active')
 })
 
 
@@ -90,33 +99,33 @@ $('.banner_content_item').mouseleave(function () {
 
 
 $(window).scroll(function() {
-      // selectors
+    // selectors
     var $window = $(window),
         $body = $('.app'),
         $panel = $('.bgColor');
-    
+
     // Change 50% earlier than scroll position so colour is there when you arrive.
     var scroll = $window.scrollTop() + ($window.height() / 2);
-    var scroll2 = $window.scrollTop() + ($window.height() - 150);
-   
+    // var scroll2 = $window.scrollTop() + ($window.height() - 150);
+
     $panel.each(function () {
-      var $this = $(this);
+        var $this = $(this);
 
-      // if position is wixthin range of this panel.
-      // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-      // Remember we set the scroll to 33% earlier in scroll var.
-      if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
-        // Remove all classes on body with color-cc  y2 q;4
-        $body.removeClass(function (index, css) {
-          return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-        });
-         
-        // Add class of currently active div
-        $body.addClass('color-' + $(this).data('color'));
-      }
+        // if position is wixthin range of this panel.
+        // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+        // Remember we set the scroll to 33% earlier in scroll var.
+        if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+            // Remove all classes on body with color-cc  y2 q;4
+            $body.removeClass(function (index, css) {
+                return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+            });
 
-    });    
-  }).scroll();
+            // Add class of currently active div
+            $body.addClass('color-' + $(this).data('color'));
+        }
+
+    });
+}).scroll();
 
 
 
@@ -131,7 +140,7 @@ $(document).on("change", '.about_yourself_content_form_control', function(e) {
 $('.desing_development_content_item_desc_acordion_card_title').click(function () {
     $(this).parents('.desing_development_content_item_desc_acordion').find('.desing_development_content_item_desc_acordion_card').not($(this).parents('.desing_development_content_item_desc_acordion_card')).removeClass('open')
     $(this).parents('.desing_development_content_item_desc_acordion').find('.desing_development_content_item_desc_acordion_card').not($(this).parents('.desing_development_content_item_desc_acordion_card')).children(".desing_development_content_item_desc_acordion_card_text").hide('200')
-    $(this).parents('.desing_development_content_item_desc_acordion_card').toggleClass('open') 
+    $(this).parents('.desing_development_content_item_desc_acordion_card').toggleClass('open')
     $(this).parent().children('.desing_development_content_item_desc_acordion_card_text').toggle('200')
 })
 
@@ -140,14 +149,14 @@ $('.desing_development_content_item_desc_acordion_card_title').click(function ()
 
 
 
-//serviceNav start 
+//serviceNav start
 
 $('.service_left_content_nav_item_link').mouseenter(function () {
-	$('.service_left_content_nav_item_link').removeClass('active')
-	$(this).addClass('active')
-	var id = $(this).attr('data-services-menu-id')
-	$('[data-services-content-id]').hide()
-	$('[data-services-content-id='+id+']').show()
+    $('.service_left_content_nav_item_link').removeClass('active')
+    $(this).addClass('active')
+    var id = $(this).attr('data-services-menu-id')
+    $('[data-services-content-id]').hide()
+    $('[data-services-content-id='+id+']').show()
 })
 
 //serviceNav finished
@@ -199,10 +208,10 @@ $('.about_content_dots').slick({
     `,
     responsive: [
         {
-          breakpoint: 992,
-          settings: {
-             dots: true,
-          }
+            breakpoint: 992,
+            settings: {
+                dots: true,
+            }
         },
     ]
 })
@@ -215,15 +224,15 @@ $('.blog_posts_content').slick({
     dots: true,
     responsive: [
         {
-          breakpoint: 992,
-          settings: {
-            centerMode: true,
-            centerPadding:'60px',
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite:true,
-            dots: true
-          }
+            breakpoint: 992,
+            settings: {
+                centerMode: true,
+                centerPadding:'60px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite:true,
+                dots: true
+            }
         },
     ]
 })
@@ -240,12 +249,12 @@ $('.expertise_content').slick({
     centerMode: true,
     responsive: [
         {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows:true,
-          }
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows:true,
+            }
         },
     ]
 })
@@ -267,18 +276,18 @@ $('.team_slideshow').slick({
     arrows: true,
     dots:false,
     prevArrow: $('.prev'),
-	nextArrow: $('.next'),
+    nextArrow: $('.next'),
     centerMode: true,
     centerPadding: '80px',
     responsive: [
         {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false
-          }
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+            }
         },
     ]
 })
@@ -298,29 +307,29 @@ $('.case_studies_slider').slick({
     infinite: true,
     arrows: true,
     prevArrow: $('.prev'),
-	nextArrow: $('.next'),
+    nextArrow: $('.next'),
     centerMode: true,
-    centerPadding: '500px',
+    centerPadding: '300px',
     responsive: [
         {
             breakpoint: 1200,
             settings: {
-              centerPadding: '160px',
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true
+                centerPadding: '160px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
             }
         },
         {
-          breakpoint: 992,
-          settings: {
-            centerPadding: '50px',
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
+            breakpoint: 992,
+            settings: {
+                centerPadding: '50px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
         },
     ]
 })
@@ -368,7 +377,18 @@ $('.hardwareDistributionCategories_body_category_items').slick({
     `
 })
 
-//sliders finished 
+//sliders finished
 
+function readURL(input,srcId = 'previewImg') {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
 
-
+        reader.onload = function (e) {
+            $('#'+srcId)
+                .attr('src', e.target.result);
+        };
+        $('#'+srcId).show();
+        $('#'+srcId).css('max-width','180px');
+        reader.readAsDataURL(input.files[0]);
+    }
+}

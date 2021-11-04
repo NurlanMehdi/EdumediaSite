@@ -1,5 +1,6 @@
 @extends('admin.master')
 @section('content')
+    dasd
     <div class="container-lg">
         <div class="page_head">
             <div class="page_head--header page_head--header_after">
@@ -116,7 +117,7 @@
                                     <div class="form-group_labelGroup">
                                         <label class="customLabel" for="contactItems--socialLinkedin">Linkedin</label>
                                         <div class="custom-control custom-switch">
-                                            <input type="checkbox" class="custom-control-input" name="linkedinStatus" id="contactItems--socialLinkedinStatus"  value="{{($contact->linkedin_status ?? 0) == 1 ? 1 : 0}}" {{($contact->linkedin_status ?? 0) == 1 ? '' : 'checked'}}>
+                                            <input type="checkbox" class="custom-control-input" name="linkedin_status" id="contactItems--socialLinkedinStatus"  value="{{($contact->linkedin_status ?? 0) == 1 ? 1 : 0}}" {{($contact->linkedin_status ?? 0) == 1 ? '' : 'checked'}}>
                                             <label class="custom-control-label" for="contactItems--socialLinkedinStatus"></label>
                                         </div>
                                     </div>
@@ -150,9 +151,6 @@
                         <button type="button" class="customBtn quickBtn save-contact">
                             Redaktə et
                         </button>
-                        <a href="{{route('adminIndex')}}" class="customBtn applyBtn-trash">
-                            Ləğv et
-                        </a>
                     </div>
                 </div>
             </form>

@@ -13,7 +13,6 @@ class LoginController extends Controller
 
     public function handleLogin()
     {
-        var_dump(request()->get('password'));
         if (auth()->attempt(['username'=>request()->get('username'),'password'=>request()->get('password')])){
             return redirect()->route('adminIndex');
         }else{

@@ -7,8 +7,6 @@
 
     <!-- SITE MANIFEST AND FAVICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{asset('admin/assets/vendor/favicon/apple-touch-icon.png')}}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('admin/assets/vendor/favicon/favicon-32x32.png')}}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('admin/assets/vendor/favicon/favicon-16x16.png')}}">
     <link rel="manifest" href="{{asset('admin/assets/vendor/favicon/site.webmanifest')}}">
     <link rel="mask-icon" href="{{asset('admin/assets/vendor/favicon/safari-pinned-tab.svg')}}" color="#15306b">
     <meta name="apple-mobile-web-app-title" content="Edumedia">
@@ -42,7 +40,7 @@
     <div class="container-fluid">
         <div class="section_header_topHeader">
             <div class="section_header_topHeader_logo">
-                <a href="index.html" class="section_header_topHeader_logo_link">
+                <a href="{{route('adminIndex')}}" class="section_header_topHeader_logo_link">
                     <span class="section_header_topHeader_logo_link--text">
                         Edumedia
                     </span>
@@ -55,20 +53,23 @@
         @if(Request::is('coco') != 1)
             <div class="section_header_mainHeader">
                 <div class="section_header_mainHeader_navbar">
-                    <a href="{{route('adminIndex')}}" data-name="Dashboard" data-sub-menu="menu_dashboard" class="section_header_mainHeader_navbar_link">
-                        Dashboard
+                    <a href="{{route('dashboardPage')}}" data-name="Dashboard" data-sub-menu="menu_dashboard" class="section_header_mainHeader_navbar_link">
+                        Servislər
                     </a>
-                    <a href="categories.html" data-name="Kateqoriyalar" data-sub-menu="menu_categories" class="section_header_mainHeader_navbar_link">
-                        Kateqoriyalar
+                    <a href="{{route('cocoPostPage')}}" data-name="Dashboard" data-sub-menu="menu_dashboard" class="section_header_mainHeader_navbar_link">
+                        Postlar
                     </a>
-                    <a href="pages.html" data-name="Səhifələr" data-sub-menu="menu_pages" class="section_header_mainHeader_navbar_link">
-                        Səhifələr
+                    <a href="{{route('cocoStudiesPage')}}" data-name="Dashboard" data-sub-menu="menu_dashboard" class="section_header_mainHeader_navbar_link">
+                        İşlərimiz
                     </a>
-                    <a href="news.html" data-name="Xəbərlər" data-sub-menu="menu_news" class="section_header_mainHeader_navbar_link">
-                        Xəbərlər
+                    <a href="{{route('aboutUsPage')}}" data-name="Dashboard" data-sub-menu="menu_dashboard" class="section_header_mainHeader_navbar_link">
+                        About Us
                     </a>
-                    <a href="contacts.html" data-name="Əlaqə" data-sub-menu="menu_contacts" class="section_header_mainHeader_navbar_link">
-                        Əlaqə
+                    <a href="{{route('cocoStudiesPage')}}" data-name="Dashboard" data-sub-menu="menu_dashboard" class="section_header_mainHeader_navbar_link">
+                        Careers
+                    </a>
+                    <a href="{{route('about.and.careers')}}" data-name="Dashboard" data-sub-menu="menu_dashboard" class="section_header_mainHeader_navbar_link">
+                        About Us / Careers
                     </a>
                     <a href="{{route('logout.handle')}}" data-name="Çıxış" data-sub-menu="menu_logout" class="section_header_mainHeader_navbar_link">
                         Çıxış
@@ -78,27 +79,30 @@
             <div class="section_header_mobileNavbar">
                 <div class="section_header_mobileNavbar_nav">
                     <div class="section_header_mobileNavbar_nav_item">
-                        <a href="{{route('adminIndex')}}" class="section_header_mobileNavbar_nav_item--link">
-                            Dashboard
+                        <a href="{{route('dashboardPage')}}" class="section_header_mobileNavbar_nav_item--link">
+                            Servislər
+                        </a>
+                        <a href="{{route('cocoPostPage')}}" class="section_header_mobileNavbar_nav_item--link">
+                            Postlar
+                        </a>
+                        <a href="{{route('cocoStudiesPage')}}" class="section_header_mobileNavbar_nav_item--link">
+                            İşlərimiz
+                        </a>
+                        <a href="{{route('cocoStudiesPage')}}" class="section_header_mobileNavbar_nav_item--link">
+                            About Us
+                        </a>
+                        <a href="{{route('cocoStudiesPage')}}" class="section_header_mobileNavbar_nav_item--link">
+                            Careers
+                        </a>
+                        <a href="{{route('about.and.careers')}}" class="section_header_mobileNavbar_nav_item--link">
+                            About Us / Careers
+                        </a>
+                        <a href="{{route('logout.handle')}}" class="section_header_mobileNavbar_nav_item--link">
+                            Çıxış
                         </a>
                     </div>
                     <div class="section_header_mobileNavbar_nav_item">
-                        <a href="categories.html" class="section_header_mobileNavbar_nav_item--link">
-                            Kateqoriyalar
-                        </a>
-                    </div>
-                    <div class="section_header_mobileNavbar_nav_item">
-                        <a href="pages.html" class="section_header_mobileNavbar_nav_item--link">
-                            Səhifələr
-                        </a>
-                    </div>
-                    <div class="section_header_mobileNavbar_nav_item">
-                        <a href="news.html" class="section_header_mobileNavbar_nav_item--link">
-                            Xəbərlər
-                        </a>
-                    </div>
-                    <div class="section_header_mobileNavbar_nav_item">
-                        <a href="contacts.html" class="section_header_mobileNavbar_nav_item--link">
+                        <a href="{{route('contactPage')}}" class="section_header_mobileNavbar_nav_item--link">
                             Əlaqə
                         </a>
                     </div>
@@ -185,6 +189,7 @@
 <div id="slugifyScript"></div>
 
 <script src="{{asset('admin/assets/js/main.js')}}"></script>
+<script src="{{asset('js/main.js')}}"></script>
 <!-- SCRIPTS END -->
 @yield('js')
 </body>

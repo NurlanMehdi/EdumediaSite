@@ -13,7 +13,7 @@
         </div>
         <div class="page_header_bottom">
             <p class="page_header_topic page_header_topic_font">
-                We’re a team of problem solvers delivering effective digital solutions that work.
+                {{$header['header_text'] ?? ''}}
             </p>
             <div class="page_header_desc">
                 <p>
@@ -69,94 +69,6 @@
                 <h2 class="team_header_title">Meet the team</h2>
             </div>
             <div class="team_slideshow">
-                <div class="team_slideshow_item">
-                    <div class="team_slideshow_item_body">
-                        <div class="team_slideshow_item_image">
-                            <img src="{{asset('img/Rectangle 53.png')}}" alt="">
-                        </div>
-                        <div class="team_slideshow_item_content">
-                            <p class="team_slideshow_item_body_name">Dilara Rustamzade</p>
-                            <small class="team_slideshow_item_body_duty">CEO</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="team_slideshow_item">
-                    <div class="team_slideshow_item_body">
-                        <div class="team_slideshow_item_image">
-                            <img src="{{asset('img/Rectangle 53.png')}}" alt="">
-                        </div>
-                        <div class="team_slideshow_item_content">
-                            <p class="team_slideshow_item_body_name">Dilara Rustamzade</p>
-                            <small class="team_slideshow_item_body_duty">CEO</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="team_slideshow_item">
-                    <div class="team_slideshow_item_body">
-                        <div class="team_slideshow_item_image">
-                            <img src="{{asset('img/Rectangle 53.png')}}" alt="">
-                        </div>
-                        <div class="team_slideshow_item_content">
-                            <p class="team_slideshow_item_body_name">Dilara Rustamzade</p>
-                            <small class="team_slideshow_item_body_duty">CEO</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="team_slideshow_item">
-                    <div class="team_slideshow_item_body">
-                        <div class="team_slideshow_item_image">
-                            <img src="{{asset('img/Rectangle 53.png')}}" alt="">
-                        </div>
-                        <div class="team_slideshow_item_content">
-                            <p class="team_slideshow_item_body_name">Dilara Rustamzade</p>
-                            <small class="team_slideshow_item_body_duty">CEO</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="team_slideshow_item">
-                    <div class="team_slideshow_item_body">
-                        <div class="team_slideshow_item_image">
-                            <img src="{{asset('img/Rectangle 53.png')}}" alt="">
-                        </div>
-                        <div class="team_slideshow_item_content">
-                            <p class="team_slideshow_item_body_name">Dilara Rustamzade</p>
-                            <small class="team_slideshow_item_body_duty">CEO</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="team_slideshow_item">
-                    <div class="team_slideshow_item_body">
-                        <div class="team_slideshow_item_image">
-                            <img src="{{asset('img/Rectangle 53.png')}}" alt="">
-                        </div>
-                        <div class="team_slideshow_item_content">
-                            <p class="team_slideshow_item_body_name">Dilara Rustamzade</p>
-                            <small class="team_slideshow_item_body_duty">CEO</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="team_slideshow_item">
-                    <div class="team_slideshow_item_body">
-                        <div class="team_slideshow_item_image">
-                            <img src="{{asset('img/Rectangle 53.png')}}" alt="">
-                        </div>
-                        <div class="team_slideshow_item_content">
-                            <p class="team_slideshow_item_body_name">Dilara Rustamzade</p>
-                            <small class="team_slideshow_item_body_duty">CEO</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="team_slideshow_item">
-                    <div class="team_slideshow_item_body">
-                        <div class="team_slideshow_item_image">
-                            <img src="{{asset('img/Rectangle 53.png')}}" alt="">
-                        </div>
-                        <div class="team_slideshow_item_content">
-                            <p class="team_slideshow_item_body_name">Dilara Rustamzade</p>
-                            <small class="team_slideshow_item_body_duty">CEO</small>
-                        </div>
-                    </div>
-                </div>
                 <div class="team_slideshow_item">
                     <div class="team_slideshow_item_body">
                         <div class="team_slideshow_item_image">
@@ -466,19 +378,5 @@
             </div>
         </div>
     </div>
-    <div class="section project bgColor fadeUp pd_mobile_0" data-color="white">
-        <div class="project_content">
-            <div class="project_content_desc">
-                <h2>Have a project in mind?</h2>
-                <a href="{{route('contact')}}" class="btn border_clr_btn">
-                    Get in touch
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
-                        <g id="noun_Left_1920800" transform="translate(9.967 23.407) rotate(180)">
-                            <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(-8 0)"/>
-                        </g>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </div>
+    @include('layouts.projectInMind')
 @endsection

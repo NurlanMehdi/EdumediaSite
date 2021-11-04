@@ -1,6 +1,5 @@
 @extends('layouts.master')
 @section('content')
-<div class="container" id="container">
     <div class="section page_header bgColor pd_mobile" data-color="white">
         <div class="page_header_top">
             <ul class="page_breadcrumb">
@@ -88,4 +87,5 @@
             </div>
         </div>
     </div>
+
 @endsection

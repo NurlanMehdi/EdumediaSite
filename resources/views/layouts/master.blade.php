@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,65 +23,65 @@
 </head>
 <body>
 <div class="app">
-    <div id="sidebar" class="sidebar {{Request::is('contact') ? 'sidebar_bg_light' : ''}} {{Request::is('about') ? 'sidebar_bg_light' : ''}}">
+    <div id="sidebar" class="sidebar {{Request::is('/') ||  Request::is('service') || Request::is('blog') ||  Request::is('careers') ? 'sidebar_bg_dark' : 'sidebar_bg_light' }}">
         <div class="sidebar_body">
             <div class="sidebar_btn" title="Toggle button" id="open_menu_btn">
-                <div class="bar1 sidebar_menu_icon sidebar_menu_icon_clr_dark"></div>
-                <div class="bar2 sidebar_menu_icon sidebar_menu_icon_clr_dark"></div>
+                <div class="bar1 sidebar_menu_icon  {{Request::is('/') ||  Request::is('service') || Request::is('blog') ||  Request::is('careers') ? 'sidebar_menu_icon_clr_light' : 'sidebar_menu_icon_clr_dark' }} "></div>
+                <div class="bar2 sidebar_menu_icon {{Request::is('/') ||  Request::is('service') || Request::is('blog') ||  Request::is('careers') ? 'sidebar_menu_icon_clr_light' : 'sidebar_menu_icon_clr_dark' }}"></div>
             </div>
             <a href="{{route('index')}}" class="sidebar_icon">
                 <img src="{{asset('img/sidebar-icon.png')}}" alt="">
-                <p class="sidebar_icon_text sidebar_icon_text_clr">edumedia</p>
+                <p class="sidebar_icon_text  {{Request::is('/') ||  Request::is('service') || Request::is('blog') ||  Request::is('careers') ? '' : 'sidebar_icon_text_clr' }} ">edumedia</p>
             </a>
-            <a href="{{route('contact')}}" class="customer_btn_light">
-                <div class="customerLink customer_btn_clr">
+            <a href="{{route('contact')}}" class="{{Request::is('/') ||  Request::is('service') || Request::is('blog') ||  Request::is('careers') ? 'customer_btn_dark' : 'customer_btn_light' }}">
+                <div class="customerLink {{Request::is('/') ||  Request::is('service') || Request::is('blog') ||  Request::is('careers') ? '' : 'customer_btn_clr' }}">
                     Müştərimiz ol
                     <svg xmlns="http://www.w3.org/2000/svg" width="18.162" height="18.162" viewBox="0 0 18.162 18.162">
                         <g id="noun_Left_1920800" transform="translate(29.617 16.393) rotate(135)">
-                            <path id="Path_19" data-name="Path 19" d="M8.492,25.684l.792-.809L4.662,20.253H16.2V19.131H4.662l4.622-4.622L8.492,13.7,2.5,19.692Z" transform="translate(0 0)" fill="#151515"/>
+                            <path id="Path_19" data-name="Path 19" d="M8.492,25.684l.792-.809L4.662,20.253H16.2V19.131H4.662l4.622-4.622L8.492,13.7,2.5,19.692Z" transform="translate(0 0)" fill="{{Request::is('/') ||  Request::is('service') || Request::is('blog') ||  Request::is('careers') ? '#ffffff' : '#151515' }}"/>
                         </g>
                     </svg>
                 </div>
             </a>
         </div>
     </div>
-    <div id="onclick_sidebar" class="onclick_sidebar" >
+    <div id="onclick_sidebar" class="onclick_sidebar {{Request::is('/') ||  Request::is('service') || Request::is('blog') ||  Request::is('careers') ? 'sidebar_bg_dark' : 'sidebar_bg_light' }}" >
         <div class="onclick_sidebar_body">
             <div class="onclick_sidebar_top">
-                <div class="onclick_sidebar_lang">
-                    <a href="#" class="onclick_sidebar_lang_item">AZ</a>
-                    <a href="#" class="onclick_sidebar_lang_item active">ENG</a>
-                </div>
+{{--                <div class="onclick_sidebar_lang">--}}
+{{--                    <a href="#" class="onclick_sidebar_lang_item">AZ</a>--}}
+{{--                    <a href="#" class="onclick_sidebar_lang_item active">ENG</a>--}}
+{{--                </div>--}}
                 <ul class="onclick_sidebar_header">
                     <li class="onclick_sidebar_header_item">
-                        <a href="#">Facebook</a>
+                        <a href="https://www.facebook.com/edumedia.azerbaijan">Facebook</a>
                     </li>
                     <li class="onclick_sidebar_header_item">
-                        <a href="#">LinkedIn</a>
+                        <a href="https://www.linkedin.com/company/edumedia-azerbaijan-llc/mycompany/">LinkedIn</a>
                     </li>
                     <li class="onclick_sidebar_header_item">
-                        <a href="#">Instagram</a>
+                        <a href="https://www.instagram.com/edumediaaz/">Instagram</a>
                     </li>
                 </ul>
             </div>
             <ul class="onclick_sidebar_content">
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('index')}}" class="onclick_sidebar_content_item_link active">Home</a>
+                    <a href="{{route('index')}}" class="onclick_sidebar_content_item_link {{Request::is('/') == true ? 'active' : '' }}">Home</a>
                 </li>
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('service')}}" class="onclick_sidebar_content_item_link">Services</a>
+                    <a href="{{route('service')}}" class="onclick_sidebar_content_item_link {{Request::is('service') == true ? 'active' : '' }}">Services</a>
                 </li>
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('case_studies')}}" class="onclick_sidebar_content_item_link">Case Studies</a>
+                    <a href="{{route('case_studies')}}" class="onclick_sidebar_content_item_link {{Request::is('case_studies') == true ? 'active' : '' }}">Portfolio</a>
                 </li>
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('about')}}" class="onclick_sidebar_content_item_link">About Us</a>
+                    <a href="{{route('about')}}" class="onclick_sidebar_content_item_link {{Request::is('about') == true ? 'active' : '' }}">About Us</a>
                 </li>
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('blog')}}" class="onclick_sidebar_content_item_link">Blog</a>
+                    <a href="{{route('blog')}}" class="onclick_sidebar_content_item_link {{Request::is('blog') == true ? 'active' : '' }}">Blog</a>
                 </li>
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('careers')}}" class="onclick_sidebar_content_item_link">Careers</a>
+                    <a href="{{route('careers')}}" class="onclick_sidebar_content_item_link {{Request::is('careers') == true ? 'active' : '' }}">Careers</a>
                 </li>
             </ul>
             <div class="onclick_sidebar_footer">
@@ -101,11 +101,11 @@
                     </a>
                     <div class="footer_center_adress">
                         <p>
-                            34, Khatai Avenue,  Luxen Plaza, <br> Baku, AZ1008, Azerbaijan
+                            {{\App\Models\Contact::first()['address']}}
                         </p>
                     </div>
                     <div class="footer_center_contact">
-                        <a class="footer_center_contact_mail" href="{{route('about')}}">info@edumedia.az</a>
+                        <a class="footer_center_contact_mail" href="{{route('about')}}">{{\App\Models\Contact::first()['mail']}}</a>
                     </div>
                 </div>
             </div>
@@ -197,7 +197,7 @@
                         </li>
                         <li class="footer_bottom_nav_item">
                             <a href="{{route('siteMap')}}">Sitemap</a>
-                        </li
+                        </li>
                     </ul>
                     <div class="footer_bottom_right">
                         <p class="footer_tag">@Edumedia 2021</p>
@@ -209,8 +209,9 @@
 
 </div>
 
-<script src="{{asset('dist/jquery.min.js')}}" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="{{asset('admin/assets/vendor/jQuery/jquery-3.6.0.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('slick/slick.min.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
+@yield('js')
 </body>
 </html>
