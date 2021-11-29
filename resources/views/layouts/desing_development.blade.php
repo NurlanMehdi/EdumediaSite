@@ -61,7 +61,7 @@
                                     Responsive website
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text" style="display: block;">
-                                    <p>Following the initial kickoff &amp; research phase of the project, we work as an extension of your marketing team to develop a brand look and feel that aligns with your core messaging and overall company vision. We help you identify visual inspiration from a variety of sources in order to create a fresh, modern, and ownable corporate identity.</p>
+                                    <p>Web pages developed by our team are flexible, dynamic and adaptable to any client need</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
@@ -69,15 +69,15 @@
                                     Mobile apps
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Following the initial kickoff &amp; research phase of the project, we work as an extension of your marketing team to develop a brand look and feel that aligns with your core messaging and overall company vision. We help you identify visual inspiration from a variety of sources in order to create a fresh, modern, and ownable corporate identity.</p>
+                                    <p>We create dynamic mobile apps that perform specific tasks for your business and services and track your customer engagement.</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                    Complex platforms
+                                    Complex Systems
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Following the initial kickoff &amp; research phase of the project, we work as an extension of your marketing team to develop a brand look and feel that aligns with your core messaging and overall company vision. We help you identify visual inspiration from a variety of sources in order to create a fresh, modern, and ownable corporate identity.</p>
+<p>Our team has a long experience working with complex architectures and building multifunctional systems</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
@@ -85,7 +85,7 @@
                                     BI systems
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Following the initial kickoff &amp; research phase of the project, we work as an extension of your marketing team to develop a brand look and feel that aligns with your core messaging and overall company vision. We help you identify visual inspiration from a variety of sources in order to create a fresh, modern, and ownable corporate identity.</p>
+                                    <p>We help you analyze and make valid decisions based on the precise data provided by complex BI systems we develop</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
@@ -93,7 +93,7 @@
                                     ERP/CRM systems
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Following the initial kickoff &amp; research phase of the project, we work as an extension of your marketing team to develop a brand look and feel that aligns with your core messaging and overall company vision. We help you identify visual inspiration from a variety of sources in order to create a fresh, modern, and ownable corporate identity.</p>
+                                    <p>We develop architecture for complicated systems that help make your life easier</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
@@ -101,7 +101,7 @@
                                     Games
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Following the initial kickoff &amp; research phase of the project, we work as an extension of your marketing team to develop a brand look and feel that aligns with your core messaging and overall company vision. We help you identify visual inspiration from a variety of sources in order to create a fresh, modern, and ownable corporate identity.</p>
+                                    <p>We are constantly integrating new technologies to make it possible to develop better and up-to-date game</p>
                                 </div>
                             </li>
                         </ul>
@@ -125,7 +125,7 @@
                                     UX / UI
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Following the initial kickoff &amp; research phase of the project, we work as an extension of your marketing team to develop a brand look and feel that aligns with your core messaging and overall company vision. We help you identify visual inspiration from a variety of sources in order to create a fresh, modern, and ownable corporate identity.</p>
+                                    <p>Our web designs are based on user interactions with the website features and controls, as well as user behavior and feeling when using the website</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
@@ -133,7 +133,7 @@
                                     Logo Design
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Following the initial kickoff &amp; research phase of the project, we work as an extension of your marketing team to develop a brand look and feel that aligns with your core messaging and overall company vision. We help you identify visual inspiration from a variety of sources in order to create a fresh, modern, and ownable corporate identity.</p>
+                                    <p>We create one of the most important elements of corporate identity that will differentiate your company among other</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
@@ -141,7 +141,7 @@
                                     Branding
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Following the initial kickoff &amp; research phase of the project, we work as an extension of your marketing team to develop a brand look and feel that aligns with your core messaging and overall company vision. We help you identify visual inspiration from a variety of sources in order to create a fresh, modern, and ownable corporate identity.</p>
+                                    <p>We help you shape your brand by creating all the necessary elements of corporate identity</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
@@ -149,15 +149,7 @@
                                     Print Design
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Following the initial kickoff &amp; research phase of the project, we work as an extension of your marketing team to develop a brand look and feel that aligns with your core messaging and overall company vision. We help you identify visual inspiration from a variety of sources in order to create a fresh, modern, and ownable corporate identity.</p>
-                                </div>
-                            </li>
-                            <li class="desing_development_content_item_desc_acordion_card">
-                                <button class="desing_development_content_item_desc_acordion_card_title">
-                                    ERP/CRM systems
-                                </button>
-                                <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Following the initial kickoff &amp; research phase of the project, we work as an extension of your marketing team to develop a brand look and feel that aligns with your core messaging and overall company vision. We help you identify visual inspiration from a variety of sources in order to create a fresh, modern, and ownable corporate identity.</p>
+                                    <p>From flyers and magazines to outdoor advertising and event materials, we treat each design as a separate project that includes brainstorming, research and best specialists in the field</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
@@ -165,7 +157,7 @@
                                     Social Media Design
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Following the initial kickoff &amp; research phase of the project, we work as an extension of your marketing team to develop a brand look and feel that aligns with your core messaging and overall company vision. We help you identify visual inspiration from a variety of sources in order to create a fresh, modern, and ownable corporate identity.</p>
+                                    <p>Our team makes sure to adapt and manage your brand social media communication materials according to constant and dynamic change in communication strategies and tools.</p>
                                 </div>
                             </li>
                         </ul>
