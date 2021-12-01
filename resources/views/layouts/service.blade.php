@@ -25,10 +25,10 @@
             <div class="service_left">
                 <div class="service_left_content">
                     <ul class="service_left_content_nav">
-                        @foreach($blogs as $blog)
+                        @foreach($blogs as $key => $blog)
                             <li class="service_left_content_nav_item">
 
-                                <a href="{{route('servicePages',$blog->id)}}" class="service_left_content_nav_item_link {{($blog->url ?? '') == 'DesignDevelopment' ? 'active' : '' }}" data-services-menu-id="{{$blog->url}}">{{$blog->blog_name}}</a>
+                                <a href="{{route('servicePages',$blog->id)}}" class="service_left_content_nav_item_link {{($key ?? 0) == 0 ? 'active' : '' }}" data-services-menu-id="{{$blog->url}}">{{$blog->blog_name}}</a>
                                 <svg class="nav_arrow" xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
                                     <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
                                         <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"></path>
@@ -44,8 +44,8 @@
                     <div class="box pd-top55">
                         <div class="box_item">
                             <div class="service_right_content_items">
-                                @foreach($blogs as $blog)
-                                    <a href="{{route('servicePages',$blog->id)}}" data-services-content-id="{{$blog->url}}" class="service_right_content_item {{($blog->url ?? '') == 'DesignDevelopment' ? 'active' : '' }}">
+                                @foreach($blogs as $key =>  $blog)
+                                    <a href="{{route('servicePages',$blog->id)}}" data-services-content-id="{{$blog->url}}" class="service_right_content_item  {{($key ?? 0) == 0 ? 'active' : '' }} ">
                                         <div class="service_right_content_item_image">
                                             <img src="{{'storage/app/img/'.$blog->img}}" alt="">
                                         </div>

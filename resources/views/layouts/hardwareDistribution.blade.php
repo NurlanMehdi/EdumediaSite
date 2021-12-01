@@ -72,7 +72,6 @@
                             <div class="hardwareDistribution_content_right_body_slide_item">
                                 <img src="{{asset('/img/PngItem_2516042.png')}}" alt="">
                             </div>
-
                         </div>
                     </div>
                     <div class="hardwareDistribution_content_right_body_desc">
@@ -80,19 +79,19 @@
                             İnteraktiv lövhələr və monitorlar
                         </div>
                         <div class="hardwareDistribution_content_right_body_desc_text">
- Promethean interaktiv lövhələri dəsrlərinizi daha canlı və əyləncəli keçməkdə sizə kömək edəcək. ActivBoard interaktiv lövhələri Promethean şirkətinin tədrisyönümlü proqram təminatı ilə işləyir və şagirdlərin diqqətini cəlb etmək və istənilən sinifdə rəqəmsal avadanlığın köməyilə keçdiyiniz dərslərə interaktiv imkanlar əlavə etmək üçün nəzərdə tutulur. Bütün siniflər bir-birindən fərqlənir, buna görə də, bir neçə konfiqurasiyalı ActivBoard interaktiv lövhələri mövcuddur və onları konkret tələblərə uyğunlaşdırmaq mümkündür. Lövhələr üçün olan tətbiqi proqramda aşağıdakı avadanlıqlar təklif edilə bilər: 
+ Promethean interaktiv lövhələri dəsrlərinizi daha canlı və əyləncəli keçməkdə sizə kömək edəcək. ActivBoard interaktiv lövhələri Promethean şirkətinin tədrisyönümlü proqram təminatı ilə işləyir və şagirdlərin diqqətini cəlb etmək və istənilən sinifdə rəqəmsal avadanlığın köməyilə keçdiyiniz dərslərə interaktiv imkanlar əlavə etmək üçün nəzərdə tutulur. Bütün siniflər bir-birindən fərqlənir, buna görə də, bir neçə konfiqurasiyalı ActivBoard interaktiv lövhələri mövcuddur və onları konkret tələblərə uyğunlaşdırmaq mümkündür. Lövhələr üçün olan tətbiqi proqramda aşağıdakı avadanlıqlar təklif edilə bilər:
 <br>
-- Sorğu və test sistemi ActivExpression 
+- Sorğu və test sistemi ActivExpression
 <br>
-- Sorğu və test sistemi ActiVote 
+- Sorğu və test sistemi ActiVote
 <br>
-- Simsiz planşet ActivSlate 
+- Simsiz planşet ActivSlate
 <br>
-- Sənəd-kamera ActiView 324 
+- Sənəd-kamera ActiView 324
 <br>
 - (Divar dinamikləri olan) akustik sistem ActivSound 200
                         </div>
-                 
+
                     </div>
                 </div>
             </div>
@@ -103,17 +102,17 @@
             <div class="hardwareDistributionCategories_body_category">
                 <div class="hardwareDistributionCategories_body_category_head">
                     Qısa və uzun yansımalı projektorlar
-            
+
                 </div>
                 <div class="hardwareDistributionCategories_body_category_items">
                     <div class="hardwareDistributionCategories_body_category_item">
                         <div class="hardwareDistributionCategories_body_category_item_image">
-                            <img src="./img/hardwareDistribution_item.png" alt="">
+                            <img src="{{asset('img/thumbnail-image-mh534-01.png')}}" alt="">
                         </div>
                         <div class="hardwareDistributionCategories_body_category_item_content">
-                        
+
                             <div class="hardwareDistributionCategories_body_category_item_content_desc">
-                          Proyektor-böyük ekranda təsvirin yaradılması üçün nəzərdə tutulmuş optik cihazdır. 
+                          Proyektor-böyük ekranda təsvirin yaradılması üçün nəzərdə tutulmuş optik cihazdır.
 Müasir proyektorlar nisbətən yaxın vaxtlarda peyda olub və onlar satışda böyük dövriyyə qazanır, tətbiqin bir çox sahələrində populyarlaşır.
 Proyektorlar yalnız təlim slaydlarını göstərmək üçün deyil, həm də ev istifadəsi üçün istifadə olunur.
                             </div>
@@ -127,16 +126,30 @@ Proyektorlar yalnız təlim slaydlarını göstərmək üçün deyil, həm də e
             <div class="hardwareDistributionCategories_body_category">
                 <div class="hardwareDistributionCategories_body_category_head">
               TƏHSİL ROBOTLARI
-                  
+
                 </div>
                 <div class="hardwareDistributionCategories_body_category_items">
- 
+
                     <div class="hardwareDistributionCategories_body_category_item">
                         <div class="hardwareDistributionCategories_body_category_item_image">
-                            <img src="./img/hardwareDistribution_item.png" alt="">
+                            <img src="{{asset('img/tehsil-robot.png')}}" alt="">
                         </div>
                         <div class="hardwareDistributionCategories_body_category_item_content">
-                       
+
+                            <div class="hardwareDistributionCategories_body_category_item_content_desc">
+                           Bu məhsulun istehsalında robot texnikası sahəsindəki yeni texnologiyalardan istifadə olunmuşdur. Oyuncaqların mühərrikləri, əlavə sensorları və rəngli ekranları vardır. Robotlar onlarla ilk dəfə rastlaşanların hamısını heyrətə gətirir, axı onlar özlərini əsl canlılar kimi aparırlar. Onlara toxunduqda və səs eşitdikdə reaksiya verir, əşyanın temperaturunu və məsafəni müəyyən edə bilirlər. Siz əl çaldıqda, onlar yaxına gəlməyi, yaxınlıqdakı əşyanı qaldırmağı və işıq və qaranlığı ayırd etməyi bacarırlar. Adama elə gəlir ki, bütün bunlar kifayət qədər çətindir, amma təcrübə göstərir ki, istifadəçi səviyyəsində kompüter bacarıqlarına malik olan hər bir uşaq heç bir problem olmadan konstruktoru proqramlaşdıra və öz şəxsi robotunu yarada bilər. Qeyd edək ki, oyuncaqlara əmrləri yalnız kompüterdən deyil, həmçinin, Bluetooth proqramını dəstəkləyən istənilən mobil telefondan daxil etmək mümkündür.
+                            </div>
+                            <a href="#" class="hardwareDistributionCategories_body_category_item_content_link">
+                                www.prometheanworld.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hardwareDistributionCategories_body_category_item">
+                        <div class="hardwareDistributionCategories_body_category_item_image">
+                            <img src="{{asset('img/tehsil-robot-2.png')}}" alt="">
+                        </div>
+                        <div class="hardwareDistributionCategories_body_category_item_content">
+
                             <div class="hardwareDistributionCategories_body_category_item_content_desc">
                            Bu məhsulun istehsalında robot texnikası sahəsindəki yeni texnologiyalardan istifadə olunmuşdur. Oyuncaqların mühərrikləri, əlavə sensorları və rəngli ekranları vardır. Robotlar onlarla ilk dəfə rastlaşanların hamısını heyrətə gətirir, axı onlar özlərini əsl canlılar kimi aparırlar. Onlara toxunduqda və səs eşitdikdə reaksiya verir, əşyanın temperaturunu və məsafəni müəyyən edə bilirlər. Siz əl çaldıqda, onlar yaxına gəlməyi, yaxınlıqdakı əşyanı qaldırmağı və işıq və qaranlığı ayırd etməyi bacarırlar. Adama elə gəlir ki, bütün bunlar kifayət qədər çətindir, amma təcrübə göstərir ki, istifadəçi səviyyəsində kompüter bacarıqlarına malik olan hər bir uşaq heç bir problem olmadan konstruktoru proqramlaşdıra və öz şəxsi robotunu yarada bilər. Qeyd edək ki, oyuncaqlara əmrləri yalnız kompüterdən deyil, həmçinin, Bluetooth proqramını dəstəkləyən istənilən mobil telefondan daxil etmək mümkündür.
                             </div>
@@ -150,17 +163,17 @@ Proyektorlar yalnız təlim slaydlarını göstərmək üçün deyil, həm də e
             <div class="hardwareDistributionCategories_body_category">
                 <div class="hardwareDistributionCategories_body_category_head">
                      3D qələmlər,3D printerlər
-                 
-                     
+
+
                 </div>
                 <div class="hardwareDistributionCategories_body_category_items">
-        
+
                     <div class="hardwareDistributionCategories_body_category_item">
                         <div class="hardwareDistributionCategories_body_category_item_image">
-                            <img src="./img/hardwareDistribution_item.png" alt="">
+                            <img src="{{asset('img/3dprinter.png')}}" alt="">
                         </div>
                         <div class="hardwareDistributionCategories_body_category_item_content">
-                          
+
                             <div class="hardwareDistributionCategories_body_category_item_content_desc">
                         3D printer kompüter sistemi ilə birgə çalışan 3 ölçülü fiziki obyektlər yarada bilən qurğudur. Ənənəvi printerlər kimi 3D printerlər də ilk növbətə rəqəmsal məlumatı qəbul edir.
                             </div>
@@ -184,9 +197,9 @@ Proyektorlar yalnız təlim slaydlarını göstərmək üçün deyil, həm də e
                    @foreach($serviceInfo as $key => $val)
               @if($key != 'id')
                    <a href="{{route('servicePages', $serviceInfo['id'][0])}}" class="expertise_content_item">
-                 
+
                           <div class="expertise_content_item_body">
-                        
+
                         <div class="expertise_content_item_title">
                             <p class="expertise_content_item_title_tp">
                                 {{$key}}
@@ -194,12 +207,12 @@ Proyektorlar yalnız təlim slaydlarını göstərmək üçün deyil, həm də e
                         </div>
                         <ul class="expertise_content_item_ul expertise_content_item_ul_clr ">
                             @foreach($val as $item)
-                          
+
                                 <li class="expertise_content_item_li">
                                 {{$item}}
                             </li>
                             @endforeach
-                        
+
                         </ul>
                         <div class="expertise_content_item_body_right_icon">
                             <svg id="expertise_item_icon" xmlns="http://www.w3.org/2000/svg" width="25.5" height="16.005" viewBox="0 0 25.5 16.005">
@@ -209,11 +222,11 @@ Proyektorlar yalnız təlim slaydlarını göstərmək üçün deyil, həm də e
                             </svg>
                         </div>
                     </div>
-   
-              
+
+
                 </a>
               @endif
-           
+
                           @endforeach
             </div>
             <div class="service_left display">

@@ -26,7 +26,7 @@
                     </p>
                     <div class="page_header_desc page_header_desc_clr">
                         <p>
-                           Biz həm texniki cəhətdən çətin inkişaf, həm də kəskin dizayn səlahiyyətlərinə malik rəqəmsal agentliyik. Çünki biz əminik ki, bu, möhkəm və yaxşı dizayn edilmiş həlləri inkişaf etdirmək və çatdırmaq üçün ən yaxşı yoldur.
+                            Yeni və interaktiv xidmət və həllər təminatçısıdır. Edumedia uğurlu beynəlxalq təcrübənin yerli bazara gətirilməsi üzərində işləyir; öz sifarişçisini bir təklif daxilində İT xidmətləri ilə təmin edir; müştərilərinin ehtiyaclarını ətraflı müəyyən edərək, onları məmnun etmək üçün səylə çalışır; yeni mənfəətli tərəfdaşlıq münasibətləri qurmaq üçün vaxt və resurs sərf edir.
                         </p>
                     </div>
                     <div alt="scrollBtn" id="button" class="arrow section-down-arrow-wrap scroller">
@@ -68,43 +68,43 @@
             </div>
         </div>
     </div>
-    <div class="section team bgColor fadeUp pd_mobile" data-color="black">
-        <div class="team_body">
-            <div class="team_header">
-                <h2 class="team_header_title">Komandamız</h2>
-            </div>
-            <div class="team_slideshow">
-                <div class="team_slideshow_item">
-                    <div class="team_slideshow_item_body">
-                        <div class="team_slideshow_item_image">
-                            <img src="{{asset('img/Rectangle 53.png')}}" alt="">
-                        </div>
-                        <div class="team_slideshow_item_content">
-                            <p class="team_slideshow_item_body_name">Dilara Rustamzade</p>
-                            <small class="team_slideshow_item_body_duty">CEO</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="team_slide_footer">
-                <button class="team_click_btn slick-arrow prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14.667" height="13.599" viewBox="0 0 14.667 13.599">
-                        <g id="noun_Left_1920800" transform="translate(-2.5 -13.7)">
-                            <path id="Path_19" data-name="Path 19" d="M9.3,27.3l.9-.918L4.954,21.136H17.167V19.862H4.954L10.2,14.618,9.3,13.7,2.5,20.5Z" transform="translate(0 0)"></path>
-                        </g>
-                    </svg>
-                </button>
-                <p class="team_slide_footer_info pagingInfo">5/7</p>
-                <button class="team_click_btn slick-arrow next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14.667" height="13.599" viewBox="0 0 14.667 13.599">
-                        <g id="noun_Left_1920800" transform="translate(17.167 27.299) rotate(180)">
-                            <path id="Path_19" data-name="Path 19" d="M9.3,27.3l.9-.918L4.954,21.136H17.167V19.862H4.954L10.2,14.618,9.3,13.7,2.5,20.5Z" transform="translate(0 0)"></path>
-                        </g>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
+{{--    <div class="section team bgColor fadeUp pd_mobile" data-color="black">--}}
+{{--        <div class="team_body">--}}
+{{--            <div class="team_header">--}}
+{{--                <h2 class="team_header_title">Komandamız</h2>--}}
+{{--            </div>--}}
+{{--            <div class="team_slideshow">--}}
+{{--                <div class="team_slideshow_item">--}}
+{{--                    <div class="team_slideshow_item_body">--}}
+{{--                        <div class="team_slideshow_item_image">--}}
+{{--                            <img src="{{asset('img/Rectangle 53.png')}}" alt="">--}}
+{{--                        </div>--}}
+{{--                        <div class="team_slideshow_item_content">--}}
+{{--                            <p class="team_slideshow_item_body_name">Dilara Rustamzade</p>--}}
+{{--                            <small class="team_slideshow_item_body_duty">CEO</small>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="team_slide_footer">--}}
+{{--                <button class="team_click_btn slick-arrow prev">--}}
+{{--                    <svg xmlns="http://www.w3.org/2000/svg" width="14.667" height="13.599" viewBox="0 0 14.667 13.599">--}}
+{{--                        <g id="noun_Left_1920800" transform="translate(-2.5 -13.7)">--}}
+{{--                            <path id="Path_19" data-name="Path 19" d="M9.3,27.3l.9-.918L4.954,21.136H17.167V19.862H4.954L10.2,14.618,9.3,13.7,2.5,20.5Z" transform="translate(0 0)"></path>--}}
+{{--                        </g>--}}
+{{--                    </svg>--}}
+{{--                </button>--}}
+{{--                <p class="team_slide_footer_info pagingInfo">5/7</p>--}}
+{{--                <button class="team_click_btn slick-arrow next">--}}
+{{--                    <svg xmlns="http://www.w3.org/2000/svg" width="14.667" height="13.599" viewBox="0 0 14.667 13.599">--}}
+{{--                        <g id="noun_Left_1920800" transform="translate(17.167 27.299) rotate(180)">--}}
+{{--                            <path id="Path_19" data-name="Path 19" d="M9.3,27.3l.9-.918L4.954,21.136H17.167V19.862H4.954L10.2,14.618,9.3,13.7,2.5,20.5Z" transform="translate(0 0)"></path>--}}
+{{--                        </g>--}}
+{{--                    </svg>--}}
+{{--                </button>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <div class="section team_info bgColor fadeUp pd_mobile" data-color="black">
         <p class="team_info_text">Biz daim özümüzü inkişaf etdirir və hər şeyi daha yaxşı şəkildə etmək arzusu ilə çalışırıq. </p>
         <div class="team_info_group">
@@ -151,136 +151,40 @@
             </a>
         </div>
         <div class="expertise_content">
-            <a href="#" class="expertise_content_item">
-                <div class="expertise_content_item_body">
-                    <div class="expertise_content_item_title">
-                        <p class="expertise_content_item_title_tp">Design & Development</p>
-                    </div>
-                    <ul class="expertise_content_item_ul">
-                        <li class="expertise_content_item_li">
-                            Responsive websites
-                        </li>
-                        <li class="expertise_content_item_li">
-                            Mobile apps
-                        </li>
-                        <li class="expertise_content_item_li">
-                            Complex platforms
-                        </li>
-                        <li class="expertise_content_item_li">
-                            BI systems
-                        </li>
-                        <li class="expertise_content_item_li">
-                            ERP/CRM systems
-                        </li>
-                        <li class="expertise_content_item_li">
-                            Games
-                        </li>
-                    </ul>
-                    <div class="expertise_content_item_body_right_icon">
-                        <svg id="expertise_item_icon" xmlns="http://www.w3.org/2000/svg" width="25.5" height="16.005" viewBox="0 0 25.5 16.005">
-                            <g id="noun_Left_1920800" transform="translate(28 29.705) rotate(180)">
-                                <path id="Path_19" data-name="Path 19" d="M10.5,29.7l1.058-1.08L5.388,22.452H28v-1.5H5.388L11.56,14.78,10.5,13.7l-8,8Z" transform="translate(0 0)" fill="#00aeef"/>
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="expertise_content_item">
-                <div class="expertise_content_item_body">
-                    <div class="expertise_content_item_title">
-                        <p class="expertise_content_item_title_tp">Hardware solutions</p>
-                    </div>
-                    <ul class="expertise_content_item_ul">
-                        <li class="expertise_content_item_li">
-                            Interactive boards, monitors
-                        </li>
-                        <li class="expertise_content_item_li">
-                            Short and long throw projection
-                        </li>
-                        <li class="expertise_content_item_li">
-                            Digital science labs
-                        </li>
-                        <li class="expertise_content_item_li">
-                            Robotics
-                        </li>
-                        <li class="expertise_content_item_li">
-                            3D pens, 3D printers
-                        </li>
-                        <li class="expertise_content_item_li">
-                            Engineering solutions for educational institutions
-                        </li>
-                    </ul>
-                    <div class="expertise_content_item_body_right_icon">
-                        <svg id="expertise_item_icon" xmlns="http://www.w3.org/2000/svg" width="25.5" height="16.005" viewBox="0 0 25.5 16.005">
-                            <g id="noun_Left_1920800" transform="translate(28 29.705) rotate(180)">
-                                <path id="Path_19" data-name="Path 19" d="M10.5,29.7l1.058-1.08L5.388,22.452H28v-1.5H5.388L11.56,14.78,10.5,13.7l-8,8Z" transform="translate(0 0)" fill="#00aeef"/>
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="expertise_content_item">
-                <div class="expertise_content_item_body">
-                    <div class="expertise_content_item_title">
-                        <p class="expertise_content_item_title_tp">Educational content</p>
-                    </div>
-                    <ul class="expertise_content_item_ul">
-                        <li class="expertise_content_item_li">
-                            Interactive video lessons
-                        </li>
-                        <li class="expertise_content_item_li">
-                            3D animated videos
-                        </li>
-                        <li class="expertise_content_item_li">
-                            HTML5 based interactive e-lessons
-                        </li>
-                        <li class="expertise_content_item_li">
-                            E-books
-                        </li>
-                        <li class="expertise_content_item_li">
-                            Traditional textbooks
-                        </li>
-                    </ul>
-                    <div class="expertise_content_item_body_right_icon">
-                        <svg id="expertise_item_icon" xmlns="http://www.w3.org/2000/svg" width="25.5" height="16.005" viewBox="0 0 25.5 16.005">
-                            <g id="noun_Left_1920800" transform="translate(28 29.705) rotate(180)">
-                                <path id="Path_19" data-name="Path 19" d="M10.5,29.7l1.058-1.08L5.388,22.452H28v-1.5H5.388L11.56,14.78,10.5,13.7l-8,8Z" transform="translate(0 0)" fill="#00aeef"/>
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="expertise_content_item">
-                <div class="expertise_content_item_body">
-                    <div class="expertise_content_item_title">
-                        <p class="expertise_content_item_title_tp">Coaching & consulting</p>
-                    </div>
-                    <ul class="expertise_content_item_ul">
-                        <li class="expertise_content_item_li">
-                            Instilling Agile thinking at the company team level
-                        </li>
-                        <li class="expertise_content_item_li">
-                            Adaptation of current projects to Agile project management approach
-                        </li>
-                        <li class="expertise_content_item_li">
-                            Application of Agile Project Management Tools
-                        </li>
-                        <li class="expertise_content_item_li">
-                            Changing office interior according to Agile PM standarts
-                        </li>
-                        <li class="expertise_content_item_li">
-                            Agile PM Training for every company member
-                        </li>
-                    </ul>
-                    <div class="expertise_content_item_body_right_icon">
-                        <svg id="expertise_item_icon" xmlns="http://www.w3.org/2000/svg" width="25.5" height="16.005" viewBox="0 0 25.5 16.005">
-                            <g id="noun_Left_1920800" transform="translate(28 29.705) rotate(180)">
-                                <path id="Path_19" data-name="Path 19" d="M10.5,29.7l1.058-1.08L5.388,22.452H28v-1.5H5.388L11.56,14.78,10.5,13.7l-8,8Z" transform="translate(0 0)" fill="#00aeef"/>
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-            </a>
+            @foreach($serviceInfo as $key => $val)
+                @if($key != 'id')
+                    <a href="{{route('servicePages', $serviceInfo['id'][0])}}" class="expertise_content_item">
+
+                        <div class="expertise_content_item_body">
+
+                            <div class="expertise_content_item_title">
+                                <p class="expertise_content_item_title_tp">
+                                    {{$key}}
+                                </p>
+                            </div>
+                            <ul class="expertise_content_item_ul expertise_content_item_ul_clr ">
+                                @foreach($val as $item)
+
+                                    <li class="expertise_content_item_li">
+                                        {{$item}}
+                                    </li>
+                                @endforeach
+
+                            </ul>
+                            <div class="expertise_content_item_body_right_icon">
+                                <svg id="expertise_item_icon" xmlns="http://www.w3.org/2000/svg" width="25.5" height="16.005" viewBox="0 0 25.5 16.005">
+                                    <g id="noun_Left_1920800" transform="translate(28 29.705) rotate(180)">
+                                        <path id="Path_19" data-name="Path 19" d="M10.5,29.7l1.058-1.08L5.388,22.452H28v-1.5H5.388L11.56,14.78,10.5,13.7l-8,8Z" transform="translate(0 0)" fill="#00aeef"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+
+                    </a>
+                @endif
+
+            @endforeach
         </div>
         <div class="expertise_content_slide_btns">
             <button class="expertise_content_slide_btn prevs slick-arrow">
