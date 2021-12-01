@@ -107,14 +107,18 @@
                 <div class="hardwareDistributionCategories_body_category_items">
                     <div class="hardwareDistributionCategories_body_category_item">
                         <div class="hardwareDistributionCategories_body_category_item_image">
-                            <img src="{{asset('img/thumbnail-image-mh534-01.png')}}" alt="">
+                            <div class="box pd-top100">
+                                <div class="box_item">
+                                    <img src="{{asset('img/thumbnail-image-mh534-01.png')}}" alt="">
+                                </div>
+                            </div>
                         </div>
                         <div class="hardwareDistributionCategories_body_category_item_content">
 
                             <div class="hardwareDistributionCategories_body_category_item_content_desc">
-                          Proyektor-böyük ekranda təsvirin yaradılması üçün nəzərdə tutulmuş optik cihazdır.
-Müasir proyektorlar nisbətən yaxın vaxtlarda peyda olub və onlar satışda böyük dövriyyə qazanır, tətbiqin bir çox sahələrində populyarlaşır.
-Proyektorlar yalnız təlim slaydlarını göstərmək üçün deyil, həm də ev istifadəsi üçün istifadə olunur.
+                            Proyektor-böyük ekranda təsvirin yaradılması üçün nəzərdə tutulmuş optik cihazdır.
+                            Müasir proyektorlar nisbətən yaxın vaxtlarda peyda olub və onlar satışda böyük dövriyyə qazanır, tətbiqin bir çox sahələrində populyarlaşır.
+                            Proyektorlar yalnız təlim slaydlarını göstərmək üçün deyil, həm də ev istifadəsi üçün istifadə olunur.
                             </div>
                             <a href="#" class="hardwareDistributionCategories_body_category_item_content_link">
                                 www.prometheanworld.com
@@ -132,7 +136,11 @@ Proyektorlar yalnız təlim slaydlarını göstərmək üçün deyil, həm də e
 
                     <div class="hardwareDistributionCategories_body_category_item">
                         <div class="hardwareDistributionCategories_body_category_item_image">
-                            <img src="{{asset('img/tehsil-robot.png')}}" alt="">
+                            <div class="box pd-top100">
+                                <div class="box_item">
+                                    <img src="{{asset('img/tehsil-robot.png')}}" alt="">
+                                </div>
+                            </div>
                         </div>
                         <div class="hardwareDistributionCategories_body_category_item_content">
 
@@ -146,7 +154,11 @@ Proyektorlar yalnız təlim slaydlarını göstərmək üçün deyil, həm də e
                     </div>
                     <div class="hardwareDistributionCategories_body_category_item">
                         <div class="hardwareDistributionCategories_body_category_item_image">
-                            <img src="{{asset('img/tehsil-robot-2.png')}}" alt="">
+                            <div class="box pd-top100">
+                                <div class="box_item">
+                                    <img src="{{asset('img/tehsil-robot-2.png')}}" alt="">
+                                </div>
+                            </div>
                         </div>
                         <div class="hardwareDistributionCategories_body_category_item_content">
 
@@ -170,7 +182,11 @@ Proyektorlar yalnız təlim slaydlarını göstərmək üçün deyil, həm də e
 
                     <div class="hardwareDistributionCategories_body_category_item">
                         <div class="hardwareDistributionCategories_body_category_item_image">
-                            <img src="{{asset('img/3dprinter.png')}}" alt="">
+                            <div class="box pd-top100">
+                                <div class="box_item">
+                                    <img src="{{asset('img/3dprinter.png')}}" alt="">
+                                </div>
+                            </div>
                         </div>
                         <div class="hardwareDistributionCategories_body_category_item_content">
 
