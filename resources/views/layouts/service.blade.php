@@ -2,12 +2,12 @@
 @section('content')
     <div class="section page_header bgColor pd_mobile" data-color="black">
         <div class="page_header_top">
-            <ul class="page_breadcrumb">
+              <ul class="page_breadcrumb">
                 <li class="page_breadcrumb_item">
-                    <a href="{{route('index')}}">home</a>
+                    <a href="{{route('index')}}">Ana səhifə</a>
                 </li>
                 <li class="page_breadcrumb_item">
-                    <a href="{{route('service')}}">service</a>
+                    <a href="{{route('service')}}">Xidmətlər</a>
                 </li>
             </ul>
         </div>
@@ -16,7 +16,7 @@
                 {{$header['header_text'] ?? ''}}
             </p>
             <div class="page_header_desc">
-                <p>A digital-first approach to strategy and creative.</p>
+                <p>Kompleks həllər üçün innovativ yanaşma​</p>
             </div>
         </div>
     </div>
@@ -24,10 +24,6 @@
         <div class="service_body">
             <div class="service_left">
                 <div class="service_left_content">
-                    <div class="service_left_content_header">
-                        Our services
-                    </div>
-
                     <ul class="service_left_content_nav">
                         @foreach($blogs as $blog)
                             <li class="service_left_content_nav_item">
@@ -51,7 +47,7 @@
                                 @foreach($blogs as $blog)
                                     <a href="{{route('servicePages',$blog->id)}}" data-services-content-id="{{$blog->url}}" class="service_right_content_item {{($blog->url ?? '') == 'DesignDevelopment' ? 'active' : '' }}">
                                         <div class="service_right_content_item_image">
-                                            <img src="{{asset('storage/img/'.$blog->img)}}" alt="">
+                                            <img src="{{'storage/app/img/'.$blog->img}}" alt="">
                                         </div>
                                         <div class="overlay"></div>
                                         <div class="service_right_content_item_desc">
@@ -71,7 +67,7 @@
             </div>
         </div>
     </div>
-    @include('layouts.miniPostDashboard')
+{{--    @include('layouts.miniPostDashboard')--}}
     @include('layouts.tplAboutAndCareers')
     @include('layouts.projectInMind')
 @endsection

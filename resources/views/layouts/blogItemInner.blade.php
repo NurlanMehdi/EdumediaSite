@@ -3,12 +3,13 @@
     <div class="section BI_system bgColor pd_mobile_0" data-color="black">
         <div class="BI_system_header">
             <div class="BI_system_header_img">
-                <img src="./img/about_content.png" alt="">
+                <img src="{{asset('storage/app/img/')."/".$data->img}}" alt="">
             </div>
+            
             <div class="BI_system_header_text">
                 <div class="BI_system_header_text_body">
                     <p class="BI_system_header_text_date">01 March 2021</p>
-                    <h3 class="BI_system_header_text_title">BI System for the Ministry of Education</h3>
+                                     <h3 class="BI_system_header_text_title">{{$data->header_name}}</h3>
                 </div>
                 <div class="overlay"></div>
             </div>
@@ -72,60 +73,7 @@
                 </svg>
             </a>
         </div>
-        <div class="blog_posts_content">
-            <a href="blogItemInner.html" class="blog_posts_content_item">
-                <div class="blog_posts_content_item_body">
-                    <div class="box pd-top100">
-                        <div class="box_item">
-                            <img src="img/startup-programming-team-508896704-5a4c19350c1a8200366a68a9.png" alt="">
-                        </div>
-                    </div>
-                    <div class="blog_posts_content_item_desc">
-                        <small class="blog_posts_content_item_desc_date">01 March 2021</small>
-                        <p class="blog_posts_content_item_desc_text" id="b">BI System for the Ministry of Education</p>
-                    </div>
-                </div>
-            </a>
-            <a href="blogItemInner.html" class="blog_posts_content_item">
-                <div class="blog_posts_content_item_body">
-                    <div class="box pd-top100">
-                        <div class="box_item">
-                            <img src="img/11344.png" alt="">
-                        </div>
-                    </div>
-                    <div class="blog_posts_content_item_desc">
-                        <small class="blog_posts_content_item_desc_date">01 March 2021</small>
-                        <p class="blog_posts_content_item_desc_text" id="b">BI System for the Ministry of Education</p>
-                    </div>
-                </div>
-            </a>
-            <a href="blogItemInner.html" class="blog_posts_content_item">
-                <div class="blog_posts_content_item_body">
-                    <div class="box pd-top100">
-                        <div class="box_item">
-                            <img src="img/startup-programming-team-508896704-5a4c19350c1a8200366a68a9.png" alt="">
-                        </div>
-                    </div>
-                    <div class="blog_posts_content_item_desc">
-                        <small class="blog_posts_content_item_desc_date">01 March 2021</small>
-                        <p class="blog_posts_content_item_desc_text" id="b">BI System for the Ministry of ducation</p>
-                    </div>
-                </div>
-            </a>
-            <a href="blogItemInner.html" class="blog_posts_content_item">
-                <div class="blog_posts_content_item_body">
-                    <div class="box pd-top100">
-                        <div class="box_item">
-                            <img src="img/11344.png" alt="">
-                        </div>
-                    </div>
-                    <div class="blog_posts_content_item_desc">
-                        <small class="blog_posts_content_item_desc_date">01 March 2021</small>
-                        <p class="blog_posts_content_item_desc_text" id="b">BI System for the Ministry of ducation</p>
-                    </div>
-                </div>
-            </a>
-        </div>
+      
         <div class="section_footer">
             <a href="blog.html" class="btn mobile_section_footer_btn">
                 See all
@@ -137,69 +85,8 @@
             </a>
         </div>
     </div>
-    <div class="section blog_posts_footer bgColor fadeUp pd_mobile" data-color="black">
-        <div class="blog_posts_footer_item">
-            <div class="blog_posts_footer_item_content">
-                <div class="blog_posts_footer_item_content_body">
-                    <div class="blog_posts_footer_item_content_body_img">
-                        <img src="./img/techguy.png" alt="">
-                    </div>
-                    <div class="overlay"></div>
-                    <div class="blog_posts_footer_item_content_body_desc">
-                        <p class="blog_posts_footer_item_content_body_desc_text">
-                            We’re a team of problem solvers  delivering effective digital  solutions that work.
-                        </p>
-                        <a href="about.html" class="btn btn_border">
-                            About Us
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
-                                <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
-                                    <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"></path>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="blog_posts_footer_item">
-            <div class="blog_posts_footer_item_content">
-                <div class="blog_posts_footer_item_content_body">
-                    <div class="blog_posts_footer_item_content_body_img">
-                        <img src="./img/7e86a435982265.570b650707a20.png" alt="">
-                    </div>
-                    <div class="overlay"></div>
-                    <div class="blog_posts_footer_item_content_body_desc">
-                        <p class="blog_posts_footer_item_content_body_desc_text">
-                            We are looking for inspiring brilliant minds to innovate & create!
-                        </p>
-                        <a href="careers.html" class="btn btn_border">
-                            Careers
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
-                                <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
-                                    <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"></path>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section project bgColor fadeUp pd_mobile_0" data-color="black">
-        <div class="project_content">
-            <div class="project_content_desc">
-                <h2>Have a project in mind?</h2>
-                <a href="contact.html" class="btn border_clr_btn">
-                    Get in touch
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
-                        <g id="noun_Left_1920800" transform="translate(9.967 23.407) rotate(180)">
-                            <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(-8 0)"/>
-                        </g>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </div>
+  @include('layouts.tplAboutAndCareers')
+    @include('layouts.projectInMind')
 @endsection
 
 

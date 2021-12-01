@@ -4,14 +4,12 @@
         <div class="page_header_top">
             <ul class="page_breadcrumb">
                 <li class="page_breadcrumb_item">
-                    <a href="{{route('service')}}">home</a>
+                    <a href="{{route('index')}}">Ana səhifə</a>
                 </li>
                 <li class="page_breadcrumb_item page_breadcrumb_item_clr">
-                    <a href="{{route('service')}}">service</a>
+                    <a href="{{route('service')}}">Layihələr</a>
                 </li>
-                <li class="page_breadcrumb_item page_breadcrumb_item_clr">
-                    <a href="{{route('case_studies')}}">design & development</a>
-                </li>
+
             </ul>
         </div>
         <div class="page_header_bottom">
@@ -73,7 +71,9 @@
                                 month   = date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth(),
                                 day     = date.getDate()  < 10 ? '0' + date.getDate()  : date.getDate(),
                                 newDate = day + '-' + month + '-' + yr;
-                            var post = ' <a href="{{route('blogItemInner')}}" class="flex_25 filter_content_item"><div class="filter_content_item_body"><div class="box pd-top100"> <div class="box_item"> <img class="filter_content_item_img" src="'+'/storage/img/'+value.img+'" alt=""> </div> </div> <div class="filter_content_item_desc"> <small  class="filter_content_item_desc_top">'+newDate+'</small> <p class="filter_content_item_desc_bottom filter_content_item_desc_bottom_clr">'+value.header_name+'</p></div></div></a>';
+                let infoUrl = "{{route('blogItemInner',':itemId')}}";
+                            infoUrl = infoUrl.replace(':itemId',value.id);
+                            var post = ' <a href="'+infoUrl+'" class="flex_25 filter_content_item"><div class="filter_content_item_body"><div class="box pd-top100"> <div class="box_item"> <img class="filter_content_item_img" src="'+'/storage/app/img/'+value.img+'" alt=""> </div> </div> <div class="filter_content_item_desc"> <small  class="filter_content_item_desc_top"></small> <p class="filter_content_item_desc_bottom filter_content_item_desc_bottom_clr">'+value.header_name+'</p></div></div></a>';
 
                             $('.filter_content').append(post);
                         });

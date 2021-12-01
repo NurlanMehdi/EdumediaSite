@@ -21,7 +21,7 @@ class CreateDashboardTranslate extends Migration
             $table->string('button_name')->nullable();
             $table->string('blog_button_other')->nullable();
             $table->string('names')->nullable();
-            $table->string('short_info');
+            $table->string('short_info')->nullable();
             $table->timestamps();
         });
     }

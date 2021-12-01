@@ -16,7 +16,8 @@ class ContactController extends Controller
     public function contactDashboardPage()
     {
         $contact = Contact::first();
-        return view('layouts/contact',['contact'=>$contact]);
+        $header = \App\Models\PageHeader::where('page_name','=','contact')->first();
+        return view('layouts/contact',['contact'=>$contact,'header'=>$header]);
     }
 
     public function saveContact()

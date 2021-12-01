@@ -79,8 +79,8 @@ class DashboardController extends Controller
     {
         $data = [];
         if ($id > 0){
-           $data = Dashboard::join('dashboard_translate','dashboard_translate.item_id','=','dashboard_items.id')
-               ->select('dashboard_items.id','dashboard_items.status','dashboard_items.img','dashboard_translate.button_name','dashboard_translate.names','dashboard_translate.blog_button_other','dashboard_translate.key','dashboard_translate.blog_name','dashboard_translate.short_info')->where('dashboard_items.id','=',$id)->first();
+            $data = Dashboard::join('dashboard_translate','dashboard_translate.item_id','=','dashboard_items.id')
+                ->select('dashboard_items.id','dashboard_items.status','dashboard_items.img','dashboard_translate.button_name','dashboard_translate.names','dashboard_translate.blog_button_other','dashboard_translate.key','dashboard_translate.blog_name','dashboard_translate.short_info')->where('dashboard_items.id','=',$id)->first();
         }else{
             $data = [];
         }
@@ -91,8 +91,8 @@ class DashboardController extends Controller
     {
         $data = [];
         if ($id > 0){
-           $data = Studies::join('studies_translate','studies_translate.item_id','=','studies_items.id')
-               ->select('studies_items.id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name','studies_translate.other_info')->where('studies_items.id','=',$id)->first();
+            $data = Studies::join('studies_translate','studies_translate.item_id','=','studies_items.id')
+                ->select('studies_items.id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name','studies_translate.other_info')->where('studies_items.id','=',$id)->first();
         }else{
             $data = [];
         }
@@ -123,7 +123,7 @@ class DashboardController extends Controller
             'names' => 'required|string',
             'button_name' => 'required|string',
             'blog_button_other' => 'required|string',
-            'short_info' => 'required|string',
+            'short_info' => 'nullable|string',
             'blogId' => 'required|integer'
         ]);
 
@@ -162,7 +162,7 @@ class DashboardController extends Controller
             'names' => 'nullable|string',
             'button_name' => 'nullable|string',
             'blog_button_other' => 'nullable|string',
-            'short_info' => 'required|string',
+            'short_info' => 'nullable|string',
             'blogId' => 'required|integer'
         ]);
 
@@ -191,7 +191,7 @@ class DashboardController extends Controller
     public function createUrl($string)
     {
 
-         $word = explode(' ', $string);
+        $word = explode(' ', $string);
         $url = '';
         foreach ($word as $val) {
             $url = $url . $val;

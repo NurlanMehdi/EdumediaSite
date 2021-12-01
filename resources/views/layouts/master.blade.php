@@ -15,7 +15,7 @@
     <meta property="og:image" content="./img/sidebar-icon.png">
     <meta property="og:url" content="edumedia.az">
 
-    <link rel="stylesheet" href="{{asset('css/main.css')}}">
+     <link rel="stylesheet" href="{{asset('css/main.css?version=123')}}">
     <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
     <link rel="shortcut icon" href="{{asset('img/favicon (2).ico')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('slick/slick.css')}}"/>
@@ -52,7 +52,7 @@
 {{--                    <a href="#" class="onclick_sidebar_lang_item">AZ</a>--}}
 {{--                    <a href="#" class="onclick_sidebar_lang_item active">ENG</a>--}}
 {{--                </div>--}}
-                <ul class="onclick_sidebar_header">
+              <ul class="onclick_sidebar_header">
                     <li class="onclick_sidebar_header_item">
                         <a href="https://www.facebook.com/edumedia.azerbaijan">Facebook</a>
                     </li>
@@ -66,22 +66,19 @@
             </div>
             <ul class="onclick_sidebar_content">
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('index')}}" class="onclick_sidebar_content_item_link {{Request::is('/') == true ? 'active' : '' }}">Home</a>
+                    <a href="{{route('index')}}" class="onclick_sidebar_content_item_link {{Request::is('/') == true ? 'active' : '' }}">Ana səhifə</a>
                 </li>
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('service')}}" class="onclick_sidebar_content_item_link {{Request::is('service') == true ? 'active' : '' }}">Services</a>
+                    <a href="{{route('service')}}" class="onclick_sidebar_content_item_link {{Request::is('service') == true ? 'active' : '' }}">Xidmətlər</a>
                 </li>
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('case_studies')}}" class="onclick_sidebar_content_item_link {{Request::is('case_studies') == true ? 'active' : '' }}">Portfolio</a>
+                    <a href="{{route('case_studies')}}" class="onclick_sidebar_content_item_link {{Request::is('case_studies') == true ? 'active' : '' }}">Layihələr</a>
                 </li>
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('about')}}" class="onclick_sidebar_content_item_link {{Request::is('about') == true ? 'active' : '' }}">About Us</a>
+                    <a href="{{route('about')}}" class="onclick_sidebar_content_item_link {{Request::is('about') == true ? 'active' : '' }}">Haqqımızda</a>
                 </li>
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('blog')}}" class="onclick_sidebar_content_item_link {{Request::is('blog') == true ? 'active' : '' }}">Blog</a>
-                </li>
-                <li class="onclick_sidebar_content_item">
-                    <a href="{{route('careers')}}" class="onclick_sidebar_content_item_link {{Request::is('careers') == true ? 'active' : '' }}">Careers</a>
+                    <a href="{{route('careers')}}" class="onclick_sidebar_content_item_link {{Request::is('careers') == true ? 'active' : '' }}">Karyera</a>
                 </li>
             </ul>
             <div class="onclick_sidebar_footer">
@@ -117,33 +114,9 @@
             <div class="footer_content">
                 <div class="footer_top">
                     <div class="footer_explore">
-                        <h2 class="footer_head">EXPLORE</h2>
+                        <h2 class="footer_head">BİZİ İZLƏYİN</h2>
                         <ul class="footer_explore_nav">
                             <li class="footer_explore_nav_item">
-                                <a href="{{route('about')}}">About Us</a>
-                            </li>
-                            <li class="footer_explore_nav_item">
-                                <a href="{{route('service')}}">Services</a>
-                            </li>
-                            <li class="footer_explore_nav_item">
-                                <a href="{{route('case_studies')}}">Case Studies</a>
-                            </li>
-                            <li class="footer_explore_nav_item">
-                                <a href="{{route('blog')}}">Blog</a>
-                            </li>
-                            <li class="footer_explore_nav_item">
-                                <a href="{{route('careers')}}">Career</a>
-                            </li>
-                            <li class="footer_explore_nav_item">
-                                <a href="{{route('contact')}}">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="footer_follow_us">
-                        <h2 class="footer_head">FOLLOW US </h2>
-                        <ul class="follow_us_nav">
-                            <li class="follow_us_nav_item">
                                 <a href="{{\App\Models\Contact::where('facebook_status',0)->first()->facebook ?? ''}}">
                                     Facebook
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
@@ -153,7 +126,7 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li class="follow_us_nav_item">
+                            <li class="footer_explore_nav_item">
                                 <a href="{{\App\Models\Contact::where('linkedin_status',0)->first()->linkedin ?? ''}}">
                                     LinkedIn
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
@@ -163,7 +136,7 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li class="follow_us_nav_item">
+                            <li class="footer_explore_nav_item">
                                 <a href="{{\App\Models\Contact::where('instagram_status',0)->first()->instagram ?? ''}}">
                                     Instagram
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
@@ -175,6 +148,7 @@
                             </li>
                         </ul>
                     </div>
+
                 </div>
                 <div class="footer_center">
                     <a href="{{route('index')}}" class="footer_center_icon">
@@ -190,19 +164,19 @@
                         <a class="footer_center_contact_mail" href="mailto::info@edumedia.az">{{\App\Models\Contact::where('mail_status',0)->first()->mail ?? ''}}</a>
                     </div>
                 </div>
-                <div class="footer_bottom">
-                    <ul class="footer_bottom_nav">
-                        <li class="footer_bottom_nav_item">
-                            <a href="{{route('privacyPolicy')}}">Privacy Policy</a>
-                        </li>
-                        <li class="footer_bottom_nav_item">
-                            <a href="{{route('siteMap')}}">Sitemap</a>
-                        </li>
-                    </ul>
-                    <div class="footer_bottom_right">
-                        <p class="footer_tag">@Edumedia 2021</p>
-                    </div>
-                </div>
+{{--                <div class="footer_bottom">--}}
+{{--                    <ul class="footer_bottom_nav">--}}
+{{--                        <li class="footer_bottom_nav_item">--}}
+{{--                            <a href="{{route('privacyPolicy')}}">Privacy Policy</a>--}}
+{{--                        </li>--}}
+{{--                        <li class="footer_bottom_nav_item">--}}
+{{--                            <a href="{{route('siteMap')}}">Sitemap</a>--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
+{{--                    <div class="footer_bottom_right">--}}
+{{--                        <p class="footer_tag">@Edumedia 2021</p>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
         </div>
     </div>

@@ -19,6 +19,7 @@
                         <option value="about_us">About Us</option>
                         <option value="blog">Blog</option>
                         <option value="careers">Careers</option>
+                         <option value="contact">Contact</option>
                     </select>
                 </div>
                 <div class="form-group required">

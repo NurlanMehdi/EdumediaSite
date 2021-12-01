@@ -4,7 +4,7 @@
             <div class="blog_posts_footer_item_content">
                 <div class="blog_posts_footer_item_content_body">
                     <div class="blog_posts_footer_item_content_body_img">
-                        <img src="{{'storage/app/img/'.(\App\Http\Controllers\AboutCareersController::aboutAndCareersGetData()['about']['img'] ?? '')}}" alt="techguy">
+                        <img src="{{'/storage/app/img/'.(\App\Http\Controllers\AboutCareersController::aboutAndCareersGetData()['about']['img'] ?? '')}}" alt="techguy">
                     </div>
                     <div class="overlay"></div>
                     <div class="blog_posts_footer_item_content_body_desc">
@@ -27,7 +27,7 @@
             <div class="blog_posts_footer_item_content">
                 <div class="blog_posts_footer_item_content_body">
                     <div class="blog_posts_footer_item_content_body_img">
-                        <img src="{{'storage/app/img/'.(\App\Http\Controllers\AboutCareersController::aboutAndCareersGetData()['careers']['img'] ?? '')}}" alt="image">
+                        <img src="{{'/storage/app/img/'.(\App\Http\Controllers\AboutCareersController::aboutAndCareersGetData()['careers']['img'] ?? '')}}" alt="image">
                     </div>
                     <div class="overlay"></div>
                     <div class="blog_posts_footer_item_content_body_desc">

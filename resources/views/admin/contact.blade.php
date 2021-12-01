@@ -1,6 +1,5 @@
 @extends('admin.master')
 @section('content')
-    dasd
     <div class="container-lg">
         <div class="page_head">
             <div class="page_head--header page_head--header_after">

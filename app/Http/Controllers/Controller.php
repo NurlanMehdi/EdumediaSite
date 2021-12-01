@@ -42,7 +42,23 @@ class Controller extends BaseController
             ->where('deliver_translate.key','=',App::getLocale())
             ->get();
         $deliverArr = [];
+                 $serviceInfo = DB::table('services_first_info')->leftJoin('dashboard_translate','dashboard_translate.id','=','services_first_info.services_id')->where('services_id','!=',$id)->where('services_first_info.key','=',App::getLocale())->get();
 
+
+        
+             $serviceArray = [];
+        foreach ($serviceInfo as $val){
+            if(!isset($serviceArray[$val->blog_name]))
+            {
+                $serviceArray[$val->blog_name][] = $val->name;
+                              $serviceArray['id'][] = $val->id;
+            }elseif(isset($serviceArray[$val->blog_name]) && $serviceArray[$val->blog_name] != $val->name){
+                 $serviceArray[$val->blog_name][] = $val->name;
+                 $serviceArray['id'][] = $val->id;
+            }
+            
+        }
+   
         foreach ($deliverData as $val)
         {
 
@@ -65,9 +81,9 @@ class Controller extends BaseController
         {
             if ($item->id == $id){
                 if ($item->url != 'Hardwaredistribution') {
-                    return view('layouts/desing_development',['data'=>$item,'allData'=>$data,'deliverArr'=>$deliverArr]);
+                    return view('layouts/desing_development',['data'=>$item,'allData'=>$data,'deliverArr'=>$deliverArr,'serviceInfo'=>$serviceArray]);
                 }else{
-                    return view('layouts/hardwareDistribution',['data'=>$item,'allData'=>$data]);
+                    return view('layouts/hardwareDistribution',['data'=>$item,'allData'=>$data,'serviceInfo'=>$serviceArray]);
                 }
             }
         }

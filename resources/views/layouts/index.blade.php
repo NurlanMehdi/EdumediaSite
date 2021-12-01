@@ -51,9 +51,9 @@
                     <div class="banner_content_item_body" onclick="location.href='{{route('servicePages',$blog->id)}}'">
                         <h2>{{$blog->blog_name ?? ''}}</h2>
                         <div class="banner_content_item_desc">
-                            <p>
-                                {{$blog->short_info ?? ''}}
-                            </p>
+                            {{--                            <p>--}}
+                            {{--                                {{$blog->short_info ?? ''}}--}}
+                            {{--                            </p>--}}
                             <a href="{{route('servicePages',$blog->id)}}" class="btn">
                                 {{$blog->blog_button_other ?? ''}}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
@@ -115,23 +115,34 @@
             </a>
         </div>
         <div class="case_studies_content">
-            <div class="case_studies_slider">
-                @foreach($studies as $studie)
-                 <div class="case_studies_silder_item">
-                    <div>
-                        <a href="{{route('serviceItemInner')}}" class="case_studies_content_item">
-                            <div class="case_studies_content_item_body">
-                                <img class="case_studies_item_img" src="{{'storage/app/img/'.$studie->img}}" alt="sekil">
+            @foreach($studies->chunk(4) as $rows)
+                <div class="case_studies_slider">
+                    @foreach($rows as $row)
+
+
+
+                        <div class="case_studies_silder_item">
+                            <div>
+                                <a href="{{route('blogItemInner',$row->id)}}" class="case_studies_content_item">
+                                    <div class="case_studies_content_item_body">
+                                        <div class="box pd-top50">
+                                            <div class="box_item">
+                                                <img class="case_studies_item_img" src="{{'storage/app/img/'.$row->img}}" alt="sekil">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="case_studies_content_item_desc">
+                                        <small>{{$row->header_name}}</small>
+                                        <p>{{$row->other_info}}</p>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="case_studies_content_item_desc">
-                                <small>{{$studie->header_name}}</small>
-                                <p>{{$studie->other_info}}</p>
-                            </div>
-                        </a>
-                    </div>
-                 </div>
-                @endforeach
-            </div>
+                        </div>
+                    @endforeach
+                </div>
+            @endforeach
+
         </div>
         <div class="case_studies_footer">
             <button class="case_studies_arrow prev" aria-label="prevBtn">
@@ -166,14 +177,13 @@
     <div class="section customers fadeUp bgColor pd_mobile" data-color="white">
         <div class="section_header">
             <div class="section_header_container">
-                <h4 class="black_title">OUR CLIENTS</h4>
+                <h4 class="black_title">MÜŞTƏRİLƏRİMİZ</h4>
                 <p class="section_header_desc">
-                    Our experience allows us to bring our
-                    disruptive approach to any sector
+                    Müştərilərimizlə uzunmüddətli əlaqələr qurmağı bacarırıq ​
                 </p>
             </div>
             <a href="{{route('about')}}" class="btn btn_bgcolor sectionHeadBtn">
-                About us
+                Haqqımızda
                 <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
                     <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
                         <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"/>
@@ -197,14 +207,14 @@
                 </a>
             </div>
             <div class="customer_content_item">
-                <a href="https://mincom.gov.az/en/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/transport ministry.png')}}" alt="transport ministry ">
+                <a href="https://www.mfa.gov.az/" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/xin-logo.png')}}" alt="transport ministry ">
                 </a>
                 <a href="https://www.azsmart.az/" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/az smart.png')}}" alt="az smart">
                 </a>
-                <a href="https://mincom.gov.az/en/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/transport ministry.png')}}" alt="transport ministry">
+                <a href="https://www.mfa.gov.az/" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/xin-logo.png')}}" alt="transport ministry">
                 </a>
                 <a href="https://www.azsmart.az/" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/az smart.png')}}" alt="az smart">
@@ -214,14 +224,14 @@
                 <a href="https://www.scanex.az/" class="customer_content_item_body">
                     <img src="{{asset('img/scanex.png')}}" alt="scanex">
                 </a>
-                <a href="https://www.tika.gov.tr/en" class="customer_content_item_body">
-                    <img src="{{asset('img/tika-logo.png')}}" alt="tika-logo">
+                <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
+                    <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
                 </a>
                 <a href="https://www.scanex.az/" class="customer_content_item_body">
                     <img src="{{asset('img/scanex.png')}}" alt="scanex">
                 </a>
-                <a href="https://www.tika.gov.tr/en" class="customer_content_item_body">
-                    <img src="{{asset('img/tika-logo.png')}}" alt="tika-logo">
+                <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
+                    <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
                 </a>
             </div>
             <div class="customer_content_item">
@@ -239,14 +249,14 @@
                 </a>
             </div>
             <div class="customer_content_item display_none">
-                <a href="https://www.tika.gov.tr/en" class="customer_content_item_body">
-                    <img src="{{asset('img/tika-logo.png')}}" alt="tika-logo">
+                <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
+                    <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
                 </a>
                 <a href="https://www.azsmart.az/" class="customer_content_item_body">
                     <img src="{{asset('img/az smart.png')}}" alt="az smart">
                 </a>
-                <a href="https://www.tika.gov.tr/en" class="customer_content_item_body">
-                    <img src="{{asset('img/tika-logo.png')}}g" alt="tika-logo">
+                <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
+                    <img src="{{asset('img/tkta-logo_with_text.svg')}}g" alt="tika-logo">
                 </a>
                 <a href="https://www.azsmart.az/" class="customer_content_item_body">
                     <img src="{{asset('img/az smart.png')}}" alt="az smart">
@@ -264,7 +274,7 @@
             </a>
         </div>
     </div>
-    @include('layouts.miniPostDashboard')
+    {{--    @include('layouts.miniPostDashboard')--}}
     @include('layouts.tplAboutAndCareers')
     @include('layouts.projectInMind')
 

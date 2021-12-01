@@ -413,13 +413,15 @@ li {
 .onclick_sidebar_content {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -10;
     align-items: center;
     position: relative;
     width: 100%;
     margin-left: -10px;
 }
 .onclick_sidebar_content_item {
-    width: 33.3%;
+    flex: 0 1 33.33%;
+    max-width: 33.33%
     padding: 10px 10px;
 }
 .onclick_sidebar_content_item_link.active{
@@ -437,10 +439,11 @@ li {
     padding: 56px 0px 56px 0px;
     color: #ffffff;
     position: relative;
-    font-size: 68px;
+    font-size: 48px;
     line-height: 68px;
     display: inline-block;
     text-align: left;
+    word-break: break-all;
 }
 .onclick_sidebar_content_item a:hover {
     color: #00AEEF;
@@ -472,6 +475,7 @@ li {
 }
 .onclick_sidebar_header {
     display: flex;
+    margin-left: auto;
     /* justify-content: flex-end; */
 }
 .onclick_sidebar_header_item a {
@@ -562,7 +566,7 @@ li {
 .btn {
     display: inline-block;
     border: 1px solid var(--color-303030);
-    padding: 20px;
+    padding: 10px;
     color: var(--color-ffffff);
     /* background-color: #151515; */
     font-weight: lighter;
@@ -889,9 +893,7 @@ li {
 .case_studies_content {
     overflow: hidden;
 }
-/* .case_studies_slider {
-    margin-left: -515px;
-} */
+
 .case_studies_slider .slick-track{
     transition: none;
 }
@@ -899,7 +901,7 @@ li {
     padding-right: 15px;
     width: 100%;
     display: inline-block;
-    margin: 0 0 0 -300px;
+    /* margin: 0 0 0 -300px; */
 }
 .case_studies_slider_item > div {
     height: 100%;
@@ -1290,7 +1292,6 @@ li {
     flex: 0 0 auto;
     color: var(--color-b9b9b9);
     line-height: 22px;
-    max-width: 240px;
     font-size: 14px;
     padding: 0px 10px;
 }
@@ -1373,7 +1374,8 @@ li {
     flex-wrap: wrap;
 }
 .page_breadcrumb_item a {
-    color: var(--color-b9b9b9);
+    color: var(--color-ffffff);
+    /* color: #ffffff; */
     font-size: 17px;
     line-height: 20px;
     opacity: 100%;
@@ -1384,7 +1386,7 @@ li {
     color: var(--color-00aeef);
 }
 .page_breadcrumb_item:last-child a:hover {
-    color: var(--color-00aeef);
+    color: var(--color-ffffff);
 }
 /* .page_breadcrumb_item_clr:last-child a {
     color: var(--color-ffffff);
@@ -1395,7 +1397,7 @@ li {
     padding-left: 0;
 }
 .page_breadcrumb_item:last-child a {
-    color: var(--color-ffffff);
+    color: var(--color-00aeef) !important;
 }
 .page_breadcrumb li+li:before {
     margin-left: 4px;
@@ -1407,13 +1409,15 @@ li {
     justify-content: space-between;
     align-items: center;
     padding-top: 40px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
+    z-index: 99;
 }
 .page_header_topic {
     max-width: 60%;
     font-size: 68px;
     line-height: 68px;
     color: var(--color-ffffff);
+    /* color: #ffffff; */
     opacity: 100%;
 }
 .page_header_desc {
@@ -1423,7 +1427,8 @@ li {
 .page_header_desc p {
     font-size: 16px;
     line-height: 24px;
-    color: var(--color-b9b9b9);
+    color: var(--color-ffffff);
+    /* color: #ffffff; */
     opacity: 100%;
 }
 
@@ -1851,6 +1856,7 @@ li {
 .team_info_group {
     padding: 50px;
     background: var(--color-191919);
+    margin-right: 70px;
 }
 .team_info_group_content{
     display: flex;
@@ -2888,6 +2894,75 @@ input.about_yourself_content_form_control {
 /* BI system bashlayir */
 
 
+.header_content {
+    height: 100vh;
+    position: relative !important;
+}
+.header_content_img {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.header_content_img img {
+    min-height: 100%;
+    min-width: 100%;
+    /* height: 100%; */
+}
+.header_content_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0px 70px 70px 70px;
+}
+.header_content_text_body {
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    padding: 30px 65px 80px;
+}
+.header_content_text .overlay {
+    height: 70%;
+    top: 30%;
+    background-color: unset;
+    background-image: linear-gradient(180deg, #00000000 0%, #000000 100%);
+    opacity: 0.9;
+}
+
+.header_content_text_date {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.header_content_text_title {
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+    font-weight: 400;
+    opacity: 100%;
+    padding: 20px 0px;
+}
+.page_header_top{
+    z-index: 99;
+}
+.main_header_head p , .main_header_head a{
+    color: #ffffff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
 .BI_system_header {
     height: 100vh;
     position: relative !important;
@@ -2938,6 +3013,9 @@ input.about_yourself_content_form_control {
     opacity: 100%;
     padding: 20px 0px;
 }
+/* .page_header_top{
+    z-index: 99999999;
+} */
 .BI_system_desc {
     width: 100%;
     padding: 0px 100px;
@@ -3420,5 +3498,14 @@ input.about_yourself_content_form_control {
 .hardwareDistribution_category_slide_btn svg{
     width: 10px;
     height: 15px;
+}
+
+.case_studies_slider {
+    display: flex !important;
+    flex-wrap: wrap;
+}
+.case_studies_silder_item{
+    flex: 0 0 50%;
+    margin-bottom: 20px;
 }
 /* hardwareDistribution finished */

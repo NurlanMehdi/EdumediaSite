@@ -68,7 +68,7 @@
                                 month   = date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth(),
                                 day     = date.getDate()  < 10 ? '0' + date.getDate()  : date.getDate(),
                                 newDate = day + '-' + month + '-' + yr;
-                            var post = ' <a href="{{route('blogItemInner')}}" class="flex_25 filter_content_item"><div class="filter_content_item_body"><div class="box pd-top100"> <div class="box_item"> <img class="filter_content_item_img" src="'+'/storage/img/'+value.img+'" alt=""> </div> </div> <div class="filter_content_item_desc"> <small  class="filter_content_item_desc_top">'+newDate+'</small> <p class="filter_content_item_desc_bottom filter_content_item_desc_bottom_clr">'+value.header_name+'</p></div></div></a>';
+                            var post = ' <a href="{{route('blogItemInner')}}" class="flex_25 filter_content_item"><div class="filter_content_item_body"><div class="box pd-top100"> <div class="box_item"> <img class="filter_content_item_img" src="'+'storage/app/img/'+value.img+'" alt=""> </div> </div> <div class="filter_content_item_desc"> <small  class="filter_content_item_desc_top">'+newDate+'</small> <p class="filter_content_item_desc_bottom filter_content_item_desc_bottom_clr">'+value.header_name+'</p></div></div></a>';
 
                             $('.filter_content').append(post);
                         });
