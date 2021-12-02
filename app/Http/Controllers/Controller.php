@@ -30,7 +30,7 @@ class Controller extends BaseController
 
     public function indexSpecialty($key)
     {
-       return view('layouts/specialty',['key'=>$key]);
+        return view('layouts/specialty',['key'=>$key]);
     }
 
     public function servicePage($id)
@@ -50,13 +50,16 @@ class Controller extends BaseController
 
 
         $serviceArray = [];
+        $serviceId = [];
         foreach ($serviceInfo as $val) {
             if (!isset($serviceArray[$val->blog_name])) {
+                $serviceId[$val->blog_name][] = $val->id;
                 $serviceArray[$val->blog_name][] = $val->name;
-                $serviceArray[$val->blog_name]['id'] = $val->id;
+
             } elseif (isset($serviceArray[$val->blog_name]) && $serviceArray[$val->blog_name] != $val->name) {
+                $serviceId[$val->blog_name][] = $val->id;
                 $serviceArray[$val->blog_name][] = $val->name;
-                $serviceArray[$val->blog_name]['id'] = $val->id;
+
             }
 
         }
@@ -81,9 +84,9 @@ class Controller extends BaseController
         foreach ($data as $item) {
             if ($item->id == $id) {
                 if ($item->url != 'Hardwaredistribution') {
-                    return view('layouts/desing_development', ['data' => $item, 'allData' => $data, 'deliverArr' => $deliverArr, 'serviceInfo' => $serviceArray]);
+                    return view('layouts/desing_development', ['data' => $item, 'allData' => $data, 'deliverArr' => $deliverArr, 'serviceInfo' => $serviceArray,'serviceId'=>$serviceId]);
                 } else {
-                    return view('layouts/hardwareDistribution', ['data' => $item, 'allData' => $data, 'serviceInfo' => $serviceArray]);
+                    return view('layouts/hardwareDistribution', ['data' => $item, 'allData' => $data, 'serviceInfo' => $serviceArray,'serviceId'=>$serviceId]);
                 }
             }
         }

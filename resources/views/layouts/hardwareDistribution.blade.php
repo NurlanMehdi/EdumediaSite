@@ -117,13 +117,12 @@
 
                             <div class="hardwareDistributionCategories_body_category_item_content_desc">
 
-                            Proyektor-böyük ekranda təsvirin yaradılması üçün nəzərdə tutulmuş optik cihazdır.
-                            Müasir proyektorlar nisbətən yaxın vaxtlarda peyda olub və onlar satışda böyük dövriyyə qazanır, tətbiqin bir çox sahələrində populyarlaşır.
-                            Proyektorlar yalnız təlim slaydlarını göstərmək üçün deyil, həm də ev istifadəsi üçün istifadə olunur.
+                                Proyektor-böyük ekranda təsvirin yaradılması üçün nəzərdə tutulmuş optik cihazdır.
+                                Müasir proyektorlar nisbətən yaxın vaxtlarda peyda olub və onlar satışda böyük dövriyyə qazanır, tətbiqin bir çox sahələrində populyarlaşır.
+                                Proyektorlar yalnız təlim slaydlarını göstərmək üçün deyil, həm də ev istifadəsi üçün istifadə olunur.
 
                             </div>
                             <a href="#" class="hardwareDistributionCategories_body_category_item_content_link">
-                                www.prometheanworld.com
                             </a>
                         </div>
                     </div>
@@ -150,7 +149,6 @@
                                 Son illər təhsildə müasir texnologiyaların tətbiqinin dünya standartları səviyyəsinə çatdırılması və informasiya-kommunikasiya texnologiyalarının tədris prosesində geniş və hərtərəfli istifadəsinin təmin olunması məqsədi ilə Təhsil Nazirliyinin Təhsil Sisteminin İnformasiyalaşdırılması İdarəsi (TSİİ) tərəfindən müxtəlif layihələr və tədbirlər hazırlanıb həyata keçirilir.Belə ki, hazırda TSİİ tərəfindən Təhsil Nazirliyinin sifarişinə əsasən, 5 ümumi təhsil müəssisəsi Lego Education Mindstorms EV3  təhsil robotları ilə təmin olunub və əlavə olaraq, 15 ümumi təhsil müəssisəsinə də avadanlıqların paylanılmasına başlanılıb.
                             </div>
                             <a href="#" class="hardwareDistributionCategories_body_category_item_content_link">
-                                www.prometheanworld.com
                             </a>
                         </div>
                     </div>
@@ -168,7 +166,7 @@
                                 Son illər təhsildə müasir texnologiyaların tətbiqinin dünya standartları səviyyəsinə çatdırılması və informasiya-kommunikasiya texnologiyalarının tədris prosesində geniş və hərtərəfli istifadəsinin təmin olunması məqsədi ilə Təhsil Nazirliyinin Təhsil Sisteminin İnformasiyalaşdırılması İdarəsi (TSİİ) tərəfindən müxtəlif layihələr və tədbirlər hazırlanıb həyata keçirilir.Belə ki, hazırda TSİİ tərəfindən Təhsil Nazirliyinin sifarişinə əsasən, 5 ümumi təhsil müəssisəsi Lego Education Mindstorms EV3  təhsil robotları ilə təmin olunub və əlavə olaraq, 15 ümumi təhsil müəssisəsinə də avadanlıqların paylanılmasına başlanılıb.
                             </div>
                             <a href="#" class="hardwareDistributionCategories_body_category_item_content_link">
-                                www.prometheanworld.com
+
                             </a>
                         </div>
                     </div>
@@ -196,7 +194,6 @@
                                 3D printer kompüter sistemi ilə birgə çalışan 3 ölçülü fiziki obyektlər yarada bilən qurğudur. Ənənəvi printerlər kimi 3D printerlər də ilk növbətə rəqəmsal məlumatı qəbul edir.
                             </div>
                             <a href="#" class="hardwareDistributionCategories_body_category_item_content_link">
-                                www.prometheanworld.com
                             </a>
                         </div>
                     </div>
@@ -214,7 +211,7 @@
                 </div>
                 @foreach($serviceInfo as $key => $val)
 
-                    <a href="{{route('servicePages', $val['id'])}}" class="expertise_content_item">
+                    <a href="{{route('servicePages', $serviceId[$key])}}" class="expertise_content_item">
 
                         <div class="expertise_content_item_body">
 
@@ -225,11 +222,11 @@
                             </div>
                             <ul class="expertise_content_item_ul expertise_content_item_ul_clr ">
                                 @foreach($val as $key => $item)
-                                    @if($key != 'id')
-                                        <li class="expertise_content_item_li">
-                                            {{$item}}
-                                        </li>
-                                    @endif
+
+                                    <li class="expertise_content_item_li">
+                                        {{$item}}
+                                    </li>
+
 
                                 @endforeach
 
@@ -258,7 +255,7 @@
                         @foreach($serviceInfo as $key => $val)
 
                             <li class="service_left_content_nav_item">
-                                <a href="{{route('servicePages', $val['id'])}}" class="service_left_content_nav_item_link service_nav_item_clr" data-services-menu-id="designAndDevelopment">{{$key}}</a>
+                                <a href="{{route('servicePages', $serviceId[$key])}}" class="service_left_content_nav_item_link service_nav_item_clr" data-services-menu-id="designAndDevelopment">{{$key}}</a>
                                 <svg class="nav_arrow" xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
                                     <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
                                         <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"></path>

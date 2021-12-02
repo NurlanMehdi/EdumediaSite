@@ -225,7 +225,7 @@
                 </div>
                 @foreach($serviceInfo as $key => $val)
 
-                    <a href="{{route('servicePages', $val['id'])}}" class="expertise_content_item">
+                    <a href="{{route('servicePages', $serviceId[$key])}}" class="expertise_content_item">
 
                         <div class="expertise_content_item_body">
 
@@ -236,11 +236,11 @@
                             </div>
                             <ul class="expertise_content_item_ul expertise_content_item_ul_clr ">
                                 @foreach($val as $key => $item)
-                                    @if($key != 'id')
-                                        <li class="expertise_content_item_li">
-                                            {{$item}}
-                                        </li>
-                                    @endif
+
+                                    <li class="expertise_content_item_li">
+                                        {{$item}}
+                                    </li>
+
 
                                 @endforeach
 
@@ -268,7 +268,7 @@
                         @foreach($serviceInfo as $key => $val)
 
                             <li class="service_left_content_nav_item">
-                                <a href="{{route('servicePages', $val['id'])}}" class="service_left_content_nav_item_link service_nav_item_clr" data-services-menu-id="designAndDevelopment">{{$key}}</a>
+                                <a href="{{route('servicePages', $serviceId[$key])}}" class="service_left_content_nav_item_link service_nav_item_clr" data-services-menu-id="designAndDevelopment">{{$key}}</a>
                                 <svg class="nav_arrow" xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
                                     <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
                                         <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"></path>

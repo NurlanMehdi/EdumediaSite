@@ -153,7 +153,7 @@
         <div class="expertise_content">
             @foreach($serviceInfo as $key => $val)
 
-                <a href="{{route('servicePages', $val['id'])}}" class="expertise_content_item">
+                <a href="{{route('servicePages', $serviceId[$key])}}" class="expertise_content_item">
 
                     <div class="expertise_content_item_body">
 
@@ -165,11 +165,11 @@
                         <ul class="expertise_content_item_ul expertise_content_item_ul_clr ">
 
                             @foreach($val as $key => $item)
-                                @if($key != 'id')
-                                    <li class="expertise_content_item_li">
-                                        {{$item}}
-                                    </li>
-                                @endif
+
+                                <li class="expertise_content_item_li">
+                                    {{$item}}
+                                </li>
+
 
                             @endforeach
 
