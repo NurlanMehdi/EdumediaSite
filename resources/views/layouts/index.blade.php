@@ -35,7 +35,7 @@
     <div class="section banner fadeUp bgColor pd_mobile" id="nextSection" data-color="black">
         <div class="section_header">
             <h4 class="white_title">{{$blogHeaderName->names ?? ''}}</h4>
-            <a href="{{route('service')}}" class="btn banner_service_btn">
+            <a href="{{route('service')}}" class="btn banner_service_btn" style="display:none;">
                 {{$blogHeaderName->button_name ?? ''}}
                 <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
                     <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
@@ -72,7 +72,7 @@
             @endforeach
         </div>
         <div class="banner_content_mobile">
-            @foreach($blogs as $blog)
+            @foreach($blogs as $key => $blog)
                 <div class="banner_content_mobile_item">
                     <div class="banner_content_mobile_item_numb">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28.996" height="28.999" viewBox="0 0 28.996 28.999">
@@ -177,12 +177,12 @@
     <div class="section customers fadeUp bgColor pd_mobile" data-color="white">
         <div class="section_header">
             <div class="section_header_container">
-                <h4 class="black_title">MÜŞTƏRİLƏRİMİZ</h4>
+                <h4 class="black_title">Müştərilərimiz</h4>
                 <p class="section_header_desc">
-                    Müştərilərimizlə uzunmüddətli əlaqələr qurmağı bacarırıq ​
+                    Müştərilərə gözləntilərinin üzərində iş vermək bizim əsas devizimizdir!
                 </p>
             </div>
-            <a href="{{route('about')}}" class="btn btn_bgcolor sectionHeadBtn">
+            <a href="{{route('about')}}" class="btn btn_bgcolor sectionHeadBtn" style="display:none;">
                 Haqqımızda
                 <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
                     <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
@@ -199,12 +199,6 @@
                 <a href="https://www.ite.az/" class="customer_content_item_body">
                     <img src="{{asset('img/inovativ texnalogiyalar.png')}}" alt="texnologiya">
                 </a>
-                <a href="https://edu.gov.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/tehsil nazirliyi.png')}}" alt="">
-                </a>
-                <a href="https://www.ite.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/inovativ texnalogiyalar.png')}}" alt="texnologiya">
-                </a>
             </div>
             <div class="customer_content_item">
                 <a href="https://www.mfa.gov.az/" class="customer_content_item_body js_content_end">
@@ -213,12 +207,6 @@
                 <a href="https://www.azsmart.az/" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/az smart.png')}}" alt="az smart">
                 </a>
-                <a href="https://www.mfa.gov.az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/logo (1).svg')}}" alt="transport ministry">
-                </a>
-                <a href="https://www.azsmart.az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/az smart.png')}}" alt="az smart">
-                </a>
             </div>
             <div class="customer_content_item">
                 <a href="https://www.scanex.az/" class="customer_content_item_body">
@@ -227,20 +215,8 @@
                 <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
                     <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
                 </a>
-                <a href="https://www.scanex.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/scanex.png')}}" alt="scanex">
-                </a>
-                <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
-                </a>
             </div>
             <div class="customer_content_item">
-                <a href="http://enginet.az/index.php/az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/enginet logo.png')}}" alt="enginet logo">
-                </a>
-                <a href="https://www.ite.az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/inovativ texnalogiyalar.png')}}" alt="inovativ texnalogiyalar">
-                </a>
                 <a href="http://enginet.az/index.php/az/" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/enginet logo.png')}}" alt="enginet logo">
                 </a>
@@ -249,12 +225,6 @@
                 </a>
             </div>
             <div class="customer_content_item display_none">
-                <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
-                </a>
-                <a href="https://www.azsmart.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/az smart.png')}}" alt="az smart">
-                </a>
                 <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
                     <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
                 </a>

@@ -740,7 +740,7 @@
     .expertise{
         padding-top: 60px;
         position: relative;
-        /* padding-bottom: 50px; */
+        padding-bottom: 50px;
     }
     .expertise_content_item_title_tp{
         color: var(--color-00aeef);

@@ -60,9 +60,10 @@
             @endforeach
         </div>
     </div>
+    @if($data->url == 'DizaynvəProgramtəminatı')
     <div class="section design_development bgColor fadeUp pd_mobile" data-color="black">
         <div class="desing_development_header" data-aos="fade-up">
-            <h2 class="desing_development_header_head">Biz nə edirik?</h2>
+            <h2 class="desing_development_header_head">Xidmətlər</h2>
         </div>
         <div class="desing_development_content" data-aos="fade-up">
             <div class="desing_development_content_item">
@@ -110,14 +111,14 @@
                                     <p>Biz sizin həyatınızı asanlaşdırmağa kömək edən mürəkkəb sistemlər üçün strukturu inkişaf etdiririk</p>
                                 </div>
                             </li>
-                            <li class="desing_development_content_item_desc_acordion_card">
+                            <!-- <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
                                     Oyunlar
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
                                     <p>Daha yaxşı və müasir oyunların yaradılmasını mümkün etmək üçün daim yeni texnologiyalardan istifadə edirik</p>
                                 </div>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -180,13 +181,15 @@
                 <div class="desing_development_content_item_photo margin">
                     <div class="desing_development_content_item_img box">
                         <div class="desing_development_content_item_img_body box_item">
-                            <img src="{{asset('./img/arif-riyanto-G1N9kDHqBrQ-unsplash.png')}}" alt="">
+                            <img src="{{asset('./img/photo-1506097425191-7ad538b29cef.jpg')}}" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="desing_development_desc" data-aos="fade-up">
+    
+      
+        <div class="desing_development_desc" data-aos="fade-up" style="display:none;">
             <div class="desing_development_desc_body">
                 <h3 class="desing_development_desc_body_h3">
                     Biz sadəcə kodlaşdırmırıq, həm də Müştərilərimizə tətbiq əhatəsini sadələşdirməyə kömək edirik, həmçinin strateji texnologiyalar toplusu üzrə məsləhətləşirik.
@@ -209,6 +212,8 @@
             </div>
         </div>
     </div>
+        @endif
+
     <div class="section expertise bgColor fadeUp pd_mobile" data-color="white">
         <div class="expertise_container">
             <div class="desingDevelopment_expertise_content expertise_content_none  pd-top150">
@@ -278,8 +283,8 @@
             </div>
         </div>
     </div>
-    @include('layouts/tplAboutAndCareers')
-    @include('layouts/projectInMind')
+    <!-- @include('layouts/tplAboutAndCareers')
+    @include('layouts/projectInMind') -->
 
 @endsection
 

@@ -127,14 +127,14 @@ li {
 }
 .white_title {
     color: var(--color-ffffff);
-    font-size: 17px;
+    font-size: 24px;
     line-height: 20px;
     letter-spacing: 0.26px;
     font-weight: 500;
 }
 .black_title {
     color: var(--color-ffffff);
-    font-size: 17px;
+    font-size: 24px;
     line-height: 20px;
     letter-spacing: 0.26px;
     font-weight: 500;
@@ -2708,7 +2708,7 @@ input.about_yourself_content_form_control {
 
 
 .page_about {
-    padding: 140px 70px 120px 70px;
+    padding: 80px 70px 80px 70px;
 }
 .page_about_content {
     display: flex;
@@ -2755,7 +2755,7 @@ input.about_yourself_content_form_control {
     display: flex;
     width: 100%;
     flex-direction: row;
-    padding-bottom: 190px;
+    padding-bottom: 100px;
 }
 .desing_development_content_item_desc {
     width: 50%;
