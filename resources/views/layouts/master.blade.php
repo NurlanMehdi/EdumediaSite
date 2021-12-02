@@ -98,11 +98,11 @@
                     </a>
                     <div class="footer_center_adress">
                         <p>
-                            {{\App\Models\Contact::first()['address']}}
+                            {{\App\Models\Contact::first()['address'] ?? ''}}
                         </p>
                     </div>
                     <div class="footer_center_contact">
-                        <a class="footer_center_contact_mail" href="{{route('about')}}">{{\App\Models\Contact::first()['mail']}}</a>
+                        <a class="footer_center_contact_mail" href="{{route('about')}}">{{\App\Models\Contact::first()['mail'] ?? ''}}</a>
                     </div>
                 </div>
             </div>
