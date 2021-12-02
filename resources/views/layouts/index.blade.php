@@ -256,7 +256,7 @@
                     <img src="{{asset('img/az smart.png')}}" alt="az smart">
                 </a>
                 <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/tkta-logo_with_text.svg')}}g" alt="tika-logo">
+                    <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
                 </a>
                 <a href="https://www.azsmart.az/" class="customer_content_item_body">
                     <img src="{{asset('img/az smart.png')}}" alt="az smart">

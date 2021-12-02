@@ -422,7 +422,7 @@ li {
 .onclick_sidebar_content_item {
     flex: 0 1 33.33%;
     max-width: 33.33%
-    padding: 10px 10px;
+    padding: 10px; 
 }
 .onclick_sidebar_content_item_link.active{
     color: #00AEEF;
@@ -704,6 +704,7 @@ li {
     font-size: 42px;
     line-height: 50px;
     font-weight: lighter;
+    margin-bottom: 20px;
 }
 .banner_content_item_desc {
     opacity: 0;
@@ -1249,6 +1250,14 @@ li {
     color: var(--color-00aeef);
     transition: all .3s;
 }
+.footer_explore_nav_item svg{
+    fill: #FFFFFF;
+    transition: none;
+}
+.footer_explore_nav_item:hover svg{
+    fill: #00AEEF;
+    transition: none;
+}
 .footer_follow_us {
     flex: 0 0 17%;
     padding: 0px 10px;
@@ -1280,7 +1289,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0px 70px 0px;
+    padding: 50px 0px 70px 0px;
     margin-right: -10px;
     margin-left: -10px;
 }
