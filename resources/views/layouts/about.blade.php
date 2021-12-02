@@ -230,22 +230,10 @@
                 <a href="https://www.ite.az/" class="customer_content_item_body">
                     <img src="{{asset('img/inovativ texnalogiyalar.png')}}" alt="texnologiya">
                 </a>
-                <a href="https://edu.gov.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/tehsil nazirliyi.png')}}" alt="">
-                </a>
-                <a href="https://www.ite.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/inovativ texnalogiyalar.png')}}" alt="texnologiya">
-                </a>
             </div>
             <div class="customer_content_item">
                 <a href="https://www.mfa.gov.az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/xin-logo.png')}}" alt="transport ministry ">
-                </a>
-                <a href="https://www.azsmart.az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/az smart.png')}}" alt="az smart">
-                </a>
-                <a href="https://www.mfa.gov.az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/xin-logo.png')}}" alt="transport ministry">
+                    <img src="{{asset('img/logo (1).svg')}}" alt="transport ministry ">
                 </a>
                 <a href="https://www.azsmart.az/" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/az smart.png')}}" alt="az smart">
@@ -258,20 +246,8 @@
                 <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
                     <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
                 </a>
-                <a href="https://www.scanex.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/scanex.png')}}" alt="scanex">
-                </a>
-                <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
-                </a>
             </div>
             <div class="customer_content_item">
-                <a href="http://enginet.az/index.php/az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/enginet logo.png')}}" alt="enginet logo">
-                </a>
-                <a href="https://www.ite.az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/inovativ texnalogiyalar.png')}}" alt="inovativ texnalogiyalar">
-                </a>
                 <a href="http://enginet.az/index.php/az/" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/enginet logo.png')}}" alt="enginet logo">
                 </a>
@@ -282,12 +258,6 @@
             <div class="customer_content_item display_none">
                 <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
                     <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
-                </a>
-                <a href="https://www.azsmart.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/az smart.png')}}" alt="az smart">
-                </a>
-                <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/tkta-logo_with_text.svg')}}g" alt="tika-logo">
                 </a>
                 <a href="https://www.azsmart.az/" class="customer_content_item_body">
                     <img src="{{asset('img/az smart.png')}}" alt="az smart">

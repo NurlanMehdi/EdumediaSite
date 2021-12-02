@@ -147,7 +147,7 @@
                         <div class="hardwareDistributionCategories_body_category_item_content">
 
                             <div class="hardwareDistributionCategories_body_category_item_content_desc">
-                                Bu məhsulun istehsalında robot texnikası sahəsindəki yeni texnologiyalardan istifadə olunmuşdur. Oyuncaqların mühərrikləri, əlavə sensorları və rəngli ekranları vardır. Robotlar onlarla ilk dəfə rastlaşanların hamısını heyrətə gətirir, axı onlar özlərini əsl canlılar kimi aparırlar. Onlara toxunduqda və səs eşitdikdə reaksiya verir, əşyanın temperaturunu və məsafəni müəyyən edə bilirlər. Siz əl çaldıqda, onlar yaxına gəlməyi, yaxınlıqdakı əşyanı qaldırmağı və işıq və qaranlığı ayırd etməyi bacarırlar. Adama elə gəlir ki, bütün bunlar kifayət qədər çətindir, amma təcrübə göstərir ki, istifadəçi səviyyəsində kompüter bacarıqlarına malik olan hər bir uşaq heç bir problem olmadan konstruktoru proqramlaşdıra və öz şəxsi robotunu yarada bilər. Qeyd edək ki, oyuncaqlara əmrləri yalnız kompüterdən deyil, həmçinin, Bluetooth proqramını dəstəkləyən istənilən mobil telefondan daxil etmək mümkündür.
+                                Son illər təhsildə müasir texnologiyaların tətbiqinin dünya standartları səviyyəsinə çatdırılması və informasiya-kommunikasiya texnologiyalarının tədris prosesində geniş və hərtərəfli istifadəsinin təmin olunması məqsədi ilə Təhsil Nazirliyinin Təhsil Sisteminin İnformasiyalaşdırılması İdarəsi (TSİİ) tərəfindən müxtəlif layihələr və tədbirlər hazırlanıb həyata keçirilir.Belə ki, hazırda TSİİ tərəfindən Təhsil Nazirliyinin sifarişinə əsasən, 5 ümumi təhsil müəssisəsi Lego Education Mindstorms EV3  təhsil robotları ilə təmin olunub və əlavə olaraq, 15 ümumi təhsil müəssisəsinə də avadanlıqların paylanılmasına başlanılıb.
                             </div>
                             <a href="#" class="hardwareDistributionCategories_body_category_item_content_link">
                                 www.prometheanworld.com
@@ -165,7 +165,7 @@
                         <div class="hardwareDistributionCategories_body_category_item_content">
 
                             <div class="hardwareDistributionCategories_body_category_item_content_desc">
-                                Bu məhsulun istehsalında robot texnikası sahəsindəki yeni texnologiyalardan istifadə olunmuşdur. Oyuncaqların mühərrikləri, əlavə sensorları və rəngli ekranları vardır. Robotlar onlarla ilk dəfə rastlaşanların hamısını heyrətə gətirir, axı onlar özlərini əsl canlılar kimi aparırlar. Onlara toxunduqda və səs eşitdikdə reaksiya verir, əşyanın temperaturunu və məsafəni müəyyən edə bilirlər. Siz əl çaldıqda, onlar yaxına gəlməyi, yaxınlıqdakı əşyanı qaldırmağı və işıq və qaranlığı ayırd etməyi bacarırlar. Adama elə gəlir ki, bütün bunlar kifayət qədər çətindir, amma təcrübə göstərir ki, istifadəçi səviyyəsində kompüter bacarıqlarına malik olan hər bir uşaq heç bir problem olmadan konstruktoru proqramlaşdıra və öz şəxsi robotunu yarada bilər. Qeyd edək ki, oyuncaqlara əmrləri yalnız kompüterdən deyil, həmçinin, Bluetooth proqramını dəstəkləyən istənilən mobil telefondan daxil etmək mümkündür.
+                                Son illər təhsildə müasir texnologiyaların tətbiqinin dünya standartları səviyyəsinə çatdırılması və informasiya-kommunikasiya texnologiyalarının tədris prosesində geniş və hərtərəfli istifadəsinin təmin olunması məqsədi ilə Təhsil Nazirliyinin Təhsil Sisteminin İnformasiyalaşdırılması İdarəsi (TSİİ) tərəfindən müxtəlif layihələr və tədbirlər hazırlanıb həyata keçirilir.Belə ki, hazırda TSİİ tərəfindən Təhsil Nazirliyinin sifarişinə əsasən, 5 ümumi təhsil müəssisəsi Lego Education Mindstorms EV3  təhsil robotları ilə təmin olunub və əlavə olaraq, 15 ümumi təhsil müəssisəsinə də avadanlıqların paylanılmasına başlanılıb.
                             </div>
                             <a href="#" class="hardwareDistributionCategories_body_category_item_content_link">
                                 www.prometheanworld.com
@@ -274,8 +274,8 @@
         </div>
     </div>
 
-    @include('layouts.tplAboutAndCareers')
-    @include('layouts.projectInMind')
+    <!-- @include('layouts.tplAboutAndCareers')
+    @include('layouts.projectInMind') -->
 @endsection
 
 

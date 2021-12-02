@@ -114,7 +114,7 @@
             <div class="footer_content">
                 <div class="footer_top">
                     <div class="footer_explore">
-                        <h2 class="footer_head">BİZİ İZLƏYİN</h2>
+                        <h2 class="footer_head">YENİLİKLƏRDƏN XƏBƏRDAR OLUN</h2>
                         <ul class="footer_explore_nav">
                             <li class="footer_explore_nav_item">
                                 <a href="{{\App\Models\Contact::where('facebook_status',0)->first()->facebook ?? ''}}">
