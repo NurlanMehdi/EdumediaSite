@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Studies;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\DB;
 
 class StudiesPageController extends Controller
 {
@@ -43,8 +44,11 @@ class StudiesPageController extends Controller
             ->select('studies_items.id','studies_items.status','studies_items.created_at','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name')
             ->where('item_id','=',$id)
             ->first();
+
+
+        $studieInfo = DB::table('studie_content')->where('studie_id','=',$id)->first();
   //      echo '<pre>';
-        return view('layouts.blogItemInner',['data'=>$posts]);
+        return view('layouts.blogItemInner',['data'=>$posts,'studieInfo'=>$studieInfo]);
    //     var_dump($posts);
     }
 

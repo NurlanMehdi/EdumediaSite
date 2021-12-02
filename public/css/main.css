@@ -3061,6 +3061,7 @@ input.about_yourself_content_form_control {
     max-height: 500px;
 }
 .BI_system_desc_link {
+    margin-top: 30px;
     text-align: center;
     padding-bottom: 30px;
 }

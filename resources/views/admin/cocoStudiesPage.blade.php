@@ -21,17 +21,22 @@
                         <th>Adı</th>
                         <th>Status</th>
                         <th class="no-sort">Düzəliş</th>
+                        <th class="no-sort">Content</th>
                         <th class="no-sort" style="width: 30px;">Silmək</th>
                     </tr>
                     </thead>
                     <tbody>
                     @foreach($studies as $studie)
                         <tr>
-                            <td>{{$studie->name ?? ''}}</td>
+                            <td>{{$studie->header_name ?? ''}}</td>
                             <td>{{($studie->status ?? 0) == 1 ? 'Bağlı' : 'Açıq'}} </td>
 
                             <td>
                                 <a href="{{route('edit.studie.page',$studie->id)}}" class="customBtn applyBtn applyBtn-white">
+                                    <i class="xin-icon xin-pencil"></i>
+                                </a>
+                            </td>                            <td>
+                                <a href="{{route('content.studie',$studie->id)}}" class="customBtn applyBtn applyBtn-white">
                                     <i class="xin-icon xin-pencil"></i>
                                 </a>
                             </td>
