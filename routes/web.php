@@ -8,27 +8,9 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\DashboardController::class,'publicDashboardPage'])->name('index');
-
+Route::get('/specialty/{key}',[\App\Http\Controllers\Controller::class,'indexSpecialty'])->name('specialty');
 Route::get('/contact', [\App\Http\Controllers\ContactController::class,'contactDashboardPage'])->name('contact');
-Route::get('/about', function () {
-    $serviceInfo = DB::table('services_first_info')->leftJoin('dashboard_translate','dashboard_translate.id','=','services_first_info.services_id')->where('services_first_info.key','=',App::getLocale())->get();
-
-    $serviceArray = [];
-    foreach ($serviceInfo as $val){
-        if(!isset($serviceArray[$val->blog_name]))
-        {
-            $serviceArray[$val->blog_name][] = $val->name;
-            $serviceArray['id'][] = $val->id;
-        }elseif(isset($serviceArray[$val->blog_name]) && $serviceArray[$val->blog_name] != $val->name){
-            $serviceArray[$val->blog_name][] = $val->name;
-            $serviceArray['id'][] = $val->id;
-        }
-
-    }
-
-    $header = \App\Models\PageHeader::where('page_name','=','about_us')->first();
-    return view('layouts/about',['header'=>$header,'serviceInfo'=>$serviceArray]);
-})->name('about');
+Route::get('/about',[\App\Http\Controllers\AboutController::class,'indexAbout'])->name('about');
 
 Route::get('/service', function () {
     $header = \App\Models\PageHeader::where('page_name','=','services')->first();
@@ -109,6 +91,11 @@ Route::group(['middleware' => 'auth:web'],function (){
     Route::post('/coco/studies-edit/', [\App\Http\Controllers\DashboardController::class,'editStudies'])->name('edit.studies');
     Route::get('/coco/edit-studie-page/{id}', [\App\Http\Controllers\DashboardController::class,'createStudiePage'])->name('edit.studie.page');
     Route::get('/coco/remove-studie/{id}', [\App\Http\Controllers\DashboardController::class,'removeStudiePage'])->name('remove.studie.page');
+
+    //layihelerin contenti
+    Route::get('/coco/content-studie/{id}', [\App\Http\Controllers\DashboardController::class,'indexStudieContent'])->name('content.studie');
+    Route::post('/coco/create-content-studie/{id}', [\App\Http\Controllers\DashboardController::class,'createStudieContent'])->name('create.studie.content');
+    Route::post('/coco/edit-content-studie/{id}', [\App\Http\Controllers\DashboardController::class,'editStudieContent'])->name('edit.studie.content');
 
     Route::get('/coco/post-page/{id}', [\App\Http\Controllers\DashboardController::class,'postPage'])->name('new.post.page');
     Route::post('/coco/post-create/', [\App\Http\Controllers\DashboardController::class,'createPost'])->name('create.post');

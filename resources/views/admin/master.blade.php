@@ -62,12 +62,12 @@
                     <a href="{{route('cocoStudiesPage')}}" data-name="Dashboard" data-sub-menu="menu_dashboard" class="section_header_mainHeader_navbar_link">
                         İşlərimiz
                     </a>
-                    <a href="{{route('aboutUsPage')}}" data-name="Dashboard" data-sub-menu="menu_dashboard" class="section_header_mainHeader_navbar_link">
-                        About Us
-                    </a>
-                    <a href="{{route('cocoStudiesPage')}}" data-name="Dashboard" data-sub-menu="menu_dashboard" class="section_header_mainHeader_navbar_link">
-                        Careers
-                    </a>
+{{--                    <a href="{{route('aboutUsPage')}}" data-name="Dashboard" data-sub-menu="menu_dashboard" class="section_header_mainHeader_navbar_link">--}}
+{{--                        About Us--}}
+{{--                    </a>--}}
+{{--                    <a href="{{route('cocoStudiesPage')}}" data-name="Dashboard" data-sub-menu="menu_dashboard" class="section_header_mainHeader_navbar_link">--}}
+{{--                        Careers--}}
+{{--                    </a>--}}
                     <a href="{{route('about.and.careers')}}" data-name="Dashboard" data-sub-menu="menu_dashboard" class="section_header_mainHeader_navbar_link">
                         About Us / Careers
                     </a>
@@ -88,12 +88,12 @@
                         <a href="{{route('cocoStudiesPage')}}" class="section_header_mobileNavbar_nav_item--link">
                             İşlərimiz
                         </a>
-                        <a href="{{route('cocoStudiesPage')}}" class="section_header_mobileNavbar_nav_item--link">
-                            About Us
-                        </a>
-                        <a href="{{route('cocoStudiesPage')}}" class="section_header_mobileNavbar_nav_item--link">
-                            Careers
-                        </a>
+{{--                        <a href="{{route('cocoStudiesPage')}}" class="section_header_mobileNavbar_nav_item--link">--}}
+{{--                            About Us--}}
+{{--                        </a>--}}
+{{--                        <a href="{{route('cocoStudiesPage')}}" class="section_header_mobileNavbar_nav_item--link">--}}
+{{--                            Careers--}}
+{{--                        </a>--}}
                         <a href="{{route('about.and.careers')}}" class="section_header_mobileNavbar_nav_item--link">
                             About Us / Careers
                         </a>

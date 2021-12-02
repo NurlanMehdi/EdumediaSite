@@ -17,16 +17,20 @@ class Controller extends BaseController
     public function fileUpload($request)
     {
         $input = $request->all();
-        if ($request->hasFile('info_img'))
-        {
+        if ($request->hasFile('info_img')) {
             //$image = Storage::url($request->file('info_img')->store('uploads/img'));
             $destination_path = 'img';
             $image = $request->file('info_img');
             $image_name = $image->getClientOriginalName();
-            $path = $request->file('info_img')->storeAs($destination_path,$image_name);
+            $path = $request->file('info_img')->storeAs($destination_path, $image_name);
             $input['info_img'] = $image_name;
         }
         return $input;
+    }
+
+    public function indexSpecialty($key)
+    {
+       return view('layouts/specialty',['key'=>$key]);
     }
 
     public function servicePage($id)
@@ -36,31 +40,28 @@ class Controller extends BaseController
         $data = $serConroller->getServiceData($id);
 
         $deliverData = DB::table('deliver_item')
-            ->leftJoin('deliver_translate','deliver_item.id','=','deliver_translate.item_id')
-            ->select('deliver_item.id','deliver_item.img','deliver_translate.name','deliver_translate.header_name','deliver_translate.info_name','deliver_translate.short_info')
-            ->where('deliver_item.service_id','=',$id)
-            ->where('deliver_translate.key','=',App::getLocale())
+            ->leftJoin('deliver_translate', 'deliver_item.id', '=', 'deliver_translate.item_id')
+            ->select('deliver_item.id', 'deliver_item.img', 'deliver_translate.name', 'deliver_translate.header_name', 'deliver_translate.info_name', 'deliver_translate.short_info')
+            ->where('deliver_item.service_id', '=', $id)
+            ->where('deliver_translate.key', '=', App::getLocale())
             ->get();
         $deliverArr = [];
-                 $serviceInfo = DB::table('services_first_info')->leftJoin('dashboard_translate','dashboard_translate.id','=','services_first_info.services_id')->where('services_id','!=',$id)->where('services_first_info.key','=',App::getLocale())->get();
+        $serviceInfo = DB::table('services_first_info')->leftJoin('dashboard_translate', 'dashboard_translate.id', '=', 'services_first_info.services_id')->where('services_id', '!=', $id)->where('services_first_info.key', '=', App::getLocale())->get();
 
 
-        
-             $serviceArray = [];
-        foreach ($serviceInfo as $val){
-            if(!isset($serviceArray[$val->blog_name]))
-            {
+        $serviceArray = [];
+        foreach ($serviceInfo as $val) {
+            if (!isset($serviceArray[$val->blog_name])) {
                 $serviceArray[$val->blog_name][] = $val->name;
-                              $serviceArray['id'][] = $val->id;
-            }elseif(isset($serviceArray[$val->blog_name]) && $serviceArray[$val->blog_name] != $val->name){
-                 $serviceArray[$val->blog_name][] = $val->name;
-                 $serviceArray['id'][] = $val->id;
+                $serviceArray[$val->blog_name]['id'] = $val->id;
+            } elseif (isset($serviceArray[$val->blog_name]) && $serviceArray[$val->blog_name] != $val->name) {
+                $serviceArray[$val->blog_name][] = $val->name;
+                $serviceArray[$val->blog_name]['id'] = $val->id;
             }
-            
+
         }
-   
-        foreach ($deliverData as $val)
-        {
+
+        foreach ($deliverData as $val) {
 
 //            if (!isset($deliverArr['header_name']) || $deliverArr['header_name'] != $val->header_name){
 //                $deliverArr['header_name'] = $val->header_name;
@@ -77,13 +78,12 @@ class Controller extends BaseController
         }
 //        echo '<pre>';
 //        var_dump($deliverArr);exit;
-        foreach ($data as $item)
-        {
-            if ($item->id == $id){
+        foreach ($data as $item) {
+            if ($item->id == $id) {
                 if ($item->url != 'Hardwaredistribution') {
-                    return view('layouts/desing_development',['data'=>$item,'allData'=>$data,'deliverArr'=>$deliverArr,'serviceInfo'=>$serviceArray]);
-                }else{
-                    return view('layouts/hardwareDistribution',['data'=>$item,'allData'=>$data,'serviceInfo'=>$serviceArray]);
+                    return view('layouts/desing_development', ['data' => $item, 'allData' => $data, 'deliverArr' => $deliverArr, 'serviceInfo' => $serviceArray]);
+                } else {
+                    return view('layouts/hardwareDistribution', ['data' => $item, 'allData' => $data, 'serviceInfo' => $serviceArray]);
                 }
             }
         }

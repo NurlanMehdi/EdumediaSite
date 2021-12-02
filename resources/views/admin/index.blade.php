@@ -49,18 +49,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="section_socialBanner_content_item">
+{{--                    <div class="col-lg-4">--}}
+{{--                        <div class="section_socialBanner_content_item">--}}
 
-                            <div class="section_socialBanner_content_item_content">
-                                <a href="{{route('aboutUsPage')}}" class="section_socialBanner_content_item_content_profile">
-                                    <div class="section_socialBanner_content_item_content_profile--name text-uppercase">
-                                        About Us
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+{{--                            <div class="section_socialBanner_content_item_content">--}}
+{{--                                <a href="{{route('aboutUsPage')}}" class="section_socialBanner_content_item_content_profile">--}}
+{{--                                    <div class="section_socialBanner_content_item_content_profile--name text-uppercase">--}}
+{{--                                        About Us--}}
+{{--                                    </div>--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                     <div class="col-lg-4">
                         <div class="section_socialBanner_content_item">
 

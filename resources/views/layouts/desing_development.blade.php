@@ -11,13 +11,13 @@
                     <h3 class="header_content_text_title">BI System for the Ministry of Education</h3>
                 </div> -->
                 <div class="page_header_top">
-                             
+
                     <ul class="page_breadcrumb">
                         <li class="page_breadcrumb_item main_header_head">
-                               <a href="{{route('index')}}">Ana səhifə </a>
+                            <a href="{{route('index')}}">Ana səhifə </a>
                         </li>
                         <li class="page_breadcrumb_item main_header_head">
-                        <a href="{{route('service')}}">Xidmətlər</a>
+                            <a href="{{route('service')}}">Xidmətlər</a>
                         </li>
                         <li class="page_breadcrumb_item">
                             <a href="desing_development.html"> {{$data->blog_name}}</a>
@@ -80,7 +80,7 @@
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                  Mobil tətbiqlər
+                                    Mobil tətbiqlər
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
                                     <p>Biz sizin biznes və xidmətləriniz üçün xüsusi tapşırıqları yerinə yetirən və müştəri əlaqənizi gücləndirən mobil tətbiqlər hazırlayırıq.</p>
@@ -91,7 +91,7 @@
                                     Kompleks platformalar
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-<p>Komandamızın mürəkkəb strukturlu işlər görmək və çoxfunksiyalı sistemlər qurmaq təcrübəsi var</p>
+                                    <p>Komandamızın mürəkkəb strukturlu işlər görmək və çoxfunksiyalı sistemlər qurmaq təcrübəsi var</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
@@ -104,7 +104,7 @@
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                 ERP/CRM sistemləri
+                                    ERP/CRM sistemləri
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
                                     <p>Biz sizin həyatınızı asanlaşdırmağa kömək edən mürəkkəb sistemlər üçün strukturu inkişaf etdiririk</p>
@@ -144,7 +144,7 @@
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                   Loqo dizaynı
+                                    Loqo dizaynı
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
                                     <p>Biz sizin şirkətinizi digərlərindən fərqləndirəcək korporativ simanın ən vacib elementlərindən birini yaradırıq</p>
@@ -160,7 +160,7 @@
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                   Çap məhsulları dizaynı
+                                    Çap məhsulları dizaynı
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
                                     <p>Flyerlər və jurnallar, xarici reklam və tədbir materialları daxil biz hər bir dizaynı təhlil araşdırma edir, bu sahədə ən yaxşı mütəxəssisləri özündə birləşdirərək ayrıca layihə olaraq nəzərdən keçiririk.</p>
@@ -189,22 +189,22 @@
         <div class="desing_development_desc" data-aos="fade-up">
             <div class="desing_development_desc_body">
                 <h3 class="desing_development_desc_body_h3">
-                  Biz sadəcə kodlaşdırmırıq, həm də Müştərilərimizə tətbiq əhatəsini sadələşdirməyə kömək edirik, həmçinin strateji texnologiyalar toplusu üzrə məsləhətləşirik.
+                    Biz sadəcə kodlaşdırmırıq, həm də Müştərilərimizə tətbiq əhatəsini sadələşdirməyə kömək edirik, həmçinin strateji texnologiyalar toplusu üzrə məsləhətləşirik.
                 </h3>
             </div>
             <div class="desing_development_desc_body">
                 <p>
-                       Yaxşı dizayn hədəf auditoriyanızın brendiniz və biznesinizlə qarşılıqlı əlaqəsini dəyişə bilər. Seminarlara, istifadəçi araşdırmalarına və təhlillərə əsaslanan anlayışlara istinadən, hədəf və məqsədinizə çatmağınıza əminik. Hədəf qrupu üçün uyğun və mənalı, aydın və effektiv konsepsiya yaratmağa diqqət yetirməklə, təcrübəlrimizə əsasən dəyər yaradacağımıza təminat veririk.
+                    Yaxşı dizayn hədəf auditoriyanızın brendiniz və biznesinizlə qarşılıqlı əlaqəsini dəyişə bilər. Seminarlara, istifadəçi araşdırmalarına və təhlillərə əsaslanan anlayışlara istinadən, hədəf və məqsədinizə çatmağınıza əminik. Hədəf qrupu üçün uyğun və mənalı, aydın və effektiv konsepsiya yaratmağa diqqət yetirməklə, təcrübəlrimizə əsasən dəyər yaradacağımıza təminat veririk.
                 </p>
                 <br>
                 <p>
-                 Uğurlu həllə aparan yol həmişə sizinlə sıx əməkdaşlıqla əldə edilir, çünki işinizi sizdən yaxşı bilən yoxdur.
+                    Uğurlu həllə aparan yol həmişə sizinlə sıx əməkdaşlıqla əldə edilir, çünki işinizi sizdən yaxşı bilən yoxdur.
                 </p>
                 <br>
                 <p>
-        
 
-İstər rəqəmsal strategiyaya ehtiyacınız olsun, istərsə də mövcud həlldə yenilik tətbiq etməyə kömək edin, məqsəd həmişə tapşırığı istəklərinizə, prioritetlərinizə və büdcənizə cavab verəcək şəkildə yaxşı həll etməkdir.
+
+                    İstər rəqəmsal strategiyaya ehtiyacınız olsun, istərsə də mövcud həlldə yenilik tətbiq etməyə kömək edin, məqsəd həmişə tapşırığı istəklərinizə, prioritetlərinizə və büdcənizə cavab verəcək şəkildə yaxşı həll etməkdir.
                 </p>
             </div>
         </div>
@@ -215,89 +215,71 @@
                 <div class="expertise_content_item">
                     <div class="expertise_content_item_body">
                         <h2 class="expertise_content_item_h2">Digər Xidmətlər</h2>
- 
+
                     </div>
                 </div>
-                   @foreach($serviceInfo as $key => $val)
-              @if($key != 'id')
-                   <a href="{{route('servicePages', $serviceInfo['id'][0])}}" class="expertise_content_item">
-                 
-                          <div class="expertise_content_item_body">
-                        
-                        <div class="expertise_content_item_title">
-                            <p class="expertise_content_item_title_tp">
-                                {{$key}}
-                            </p>
+                @foreach($serviceInfo as $key => $val)
+
+                    <a href="{{route('servicePages', $val['id'])}}" class="expertise_content_item">
+
+                        <div class="expertise_content_item_body">
+
+                            <div class="expertise_content_item_title">
+                                <p class="expertise_content_item_title_tp">
+                                    {{$key}}
+                                </p>
+                            </div>
+                            <ul class="expertise_content_item_ul expertise_content_item_ul_clr ">
+                                @foreach($val as $key => $item)
+                                    @if($key != 'id')
+                                        <li class="expertise_content_item_li">
+                                            {{$item}}
+                                        </li>
+                                    @endif
+
+                                @endforeach
+
+                            </ul>
+                            <div class="expertise_content_item_body_right_icon">
+                                <svg id="expertise_item_icon" xmlns="http://www.w3.org/2000/svg" width="25.5" height="16.005" viewBox="0 0 25.5 16.005">
+                                    <g id="noun_Left_1920800" transform="translate(28 29.705) rotate(180)">
+                                        <path id="Path_19" data-name="Path 19" d="M10.5,29.7l1.058-1.08L5.388,22.452H28v-1.5H5.388L11.56,14.78,10.5,13.7l-8,8Z" transform="translate(0 0)" fill="#00aeef"></path>
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
-                        <ul class="expertise_content_item_ul expertise_content_item_ul_clr ">
-                            @foreach($val as $item)
-                          
-                                <li class="expertise_content_item_li">
-                                {{$item}}
-                            </li>
-                            @endforeach
-                        
-                        </ul>
-                        <div class="expertise_content_item_body_right_icon">
-                            <svg id="expertise_item_icon" xmlns="http://www.w3.org/2000/svg" width="25.5" height="16.005" viewBox="0 0 25.5 16.005">
-                                <g id="noun_Left_1920800" transform="translate(28 29.705) rotate(180)">
-                                    <path id="Path_19" data-name="Path 19" d="M10.5,29.7l1.058-1.08L5.388,22.452H28v-1.5H5.388L11.56,14.78,10.5,13.7l-8,8Z" transform="translate(0 0)" fill="#00aeef"></path>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-   
-              
-                </a>
-              @endif
-           
-                          @endforeach
+
+
+                    </a>
+
+                @endforeach
             </div>
             <div class="service_left display">
                 <div class="service_left_content">
                     <div class="service_left_content_header service_nav_item_clr">
-                       Our services
+                        Xidmətlər
                     </div>
                     <ul class="service_left_content_nav">
-                        <li class="service_left_content_nav_item">
-                            <a href="desing_development.html" class="service_left_content_nav_item_link service_nav_item_clr" data-services-menu-id="designAndDevelopment">Design &amp; Development</a>
-                            <svg class="nav_arrow" xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
-                                <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
-                                    <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"></path>
-                                </g>
-                            </svg>
-                        </li>
-                        <li class="service_left_content_nav_item">
-                            <a href="hardwareDistribution.html" class="service_left_content_nav_item_link service_nav_item_clr active" data-services-menu-id="hardwareSolutions">Hardware solutions</a>
-                            <svg class="nav_arrow" xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
-                                <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
-                                    <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"></path>
-                                </g>
-                            </svg>
-                        </li>
-                        <li class="service_left_content_nav_item">
-                            <a href="desing_development.html" class="service_left_content_nav_item_link service_nav_item_clr" data-services-menu-id="educationContent">Educational content</a>
-                            <svg class="nav_arrow" xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
-                                <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
-                                    <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"></path>
-                                </g>
-                            </svg>
-                        </li>
-                        <li class="service_left_content_nav_item">
-                            <a href="desing_development.html" class="service_left_content_nav_item_link service_nav_item_clr" data-services-menu-id="coachingAndConsulting">Coaching &amp; consulting</a>
-                            <svg class="nav_arrow" xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
-                                <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
-                                    <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"></path>
-                                </g>
-                            </svg>
-                        </li>
+                        @foreach($serviceInfo as $key => $val)
+
+                            <li class="service_left_content_nav_item">
+                                <a href="{{route('servicePages', $val['id'])}}" class="service_left_content_nav_item_link service_nav_item_clr" data-services-menu-id="designAndDevelopment">{{$key}}</a>
+                                <svg class="nav_arrow" xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
+                                    <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
+                                        <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"></path>
+                                    </g>
+                                </svg>
+                            </li>
+
+                        @endforeach
+
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-@include('layouts/tplAboutAndCareers')
-@include('layouts/projectInMind')
+    @include('layouts/tplAboutAndCareers')
+    @include('layouts/projectInMind')
 
 @endsection
 

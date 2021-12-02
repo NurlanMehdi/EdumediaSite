@@ -45,6 +45,73 @@ class DashboardController extends Controller
         return view('admin/cocoStudiesPage',['header'=>$header,'studies'=>$studies]);
     }
 
+
+    public function indexStudieContent($id)
+    {
+        $studieContent = DB::table('studie_content')->where('studie_id','=',$id)->first();
+        return view('admin/indexStudieContent',['id'=>$id,'studieContent'=>$studieContent]);
+    }
+
+    public function editStudieContent($service_id)
+    {
+        $validator = validator(request()->all(),[
+            'header_text' => 'required|string',
+            'first_text' => 'string|nullable',
+            'header_name' => 'string|nullable',
+            'footer_text' => 'string|nullable',
+            'lang' => 'required|string',
+        ]);
+
+        if ($validator->fails()){
+            return redirect()->back()->withErrors($validator)->withInput();
+        }else{
+            $input = $this->fileUpload(\request());
+
+            DB::table('studie_content')->where('id','=',$service_id)->update([
+                'header_text' => request()->get('header_text'),
+                'first_text' => request()->get('first_text'),
+                'header_name' => request()->get('header_name'),
+                'footer_text' => request()->get('footer_text'),
+                'img' => $input['info_img'],
+                'key' => request()->get('lang'),
+            ]);
+
+            return $this->studiesPage();
+        }
+
+    }
+
+    public function createStudieContent($id)
+    {
+
+        $validator = validator(request()->all(),[
+            'header_text' => 'required|string',
+            'first_text' => 'string|nullable',
+            'header_name' => 'string|nullable',
+            'footer_text' => 'string|nullable',
+            'lang' => 'required|string',
+        ]);
+
+        if ($validator->fails()){
+            return redirect()->back()->withErrors($validator)->withInput();
+        }else{
+            $input = $this->fileUpload(\request());
+
+            DB::table('studie_content')->insert([
+                'header_text' => request()->get('header_text'),
+                'first_text' => request()->get('first_text'),
+                'header_name' => request()->get('header_name'),
+                'footer_text' => request()->get('footer_text'),
+                'img' => $input['info_img'],
+                'key' => request()->get('lang'),
+                'studie_id' => $id,
+            ]);
+
+            return $this->studiesPage();
+        }
+    }
+
+
     public function aboutUsPage()
     {
 
