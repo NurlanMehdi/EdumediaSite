@@ -985,6 +985,9 @@
         max-width: 100%;
         padding-bottom: 40px;
     }
+    .hardwareDistribution_content_left_body{
+        margin-top: 30px;
+    }
     .hardwareDistribution_content_right{
         flex: 0 0 100%;
         max-width: 100%;

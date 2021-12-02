@@ -75,12 +75,12 @@ function navbarScrollEndFn() {
 $(document).ready(function(){
     $("#button").click(function() {
         $('html, body').animate({
-            scrollTop: $(".banner").offset().top
+            scrollTop: $('.section:first-child').outerHeight()
         }, 1000);
     });
-    $(document).ready(function(){
-        $(this).scrollTop(0);
-    });
+    // $(document).ready(function(){
+    //     $(this).scrollTop(0);
+    // });
 });
 
 
