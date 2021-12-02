@@ -24,7 +24,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::omEyzGaD0h2RxVje',
+            '_route' => 'generated::jcncv3VUUP82Xy1C',
           ),
           1 => NULL,
           2 => 
@@ -44,7 +44,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::7CgAyedXnE4IdDtc',
+            '_route' => 'generated::jXEnz71i6JeQcnN5',
           ),
           1 => NULL,
           2 => 
@@ -708,11 +708,34 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/coco/(?|post\\-(?|selected\\-from\\-(?|studies/([^/]++)(*:60)|blog/([^/]++)(*:80))|page/([^/]++)(*:101))|blog\\-create\\-page/([^/]++)(*:137)|remove\\-(?|blog/([^/]++)(*:169)|studie/([^/]++)(*:192)|post/([^/]++)(?|(*:216)|/([^/]++)(*:233)))|header\\-text\\-show/([^/]++)(*:270)|edit\\-s(?|tudie\\-page/([^/]++)(*:308)|ervice\\-info/([^/]++)(*:337))|service\\-(?|content/([^/]++)(*:374)|deliver/([^/]++)/([^/]++)(*:407))|first\\-info/([^/]++)/([^/]++)(*:445))|/design_development/([^/]++)(*:482)|/blogItemInner/([^/]++)(*:513))/?$}sDu',
+      0 => '{^(?|/specialty/([^/]++)(*:26)|/coco/(?|post\\-(?|selected\\-from\\-(?|studies/([^/]++)(*:86)|blog/([^/]++)(*:106))|page/([^/]++)(*:128))|blog\\-create\\-page/([^/]++)(*:164)|remove\\-(?|blog/([^/]++)(*:196)|studie/([^/]++)(*:219)|post/([^/]++)(?|(*:243)|/([^/]++)(*:260)))|header\\-text\\-show/([^/]++)(*:297)|edit\\-(?|s(?|tudie\\-page/([^/]++)(*:338)|ervice\\-info/([^/]++)(*:367))|content\\-studie/([^/]++)(*:400))|c(?|ontent\\-studie/([^/]++)(*:436)|reate\\-content\\-studie/([^/]++)(*:475))|service\\-(?|content/([^/]++)(*:512)|deliver/([^/]++)/([^/]++)(*:545))|first\\-info/([^/]++)/([^/]++)(*:583))|/design_development/([^/]++)(*:620)|/blogItemInner/([^/]++)(*:651))/?$}sDu',
     ),
     3 => 
     array (
-      60 => 
+      26 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'specialty',
+          ),
+          1 => 
+          array (
+            0 => 'key',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      86 => 
       array (
         0 => 
         array (
@@ -735,7 +758,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      80 => 
+      106 => 
       array (
         0 => 
         array (
@@ -758,7 +781,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      101 => 
+      128 => 
       array (
         0 => 
         array (
@@ -781,7 +804,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      137 => 
+      164 => 
       array (
         0 => 
         array (
@@ -804,7 +827,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      169 => 
+      196 => 
       array (
         0 => 
         array (
@@ -827,7 +850,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      192 => 
+      219 => 
       array (
         0 => 
         array (
@@ -850,7 +873,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      216 => 
+      243 => 
       array (
         0 => 
         array (
@@ -873,7 +896,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      233 => 
+      260 => 
       array (
         0 => 
         array (
@@ -897,7 +920,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      270 => 
+      297 => 
       array (
         0 => 
         array (
@@ -920,7 +943,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      308 => 
+      338 => 
       array (
         0 => 
         array (
@@ -943,7 +966,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      337 => 
+      367 => 
       array (
         0 => 
         array (
@@ -965,7 +988,74 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      374 => 
+      400 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'edit.studie.content',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      436 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'content.studie',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      475 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'create.studie.content',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      512 => 
       array (
         0 => 
         array (
@@ -988,7 +1078,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      407 => 
+      545 => 
       array (
         0 => 
         array (
@@ -1012,7 +1102,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      445 => 
+      583 => 
       array (
         0 => 
         array (
@@ -1036,7 +1126,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      482 => 
+      620 => 
       array (
         0 => 
         array (
@@ -1059,7 +1149,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      513 => 
+      651 => 
       array (
         0 => 
         array (
@@ -1097,7 +1187,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::omEyzGaD0h2RxVje' => 
+    'generated::jcncv3VUUP82Xy1C' => 
     array (
       'methods' => 
       array (
@@ -1118,7 +1208,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::omEyzGaD0h2RxVje',
+        'as' => 'generated::jcncv3VUUP82Xy1C',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1134,7 +1224,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::7CgAyedXnE4IdDtc' => 
+    'generated::jXEnz71i6JeQcnN5' => 
     array (
       'methods' => 
       array (
@@ -1149,15 +1239,15 @@ app('router')->setCompiledRoutes(
           0 => 'api',
           1 => 'auth:sanctum',
         ),
-        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":291:{@CHJ8WR9sdyym6t112HuMEJvccgIUp322jQeB3ELCmUk=.a:5:{s:3:"use";a:0:{}s:8:"function";s:79:"function (\\Illuminate\\Http\\Request $request) {
+        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":291:{@vnCOKybSQf+5VALFnJWJqG0kd/GkKehuPQp6nM6Bsag=.a:5:{s:3:"use";a:0:{}s:8:"function";s:79:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000127473d00000000676380f7";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000072cac04300000000282c3f9e";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::7CgAyedXnE4IdDtc',
+        'as' => 'generated::jXEnz71i6JeQcnN5',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1195,6 +1285,43 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'index',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'specialty' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'specialty/{key}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Controller@indexSpecialty',
+        'controller' => 'App\\Http\\Controllers\\Controller@indexSpecialty',
+        'namespace' => NULL,
+        'prefix' => NULL,
+        'where' => 
+        array (
+        ),
+        'as' => 'specialty',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1261,25 +1388,8 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":1133:{@oM4RISR76fAbCf0j1REkZUI2TJnpYg+HGs3LisaE46s=.a:5:{s:3:"use";a:0:{}s:8:"function";s:920:"function () {
-    $serviceInfo = \\Illuminate\\Support\\Facades\\DB::table(\'services_first_info\')->leftJoin(\'dashboard_translate\',\'dashboard_translate.id\',\'=\',\'services_first_info.services_id\')->where(\'services_first_info.key\',\'=\',\\Illuminate\\Support\\Facades\\App::getLocale())->get();
-
-    $serviceArray = [];
-    foreach ($serviceInfo as $val){
-        if(!isset($serviceArray[$val->blog_name]))
-        {
-            $serviceArray[$val->blog_name][] = $val->name;
-            $serviceArray[\'id\'][] = $val->id;
-        }elseif(isset($serviceArray[$val->blog_name]) && $serviceArray[$val->blog_name] != $val->name){
-            $serviceArray[$val->blog_name][] = $val->name;
-            $serviceArray[\'id\'][] = $val->id;
-        }
-
-    }
-
-    $header = \\App\\Models\\PageHeader::where(\'page_name\',\'=\',\'about_us\')->first();
-    return \\view(\'layouts/about\',[\'header\'=>$header,\'serviceInfo\'=>$serviceArray]);
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000127473900000000676380f7";}}',
+        'uses' => 'App\\Http\\Controllers\\AboutController@indexAbout',
+        'controller' => 'App\\Http\\Controllers\\AboutController@indexAbout',
         'namespace' => NULL,
         'prefix' => NULL,
         'where' => 
@@ -1315,7 +1425,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":1262:{@Ud07Q43BFi/6WP68CH7hQH1MwwcySdGsQyNspoJz+lE=.a:5:{s:3:"use";a:0:{}s:8:"function";s:1048:"function () {
+        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":1262:{@v4KAhTAGxGCw2XEM2y5WttGaOA6kXr5O+y4Zex+lbb8=.a:5:{s:3:"use";a:0:{}s:8:"function";s:1048:"function () {
     $header = \\App\\Models\\PageHeader::where(\'page_name\',\'=\',\'services\')->first();
 
     $blogs = \\App\\Models\\Dashboard::join(\'dashboard_translate\',\'dashboard_translate.item_id\',\'=\',\'dashboard_items.id\')
@@ -1328,7 +1438,7 @@ app('router')->setCompiledRoutes(
     $postHeaderName = \\App\\Models\\PostTranslate::first();
 
     return \\view(\'layouts/service\',[\'header\'=>$header,\'blogs\'=>$blogs,\'posts\'=>$posts]);
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000127472700000000676380f7";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000072cac05900000000282c3f9e";}}',
         'namespace' => NULL,
         'prefix' => NULL,
         'where' => 
@@ -1364,11 +1474,11 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":461:{@wU6JP9jYtqfYqT29NpQhgZzqU+n6MUpSGJV6A0vaQyE=.a:5:{s:3:"use";a:0:{}s:8:"function";s:248:"function () {
+        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":461:{@8ZmQ2DZ19LzolAXXclf75GL2+wIUhBGWaJlYcm/7rfg=.a:5:{s:3:"use";a:0:{}s:8:"function";s:248:"function () {
     $header = \\App\\Models\\PageHeader::where(\'page_name\',\'=\',\'case_studies\')->first();
     $blogItems = \\App\\Models\\DashboardTranslater::get();
     return \\view(\'layouts/case_studies\',[\'header\'=>$header,\'blogItems\'=>$blogItems]);
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000127472500000000676380f7";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000072cac05b00000000282c3f9e";}}',
         'namespace' => NULL,
         'prefix' => NULL,
         'where' => 
@@ -1441,11 +1551,11 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":445:{@/U1JlbMrqJfMkAYu4jWUBP582Mfk2fmyEEukc9TK7j0=.a:5:{s:3:"use";a:0:{}s:8:"function";s:232:"function () {
+        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":445:{@6hZJFWVb5BtWCd4eoKYs4BzX61eowxHj11ua3qFnUw8=.a:5:{s:3:"use";a:0:{}s:8:"function";s:232:"function () {
     $header = \\App\\Models\\PageHeader::where(\'page_name\',\'=\',\'blog\')->first();
     $blogItems = \\App\\Models\\DashboardTranslater::get();
     return \\view(\'layouts/blog\',[\'header\'=>$header,\'blogItems\'=>$blogItems]);
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000127472000000000676380f7";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000072cac05e00000000282c3f9e";}}',
         'namespace' => NULL,
         'prefix' => NULL,
         'where' => 
@@ -1481,10 +1591,10 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":369:{@Zj8aAlYBblRBLM5oeq4hHe8ApKIUYpJ0Hou2HnZE7wY=.a:5:{s:3:"use";a:0:{}s:8:"function";s:156:"function () {
+        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":369:{@2Yu5tavbIVk1mprrb2BcmNJ9J6RC9eAl++5ntgBF/20=.a:5:{s:3:"use";a:0:{}s:8:"function";s:156:"function () {
     $header = \\App\\Models\\PageHeader::where(\'page_name\',\'=\',\'careers\')->first();
     return \\view(\'layouts/careers\',[\'header\'=>$header]);
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000127472e00000000676380f7";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000072cac05000000000282c3f9e";}}',
         'namespace' => NULL,
         'prefix' => NULL,
         'where' => 
@@ -1557,12 +1667,12 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":577:{@4F8RgIdw7DjFO32ivDD34yJunWsZBtaflq1/Su8ITb8=.a:5:{s:3:"use";a:0:{}s:8:"function";s:364:"function () {
+        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":577:{@t337tkTwPoycc0I2Ko6pH4p30DpLZhnVzl5rVmxFp7A=.a:5:{s:3:"use";a:0:{}s:8:"function";s:364:"function () {
     $posts = \\App\\Models\\Post::join(\'post_translate\',\'post_translate.item_id\',\'=\',\'post_items.id\')
         ->select(\'post_items.id\',\'post_items.status\',\'post_items.img\',\'post_translate.button_name\',\'post_translate.name\',\'post_translate.key\',\'post_translate.header_name\')->get();
 
     return \\view(\'layouts/serviceItemInner\',[\'posts\'=>$posts]);
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000127472d00000000676380f7";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000072cac05300000000282c3f9e";}}',
         'namespace' => NULL,
         'prefix' => NULL,
         'where' => 
@@ -1635,9 +1745,9 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":272:{@pcTle8RdBl3gpAETpFGHhKweKxU0B3mcUx6ssifyyO4=.a:5:{s:3:"use";a:0:{}s:8:"function";s:60:"function () {
+        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":272:{@7jdYzGLRXxNMjRC8FqTcVh/7yQS3GL2J9tGAToCzLTg=.a:5:{s:3:"use";a:0:{}s:8:"function";s:60:"function () {
     return \\view(\'layouts/privacyPolicy\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000127472800000000676380f7";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000072cac05600000000282c3f9e";}}',
         'namespace' => NULL,
         'prefix' => NULL,
         'where' => 
@@ -1673,9 +1783,9 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":266:{@1K2kt0ZFsTg0fbqoEFjWS3OSOn0KNUiCxZfXH32JY8Q=.a:5:{s:3:"use";a:0:{}s:8:"function";s:54:"function () {
+        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":266:{@3kMoc+ARNhIm4mnxQqs7U+/fw2kNrBs9wxOR0zmIYe8=.a:5:{s:3:"use";a:0:{}s:8:"function";s:54:"function () {
     return \\view(\'layouts/siteMap\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000127471600000000676380f7";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000072cac06800000000282c3f9e";}}',
         'namespace' => NULL,
         'prefix' => NULL,
         'where' => 
@@ -1712,9 +1822,9 @@ app('router')->setCompiledRoutes(
           0 => 'web',
           1 => 'auth:web',
         ),
-        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":270:{@Wnf5zC7s+6fCBpEtYxXfNHGujXgAophfG/Sd2N1xSis=.a:5:{s:3:"use";a:0:{}s:8:"function";s:58:"function () {
+        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":270:{@kQD2K6JPGCmS4Fkqa8lnSoWY3gK6W5w5OUVZlqsneuM=.a:5:{s:3:"use";a:0:{}s:8:"function";s:58:"function () {
         return \\view(\'admin/index\');
-    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000127471500000000676380f7";}}',
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000072cac06b00000000282c3f9e";}}',
         'namespace' => NULL,
         'prefix' => NULL,
         'where' => 
@@ -2361,6 +2471,118 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'remove.studie.page',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'content.studie' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'coco/content-studie/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth:web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\DashboardController@indexStudieContent',
+        'controller' => 'App\\Http\\Controllers\\DashboardController@indexStudieContent',
+        'namespace' => NULL,
+        'prefix' => NULL,
+        'where' => 
+        array (
+        ),
+        'as' => 'content.studie',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'create.studie.content' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'coco/create-content-studie/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth:web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\DashboardController@createStudieContent',
+        'controller' => 'App\\Http\\Controllers\\DashboardController@createStudieContent',
+        'namespace' => NULL,
+        'prefix' => NULL,
+        'where' => 
+        array (
+        ),
+        'as' => 'create.studie.content',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'edit.studie.content' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'coco/edit-content-studie/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth:web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\DashboardController@editStudieContent',
+        'controller' => 'App\\Http\\Controllers\\DashboardController@editStudieContent',
+        'namespace' => NULL,
+        'prefix' => NULL,
+        'where' => 
+        array (
+        ),
+        'as' => 'edit.studie.content',
       ),
       'fallback' => false,
       'defaults' => 

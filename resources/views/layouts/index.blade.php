@@ -12,7 +12,7 @@
                         {{$header['header_text'] ?? ''}}
                     </h1>
                 </div>
-                <a href="#scroll" alt="scrollBtn" id="button" class="arrow section-down-arrow-wrap scroller">
+                <a alt="scrollBtn" id="button" class="arrow section-down-arrow-wrap scroller">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17.692" height="28.189" viewBox="0 0 17.692 28.189">
                         <g id="noun_Left_1920800" transform="translate(-13.7 30.689) rotate(-90)">
                             <path id="Path_19" data-name="Path 19" d="M11.346,31.392l1.17-1.194L5.692,23.375h25V21.718h-25l6.823-6.823L11.346,13.7,2.5,22.546Z" transform="translate(0 0)" fill="#fff"/>
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="section banner fadeUp bgColor pd_mobile" data-color="black">
+    <div class="section banner fadeUp bgColor pd_mobile" id="nextSection" data-color="black">
         <div class="section_header">
             <h4 class="white_title">{{$blogHeaderName->names ?? ''}}</h4>
             <a href="{{route('service')}}" class="btn banner_service_btn">
@@ -208,13 +208,13 @@
             </div>
             <div class="customer_content_item">
                 <a href="https://www.mfa.gov.az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/xin-logo.png')}}" alt="transport ministry ">
+                    <img src="{{asset('img/logo (1).svg')}}" alt="transport ministry ">
                 </a>
                 <a href="https://www.azsmart.az/" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/az smart.png')}}" alt="az smart">
                 </a>
                 <a href="https://www.mfa.gov.az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/xin-logo.png')}}" alt="transport ministry">
+                    <img src="{{asset('img/logo (1).svg')}}" alt="transport ministry">
                 </a>
                 <a href="https://www.azsmart.az/" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/az smart.png')}}" alt="az smart">
