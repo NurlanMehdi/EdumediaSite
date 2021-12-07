@@ -16,7 +16,7 @@
                             <a href="{{route('index')}}">Ana səhifə</a>
                         </li>
                         <li class="page_breadcrumb_item">
-                            <a href="{{route('careers')}}">Karyera</a>
+                            <a>Karyera</a>
                         </li>
                     </ul>
                 </div>

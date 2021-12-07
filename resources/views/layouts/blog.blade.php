@@ -7,7 +7,7 @@
                     <a href="{{route('index')}}">home</a>
                 </li>
                 <li class="page_breadcrumb_item">
-                    <a href="{{route('blog')}}">blog</a>
+                    <a>blog</a>
                 </li>
             </ul>
         </div>

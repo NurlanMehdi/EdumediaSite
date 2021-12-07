@@ -16,7 +16,7 @@
                             <a href="{{route('index')}}">Ana səhifə</a>
                         </li>
                         <li class="page_breadcrumb_item">
-                            <a href="{{route('about')}}">Haqqımızda</a>
+                            <a>Haqqımızda</a>
                         </li>
                     </ul>
                 </div>
@@ -233,26 +233,26 @@
             </div>
             <div class="customer_content_item">
                 <a href="https://www.mfa.gov.az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/logo (1).svg')}}" alt="transport ministry ">
+                    <img src="{{asset('img/logo (2).svg')}}" alt="transport ministry ">
                 </a>
                 <a href="https://www.azsmart.az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/az smart.png')}}" alt="az smart">
+                    <img src="{{asset('img/reqemsal-logo.svg')}}" alt="reqemsal bacariqlar">
                 </a>
             </div>
             <div class="customer_content_item">
                 <a href="https://www.scanex.az/" class="customer_content_item_body">
                     <img src="{{asset('img/scanex.png')}}" alt="scanex">
                 </a>
-                <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
+                <a href="https://video.edu.az/" class="customer_content_item_body">
+                    <img src="{{asset('img/video-edu-az.png')}}" alt="video edu az">
                 </a>
             </div>
             <div class="customer_content_item">
                 <a href="http://enginet.az/index.php/az/" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/enginet logo.png')}}" alt="enginet logo">
                 </a>
-                <a href="https://www.ite.az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/inovativ texnalogiyalar.png')}}" alt="inovativ texnalogiyalar">
+                <a href="https://grants.edu.az/" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/qrant_logo.svg')}}" alt="qrants edu az">
                 </a>
             </div>
             <div class="customer_content_item display_none">

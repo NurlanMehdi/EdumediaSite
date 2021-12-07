@@ -7,7 +7,7 @@
                     <a href="{{route('index')}}">Ana səhifə</a>
                 </li>
                 <li class="page_breadcrumb_item page_breadcrumb_item_clr">
-                    <a href="{{route('contact')}}">Əlaqə</a>
+                    <a>Əlaqə</a>
                 </li>
             </ul>
         </div>
@@ -59,7 +59,7 @@
             <div class="contact">
                 <p class="title">Əlaqə</p>
                 <span>{{($contact->phone_number_status == 0) ? $contact->phone_number : ''}}</span>
-                <a href="#">{{($contact->mail_status == 0) ? $contact->mail : ''}}</a>
+                <a href="mailto::info@edumedia.az">{{($contact->mail_status == 0) ? $contact->mail : ''}}</a>
             </div>
             <div class="find_us">
                 <p class="title">Ünvan</p>

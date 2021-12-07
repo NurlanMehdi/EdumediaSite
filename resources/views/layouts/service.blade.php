@@ -7,7 +7,7 @@
                     <a href="{{route('index')}}">Ana səhifə</a>
                 </li>
                 <li class="page_breadcrumb_item">
-                    <a href="{{route('service')}}">Xidmətlər</a>
+                    <a>Xidmətlər</a>
                 </li>
             </ul>
         </div>

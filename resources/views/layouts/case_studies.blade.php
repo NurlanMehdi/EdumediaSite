@@ -7,9 +7,8 @@
                     <a href="{{route('index')}}">Ana səhifə</a>
                 </li>
                 <li class="page_breadcrumb_item page_breadcrumb_item_clr">
-                    <a href="{{route('service')}}">Layihələr</a>
+                    <a>Layihələr</a>
                 </li>
-
             </ul>
         </div>
         <div class="page_header_bottom">
