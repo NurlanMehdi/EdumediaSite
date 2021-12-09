@@ -199,6 +199,12 @@
                 <a href="https://www.ite.az/" class="customer_content_item_body">
                     <img src="{{asset('img/inovativ texnalogiyalar.png')}}" alt="texnologiya">
                 </a>
+                <a href="https://www.etwinning.net/en/pub/index.htm" class="customer_content_item_body">
+                    <img src="{{asset('img/e-twinning.svg')}}" alt="texnologiya">
+                </a>
+                <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
+                    <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
+                </a>
             </div>
             <div class="customer_content_item">
                 <a href="https://www.mfa.gov.az/" class="customer_content_item_body js_content_end">
@@ -206,6 +212,12 @@
                 </a>
                 <a href="https://www.azsmart.az/" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/reqemsal-logo.svg')}}" alt="reqemsal bacariqlar">
+                </a>
+                <a href="https://marsacademy.az/" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/MA-logo.svg')}}" alt="mars academy">
+                </a>
+                <a href="https://www.azsmart.az/" class="customer_content_item_body">
+                    <img src="{{asset('img/az smart.png')}}" alt="az smart">
                 </a>
             </div>
             <div class="customer_content_item">
@@ -215,21 +227,25 @@
                 <a href="https://video.edu.az/s" class="customer_content_item_body">
                     <img src="{{asset('img/video-edu-az.png')}}" alt="video edu az">
                 </a>
+                <a href="https://birlink.az/az" class="customer_content_item_body">
+                    <img src="{{asset('img/birlink-logo.svg')}}" alt="birlink">
+                </a>
+                <a href="https://www.khanacademy.org/" class="customer_content_item_body">
+                    <img src="{{asset('img/Logo-vL.png')}}" alt="vl">
+                </a>
             </div>
             <div class="customer_content_item">
                 <a href="http://enginet.az/index.php/az/" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/enginet logo.png')}}" alt="enginet logo">
                 </a>
                 <a href="https://grants.edu.az/" class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/qrant_logo.svg')}}" alt="grant edu az">
+                    <img src="{{asset('img/qrant_logo-mono.svg')}}" alt="grant edu az">
                 </a>
-            </div>
-            <div class="customer_content_item display_none">
-                <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
+                <a href="https://ict.edu.az/" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/tsii.svg')}}" alt="tsii logo">
                 </a>
-                <a href="https://www.azsmart.az/" class="customer_content_item_body">
-                    <img src="{{asset('img/az smart.png')}}" alt="az smart">
+                <a href="https://bsu-uni.edu.az/" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/uni.png')}}" alt="tsii logo">
                 </a>
             </div>
         </div>

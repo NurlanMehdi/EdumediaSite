@@ -993,7 +993,7 @@ li {
 .customer_content {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     margin-right: -70px;
     margin-left: -70px;
     margin-bottom: 80px;
@@ -1001,7 +1001,7 @@ li {
 .customer_content_item {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    /* width: 20%; */
 }
 .customer_content_item_body {
     margin: 30px 70px;
