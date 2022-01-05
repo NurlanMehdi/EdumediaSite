@@ -24,7 +24,7 @@
                 <div class="page_header_top">
                     <ul class="page_breadcrumb">
                         <li class="page_breadcrumb_item main_header_head">
-                            <a href="{{route('index')}}">Ana Səhifə</a>
+                            <a href="{{route('index')}}">{{__('language.anasehife')}}</a>
                         </li>
                         <li class="page_breadcrumb_item main_header_head">
                             <a href="{{route('careers')}}">Karyera</a>

@@ -13,10 +13,12 @@
                 <div class="page_header_top">
                     <ul class="page_breadcrumb">
                         <li class="page_breadcrumb_item">
-                            <a href="{{route('index')}}">Ana səhifə</a>
+                            <a href="{{route('index')}}">{{__('language.anasehife')}}</a>
                         </li>
                         <li class="page_breadcrumb_item">
-                            <a>Haqqımızda</a>
+
+                            <a href="{{route('about')}}">{{__('language.haqqimizda')}}</a>
+
                         </li>
                     </ul>
                 </div>
@@ -26,7 +28,7 @@
                     </p>
                     <div class="page_header_desc page_header_desc_clr">
                         <p>
-                            Edumedia-Azərbaycan yeni və interaktiv xidmət və həllər təminatçısıdır. Edumedia uğurlu beynəlxalq təcrübənin yerli bazara gətirilməsi üzərində işləyir; öz sifarişçisini bir təklif daxilində İT xidmətləri ilə təmin edir; müştərilərinin ehtiyaclarını ətraflı müəyyən edərək, onları məmnun etmək üçün səylə çalışır; yeni mənfəətli tərəfdaşlıq münasibətləri qurmaq üçün vaxt və resurs sərf edir.
+                            {{__('language.aboutbashliq')}}
                         </p>
                     </div>
                     <div alt="scrollBtn" id="button" class="arrow section-down-arrow-wrap scroller">
@@ -43,27 +45,27 @@
     </div>
     <div class="section about_desc bgColor fadeUp" data-color="white">
         <div class="about_content_desc_header">
-            <h2 class="about_content_desc_head">Əsas dəyərlərimiz</h2>
+            <h2 class="about_content_desc_head">{{__('language.esasDeyerlerimiz')}}</h2>
         </div>
         <div class="about_content_desc_body">
             <div class="about_content_desc_body_item">
-                <h3 class="about_content_desc_body_item_title">Kreativlik</h3>
+                <h3 class="about_content_desc_body_item_title">{{__('language.kreativlik')}}</h3>
 
             </div>
             <div class="about_content_desc_body_item">
-                <h3 class="about_content_desc_body_item_title">Əməkdaşlıq</h3>
+                <h3 class="about_content_desc_body_item_title">{{__('language.emekdashliq')}}</h3>
 
             </div>
             <div class="about_content_desc_body_item">
-                <h3 class="about_content_desc_body_item_title">Məsuliyyət</h3>
+                <h3 class="about_content_desc_body_item_title">{{__('language.mesuliyyet')}}</h3>
 
             </div>
             <div class="about_content_desc_body_item">
-                <h3 class="about_content_desc_body_item_title">Müştəri məmnuniyyət.</h3>
+                <h3 class="about_content_desc_body_item_title">{{__('language.mushteriMemnuniyyeti')}}</h3>
 
             </div>
             <div class="about_content_desc_body_item">
-                <h3 class="about_content_desc_body_item_title">Uğurlu həllərin təminatı</h3>
+                <h3 class="about_content_desc_body_item_title">{{__('language.ugurluHellerinTeminati')}}</h3>
                 <!-- <p class="about_content_desc_body_item_text">We pride ourselves on pushing the boundaries of digital design and development.  We combine relevant trends and best practices to build platforms with longevity.</p>-->
             </div>
         </div>
@@ -106,31 +108,31 @@
     {{--        </div>--}}
     {{--    </div>--}}
     <div class="section team_info bgColor fadeUp pd_mobile" data-color="black">
-        <p class="team_info_text">Biz daim özümüzü inkişaf etdirir və hər şeyi daha yaxşı şəkildə etmək arzusu ilə çalışırıq. </p>
+        <p class="team_info_text">{{__('language.aboutText1')}}</p>
         <div class="team_info_group">
             <div class="team_info_group_content">
                 <div class="team_info_group_item">
                     <div class="team_info_group_item_body">
                         <h1 class="team_info_group_item_numb timer">120+</h1>
-                        <small class="team_info_group_item_title">Müştərilərimiz</small>
+                        <small class="team_info_group_item_title">{{__('language.mushterilerimiz1')}}</small>
                     </div>
                 </div>
                 <div class="team_info_group_item">
                     <div class="team_info_group_item_body">
                         <h1 class="team_info_group_item_numb">536+</h1>
-                        <small class="team_info_group_item_title">Uğurlu layihələrimiz </small>
+                        <small class="team_info_group_item_title">U{{__('language.ugurluLayihelerimiz')}}</small>
                     </div>
                 </div>
                 <div class="team_info_group_item">
                     <div class="team_info_group_item_body">
                         <h1 class="team_info_group_item_numb">10</h1>
-                        <small class="team_info_group_item_title">Təcrübəmiz</small>
+                        <small class="team_info_group_item_title">{{__('language.tecrubemiz')}}</small>
                     </div>
                 </div>
                 <div class="team_info_group_item">
                     <div class="team_info_group_item_body">
                         <h1 class="team_info_group_item_numb">27</h1>
-                        <small class="team_info_group_item_title">Komanda üzvləri</small>
+                        <small class="team_info_group_item_title">{{__('language.komandaUzvleri')}}</small>
                     </div>
                 </div>
             </div>
@@ -139,10 +141,10 @@
     <div class="section expertise bgColor fadeUp pd_mobile" data-color="black">
         <div class="section_header">
             <div class="section_header_container">
-                <h4 class="white_title expertise_head">Fəaliyyət sahəmiz</h4>
+                <h4 class="white_title expertise_head">{{__('language.fealiyyetSahemiz')}}</h4>
             </div>
             <a href="{{route('service')}}" class="btn display_none">
-                Xidmətlər
+                {{__('language.xidmetler')}}
                 <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
                     <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
                         <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"></path>
@@ -208,13 +210,13 @@
     <div class="section customers bgColor fadeUp pd_mobile" data-color="white">
         <div class="section_header">
             <div class="section_header_container">
-                <h4 class="black_title">MÜŞTƏRİLƏRİMİZ</h4>
+                <h4 class="black_title">{{__('language.mushterilerimiz')}}</h4>
                 <p class="section_header_desc">
-                    Müştərilərimizlə uzunmüddətli əlaqələr qurmağı bacarırıq ​
+                    {{__('language.mushterilerimizBashliq')}}
                 </p>
             </div>
             <a href="{{route('about')}}" class="btn btn_bgcolor sectionHeadBtn">
-                Haqqımızda
+                {{__('language.haqqimizda')}}
                 <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
                     <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
                         <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"/>

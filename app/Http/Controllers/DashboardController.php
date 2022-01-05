@@ -23,7 +23,7 @@ class DashboardController extends Controller
         $blogs = Dashboard::join('dashboard_translate','dashboard_translate.item_id','=','dashboard_items.id')
             ->select('dashboard_items.id','dashboard_items.status','dashboard_items.img','dashboard_translate.button_name','dashboard_translate.names','dashboard_translate.blog_button_other','dashboard_translate.key','dashboard_translate.blog_name','dashboard_translate.short_info')->get();
 
-        $header = PageHeader::where('page_name','=','home')->first();
+        $header = PageHeader::where('page_name','=','home')->where('key','=',App::getLocale())->first();
         return view('admin/dashboard',['blogs'=>$blogs,'header'=>$header]);
     }
 
@@ -32,7 +32,7 @@ class DashboardController extends Controller
         $posts = Post::join('post_translate','post_translate.item_id','=','post_items.id')
             ->select('post_items.id','post_items.status','post_items.img','post_translate.button_name','post_translate.name','post_translate.key','post_translate.header_name')->get();
 
-        $header = PageHeader::where('page_name','=','home')->first();
+        $header = PageHeader::where('page_name','=','home')->where('key','=',App::getLocale())->first();
         return view('admin/cocoPostPage',['header'=>$header,'posts'=>$posts]);
     }
 
@@ -41,7 +41,7 @@ class DashboardController extends Controller
         $studies = Studies::join('studies_translate','studies_translate.item_id','=','studies_items.id')
             ->select('studies_items.id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name')->get();
 
-        $header = PageHeader::where('page_name','=','home')->first();
+        $header = PageHeader::where('page_name','=','home')->where('key','=',App::getLocale())->first();
         return view('admin/cocoStudiesPage',['header'=>$header,'studies'=>$studies]);
     }
 
@@ -120,9 +120,9 @@ class DashboardController extends Controller
 
     public function publicDashboardPage()
     {
-        $blogHeaderName = DashboardTranslater::first();
-        $studiesHeaderName = StudiesTranslater::first();
-        $postHeaderName = PostTranslate::first();
+        $blogHeaderName = DashboardTranslater::where('key','=',App::getLocale())->first();
+        $studiesHeaderName = StudiesTranslater::where('key','=',App::getLocale())->first();
+        $postHeaderName = PostTranslate::where('key','=',App::getLocale())->first();
         $blogs = Dashboard::join('dashboard_translate','dashboard_translate.item_id','=','dashboard_items.id')
             ->select('dashboard_items.id','dashboard_items.status','dashboard_translate.button_name','dashboard_translate.names','dashboard_translate.blog_button_other','dashboard_translate.key','dashboard_translate.blog_name','dashboard_translate.short_info')
             ->where('key','=',App::getLocale())
@@ -138,7 +138,7 @@ class DashboardController extends Controller
             ->where('key','=',App::getLocale())
             ->paginate(4);
 
-        $header = PageHeader::where('page_name','=','home')->first();
+        $header = PageHeader::where('page_name','=','home')->where('key','=',App::getLocale())->first();
         return view('layouts/index',['blogs'=>$blogs,'blogHeaderName'=>$blogHeaderName,'header'=>$header,'studies'=>$studies,'posts'=>$posts,'postHeaderName'=>$postHeaderName,'studiesHeaderName'=>$studiesHeaderName]);
     }
 
@@ -386,7 +386,7 @@ class DashboardController extends Controller
         $data = [];
 
         if ($key != ''){
-            $data = PageHeader::where('page_name','=',$key)->first();
+            $data = PageHeader::where('page_name','=',$key)->where('key','=',App::getLocale())->first();
         }else{
             $data = [];
         }

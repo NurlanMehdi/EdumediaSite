@@ -1,19 +1,20 @@
 <?php
 
+use App\Http\Controllers\LocalizationController;
 use App\Models\Dashboard;
 use App\Models\Post;
 use App\Models\PostTranslate;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 
 Route::get('/', [\App\Http\Controllers\DashboardController::class,'publicDashboardPage'])->name('index');
 Route::get('/specialty/{key}',[\App\Http\Controllers\Controller::class,'indexSpecialty'])->name('specialty');
 Route::get('/contact', [\App\Http\Controllers\ContactController::class,'contactDashboardPage'])->name('contact');
 Route::get('/about',[\App\Http\Controllers\AboutController::class,'indexAbout'])->name('about');
-
 Route::get('/service', function () {
-    $header = \App\Models\PageHeader::where('page_name','=','services')->first();
+    $header = \App\Models\PageHeader::where('page_name','=','services')->where('key','=',App::getLocale())->first();
 
     $blogs = \App\Models\Dashboard::join('dashboard_translate','dashboard_translate.item_id','=','dashboard_items.id')
         ->select('dashboard_items.id','dashboard_items.url','dashboard_items.img','dashboard_items.status','dashboard_translate.button_name','dashboard_translate.names','dashboard_translate.blog_button_other','dashboard_translate.key','dashboard_translate.blog_name','dashboard_translate.short_info')
@@ -28,21 +29,21 @@ Route::get('/service', function () {
 })->name('service');
 
 Route::get('/case_studies', function () {
-    $header = \App\Models\PageHeader::where('page_name','=','case_studies')->first();
-    $blogItems = \App\Models\DashboardTranslater::get();
+    $header = \App\Models\PageHeader::where('page_name','=','case_studies')->where('key','=',App::getLocale())->first();
+    $blogItems = \App\Models\DashboardTranslater::where('key','=',App::getLocale())->get();
     return view('layouts/case_studies',['header'=>$header,'blogItems'=>$blogItems]);
 })->name('case_studies');
 
 Route::get('/coco/post-selected-from-studies/{id}',[\App\Http\Controllers\StudiesPageController::class,'studiesFromBlog'])->name('post.selected.from.studies');
 
 Route::get('/blog', function () {
-    $header = \App\Models\PageHeader::where('page_name','=','blog')->first();
-    $blogItems = \App\Models\DashboardTranslater::get();
+    $header = \App\Models\PageHeader::where('page_name','=','blog')->where('key','=',App::getLocale())->first();
+    $blogItems = \App\Models\DashboardTranslater::where('key','=',App::getLocale())->get();
     return view('layouts/blog',['header'=>$header,'blogItems'=>$blogItems]);
 })->name('blog');
 
 Route::get('/careers', function () {
-    $header = \App\Models\PageHeader::where('page_name','=','careers')->first();
+    $header = \App\Models\PageHeader::where('page_name','=','careers')->where('key','=',App::getLocale())->first();
     return view('layouts/careers',['header'=>$header]);
 })->name('careers');
 
@@ -50,7 +51,7 @@ Route::get('/design_development/{id}', [\App\Http\Controllers\Controller::class,
 
 Route::get('/serviceItemInner', function () {
     $posts = Post::join('post_translate','post_translate.item_id','=','post_items.id')
-        ->select('post_items.id','post_items.status','post_items.img','post_translate.button_name','post_translate.name','post_translate.key','post_translate.header_name')->get();
+        ->select('post_items.id','post_items.status','post_items.img','post_translate.button_name','post_translate.name','post_translate.key','post_translate.header_name')->where('post_translate.key','=',App::getLocale())->get();
 
     return view('layouts/serviceItemInner',['posts'=>$posts]);
 })->name('serviceItemInner');
@@ -123,5 +124,8 @@ Route::post('/login', [\App\Http\Controllers\LoginController::class,'handleLogin
 Route::get('/logout', [\App\Http\Controllers\LoginController::class,'handleLogout'])->name('logout.handle');
 Route::view('/coco', '/admin/auth/login')->name('login')->middleware('guest');
 
-
+Route::get('/lang/{locale}',[
+    LocalizationController::class,
+    'index'
+])->name('changeLang');
 

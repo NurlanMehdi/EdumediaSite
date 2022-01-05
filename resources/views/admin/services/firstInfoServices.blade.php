@@ -25,7 +25,7 @@
                     <label class="customLabel" for="cateqory_language">Dil</label>
                     <select class="customSelect" name="lang" id="cateqory_language" required="" title="Dil" >
                         <option value="az" {{($data->key ?? '') == 'az' ? 'selected' : ''}}>Azərbaycanca</option>
-                        {{--                        <option value="en" {{($data['key'] ?? '') == 'en' ? 'selected' : ''}}>İngiliscə</option>--}}
+                                                <option value="en" {{($data['key'] ?? '') == 'en' ? 'selected' : ''}}>İngiliscə</option>
                         {{--                        <option value="ru" {{($data['key'] ?? '') == 'ru' ? 'selected' : ''}}>Rusca</option>--}}
                     </select>
                 </div>
