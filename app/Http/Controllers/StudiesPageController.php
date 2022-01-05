@@ -15,10 +15,12 @@ class StudiesPageController extends Controller
             $posts = Studies::join('studies_translate','studies_translate.item_id','=','studies_items.id')
                 ->select('studies_items.id','studies_items.status','studies_items.created_at','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name')
                 ->where('blog_id','=',$id)
+                ->where('key','=',App::getLocale())
                 ->get();
         }else{
             $posts = Studies::join('studies_translate','studies_translate.item_id','=','studies_items.id')
                 ->select('studies_items.id','studies_items.status','studies_items.created_at','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name')
+                ->where('key','=',App::getLocale())
                 ->get();
         }
 
@@ -43,10 +45,11 @@ class StudiesPageController extends Controller
         $posts = Studies::join('studies_translate','studies_translate.item_id','=','studies_items.id')
             ->select('studies_items.id','studies_items.status','studies_items.created_at','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name')
             ->where('item_id','=',$id)
+            ->where('studies_translate.key','=',App::getLocale())
             ->first();
 
 
-        $studieInfo = DB::table('studie_content')->where('studie_id','=',$id)->first();
+        $studieInfo = DB::table('studie_content')->where('key','=',App::getLocale())->where('studie_id','=',$id)->first();
   //      echo '<pre>';
         return view('layouts.blogItemInner',['data'=>$posts,'studieInfo'=>$studieInfo]);
    //     var_dump($posts);

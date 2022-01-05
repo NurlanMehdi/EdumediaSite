@@ -13,10 +13,10 @@
                 <div class="page_header_top">
                     <ul class="page_breadcrumb">
                         <li class="page_breadcrumb_item">
-                            <a href="{{route('index')}}">Ana səhifə</a>
+                            <a href="{{route('index')}}">{{__('language.anasehife')}}</a>
                         </li>
                         <li class="page_breadcrumb_item">
-                            <a href="{{route('careers')}}">Karyera</a>
+                            <a href="{{route('careers')}}">{{__('language.karyera')}}</a>
                         </li>
                     </ul>
                 </div>

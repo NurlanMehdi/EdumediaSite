@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class ContactController extends Controller
 {
@@ -16,7 +17,7 @@ class ContactController extends Controller
     public function contactDashboardPage()
     {
         $contact = Contact::first();
-        $header = \App\Models\PageHeader::where('page_name','=','contact')->first();
+        $header = \App\Models\PageHeader::where('page_name','=','contact')->where('key','=',App::getLocale())->first();
         return view('layouts/contact',['contact'=>$contact,'header'=>$header]);
     }
 

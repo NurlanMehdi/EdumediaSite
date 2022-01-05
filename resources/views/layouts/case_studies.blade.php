@@ -4,10 +4,10 @@
         <div class="page_header_top">
             <ul class="page_breadcrumb">
                 <li class="page_breadcrumb_item">
-                    <a href="{{route('index')}}">Ana səhifə</a>
+                    <a href="{{route('index')}}">{{__('language.anasehife')}}</a>
                 </li>
                 <li class="page_breadcrumb_item page_breadcrumb_item_clr">
-                    <a href="{{route('service')}}">Layihələr</a>
+                    <a href="{{route('service')}}">{{__('language.layiheler')}}</a>
                 </li>
 
             </ul>

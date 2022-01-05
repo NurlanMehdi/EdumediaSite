@@ -10,7 +10,7 @@ class AboutController extends Controller
 {
     public function indexAbout()
     {
-        $serviceInfo = DB::table('services_first_info')->leftJoin('dashboard_translate','dashboard_translate.id','=','services_first_info.services_id')->where('services_first_info.key','=',App::getLocale())->get();
+        $serviceInfo = DB::table('services_first_info')->leftJoin('dashboard_items','dashboard_items.id','=','services_first_info.services_id')->leftJoin('dashboard_translate','dashboard_translate.item_id','=','dashboard_items.id')->where('dashboard_translate.key','=',App::getLocale())->where('services_first_info.key','=',App::getLocale())->get();
 
         $serviceArray = [];
         $serviceId = [];
@@ -24,7 +24,7 @@ class AboutController extends Controller
             }
         }
 
-        $header = \App\Models\PageHeader::where('page_name','=','about_us')->first();
+        $header = \App\Models\PageHeader::where('page_name','=','about_us')->where('key','=',App::getLocale())->first();
         return view('layouts/about',['header'=>$header,'serviceInfo'=>$serviceArray,'serviceId'=>$serviceId]);
     }
 }

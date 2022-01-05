@@ -16,7 +16,7 @@ class AboutCareersController extends Controller
 
     public static function aboutAndCareersGetData()
     {
-        $data = AboutAndCareers::get();
+        $data = AboutAndCareers::where('key','=',app()->getLocale())->get();
         $arr = [];
         foreach ($data as $val)
         {
