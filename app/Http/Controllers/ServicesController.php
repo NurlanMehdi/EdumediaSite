@@ -17,13 +17,16 @@ class ServicesController extends Controller
                 ->leftJoin('services_first_info','dashboard_translate.item_id','=','services_first_info.services_id')
                 ->select('services_first_info.id as sfi_id','services_first_info.name as sfi_name','services_first_info.short_info as sfi_short_info','dashboard_items.id','dashboard_items.url','dashboard_items.img','dashboard_items.status','dashboard_translate.button_name','dashboard_translate.names','dashboard_translate.blog_button_other','dashboard_translate.key','dashboard_translate.blog_name','dashboard_translate.short_info')
                 ->where('dashboard_translate.key','=',App::getLocale())
+                ->where('services_first_info.key','=',App::getLocale())
                 ->where('dashboard_items.id','=',$id)
                 ->get();
+
         }else{
             $blogs = DB::table('dashboard_items')->leftJoin('dashboard_translate','dashboard_translate.item_id','=','dashboard_items.id')
                 ->leftJoin('services_first_info','dashboard_translate.item_id','=','services_first_info.services_id')
                 ->select('services_first_info.id as sfi_id','services_first_info.name as sfi_name','services_first_info.short_info as sfi_short_info','dashboard_items.id','dashboard_items.url','dashboard_items.img','dashboard_items.status','dashboard_translate.button_name','dashboard_translate.names','dashboard_translate.blog_button_other','dashboard_translate.key','dashboard_translate.blog_name','dashboard_translate.short_info')
                 ->where('dashboard_translate.key','=',App::getLocale())
+                ->where('services_first_info.key','=',App::getLocale())
                 ->get();
         }
         return $blogs;

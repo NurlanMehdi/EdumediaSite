@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="az">
+
+<html lang="{{app()->getLocale()}}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +36,7 @@
             </a>
             <a href="{{route('contact')}}" class="{{Request::is('/') ||  Request::is('service') || Request::is('blog') ||  Request::is('careers') ? 'customer_btn_dark' : 'customer_btn_light' }}">
                 <div class="customerLink {{Request::is('/') ||  Request::is('service') || Request::is('blog') ||  Request::is('careers') ? '' : 'customer_btn_clr' }}">
-                    Müştərimiz ol
+                    {{__('language.mushterimizOl')}}
                     <svg xmlns="http://www.w3.org/2000/svg" width="18.162" height="18.162" viewBox="0 0 18.162 18.162">
                         <g id="noun_Left_1920800" transform="translate(29.617 16.393) rotate(135)">
                             <path id="Path_19" data-name="Path 19" d="M8.492,25.684l.792-.809L4.662,20.253H16.2V19.131H4.662l4.622-4.622L8.492,13.7,2.5,19.692Z" transform="translate(0 0)" fill="{{Request::is('/') ||  Request::is('service') || Request::is('blog') ||  Request::is('careers') ? '#ffffff' : '#151515' }}"/>
@@ -48,10 +49,15 @@
     <div id="onclick_sidebar" class="onclick_sidebar {{Request::is('/') ||  Request::is('service') || Request::is('blog') ||  Request::is('careers') ? 'sidebar_bg_dark' : 'sidebar_bg_light' }}" >
         <div class="onclick_sidebar_body">
             <div class="onclick_sidebar_top">
-{{--                <div class="onclick_sidebar_lang">--}}
-{{--                    <a href="#" class="onclick_sidebar_lang_item">AZ</a>--}}
-{{--                    <a href="#" class="onclick_sidebar_lang_item active">ENG</a>--}}
-{{--                </div>--}}
+                <div class="onclick_sidebar_lang">
+                    <a href="{{route('changeLang','az')}}"  class="onclick_sidebar_lang_item {{(app()->getLocale() === 'az') ? 'active' : ''}}">
+                        AZ
+                    </a>
+
+                    <a href="{{route('changeLang','en')}}"  class="onclick_sidebar_lang_item {{(app()->getLocale() === 'en') ? 'active' : ''}}">
+                        ENG
+                    </a>
+                </div>
               <ul class="onclick_sidebar_header">
                     <li class="onclick_sidebar_header_item">
                         <a href="https://www.facebook.com/edumedia.azerbaijan">Facebook</a>
@@ -66,25 +72,25 @@
             </div>
             <ul class="onclick_sidebar_content">
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('index')}}" class="onclick_sidebar_content_item_link {{Request::is('/') == true ? 'active' : '' }}">Ana səhifə</a>
+                    <a href="{{route('index')}}" class="onclick_sidebar_content_item_link {{Request::is('/') == true ? 'active' : '' }}">{{__('language.anasehife')}}</a>
                 </li>
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('service')}}" class="onclick_sidebar_content_item_link {{Request::is('service') == true ? 'active' : '' }}">Xidmətlər</a>
+                    <a href="{{route('service')}}" class="onclick_sidebar_content_item_link {{Request::is('service') == true ? 'active' : '' }}">{{__('language.xidmetler')}}</a>
                 </li>
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('case_studies')}}" class="onclick_sidebar_content_item_link {{Request::is('case_studies') == true ? 'active' : '' }}">Layihələr</a>
+                    <a href="{{route('case_studies')}}" class="onclick_sidebar_content_item_link {{Request::is('case_studies') == true ? 'active' : '' }}">{{__('language.layiheler')}}</a>
                 </li>
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('about')}}" class="onclick_sidebar_content_item_link {{Request::is('about') == true ? 'active' : '' }}">Haqqımızda</a>
+                    <a href="{{route('about')}}" class="onclick_sidebar_content_item_link {{Request::is('about') == true ? 'active' : '' }}">{{__('language.haqqimizda')}}</a>
                 </li>
                 <li class="onclick_sidebar_content_item">
-                    <a href="{{route('careers')}}" class="onclick_sidebar_content_item_link {{Request::is('careers') == true ? 'active' : '' }}">Karyera</a>
+                    <a href="{{route('careers')}}" class="onclick_sidebar_content_item_link {{Request::is('careers') == true ? 'active' : '' }}">{{__('language.karyera')}}</a>
                 </li>
             </ul>
             <div class="onclick_sidebar_footer">
                 <div class="onclick_section_footer">
                     <a href="{{route('contact')}}" class="btn onclick_mobile_section_footer_btn">
-                        Müştərimiz ol
+                        {{__('language.mushterimizOl')}}
                         <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
                             <g id="noun_Left_1920800" transform="translate(9.967 23.407) rotate(180)">
                                 <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(-8 0)" fill="#151515"></path>
@@ -114,7 +120,7 @@
             <div class="footer_content">
                 <div class="footer_top">
                     <div class="footer_explore">
-                        <h2 class="footer_head">YENİLİKLƏRDƏN XƏBƏRDAR OLUN</h2>
+                        <h2 class="footer_head">{{__('language.explore')}}</h2>
                         <ul class="footer_explore_nav">
                             <li class="footer_explore_nav_item">
                                 <a href="{{\App\Models\Contact::where('facebook_status',0)->first()->facebook ?? ''}}">

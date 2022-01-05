@@ -13,10 +13,10 @@
                 <div class="page_header_top">
                     <ul class="page_breadcrumb">
                         <li class="page_breadcrumb_item main_header_head">
-                            <a href="{{route('index')}}">Ana Səhifə</a>
+                            <a href="{{route('index')}}">{{__('language.anasehife')}}</a>
                         </li>
                         <li class="page_breadcrumb_item main_header_head">
-                            <a href="{{route('service')}}">Xidmətlər</a>
+                            <a href="{{route('service')}}">{{__('language.xidmetler')}}</a>
                         </li>
                         <li class="page_breadcrumb_item">
                             <a href="desing_development.html">    {{$data->blog_name}}</a>
@@ -29,7 +29,7 @@
                     </p>
                     <div class="page_header_desc page_header_desc_clr">
                         <p>
-                            Strategiya və yaradıcılığa rəqəmsal yanaşma
+                            {{__('language.strategiyaVeYaradiciliq')}}
                         </p>
                     </div>
                     <div alt="scrollBtn" id="button" class="arrow section-down-arrow-wrap scroller">
@@ -47,11 +47,11 @@
     <div class="section hardwareDistribution_header bgColor fadeUp pd_mobile" data-color="black">
         <div class="page_header_bottom">
             <p class="page_header_topic page_header_topic_font">
-                Komandamız effektiv rəqəmsal həllər təqdim edərək problemlərin həllini təmin edir.
+                {{__('language.hardwareBashliq')}}
             </p>
             <div class="page_header_desc">
                 <p>
-                    Biz həm texniki cəhətdən uğurlu inkişaf etmiş, həm də dəqiq dizayn səriştələrinə malik rəqəmsal agentliyik. Çünki biz əminik ki, bu, uğurlu həllər yaratmaq və çatdırmağın ən yaxşı yoludur.
+                    {{__('language.hardwareShortInfo')}}
                 </p>
             </div>
         </div>
@@ -61,7 +61,7 @@
             <div class="hardwareDistribution_content_left">
                 <div class="hardwareDistribution_content_left_body">
                     <div class="hardwareDistribution_content_left_desc">
-                        Məhsulların keyfiyyətinə zəmanət veririk. Çünki, biz sizin məmnunluğunuz üçün çalışırıq.
+                    {{__('language.mehsulKeyfiyyeti')}}
                     </div>
                 </div>
             </div>
@@ -76,20 +76,20 @@
                     </div>
                     <div class="hardwareDistribution_content_right_body_desc">
                         <div class="hardwareDistribution_content_right_body_desc_head">
-                            İnteraktiv lövhələr və monitorlar
+                            {{__('language.interaktivlovhe')}}
                         </div>
                         <div class="hardwareDistribution_content_right_body_desc_text">
-                            Promethean interaktiv lövhələri dəsrlərinizi daha canlı və əyləncəli keçməkdə sizə kömək edəcək. ActivBoard interaktiv lövhələri Promethean şirkətinin tədrisyönümlü proqram təminatı ilə işləyir və şagirdlərin diqqətini cəlb etmək və istənilən sinifdə rəqəmsal avadanlığın köməyilə keçdiyiniz dərslərə interaktiv imkanlar əlavə etmək üçün nəzərdə tutulur. Bütün siniflər bir-birindən fərqlənir, buna görə də, bir neçə konfiqurasiyalı ActivBoard interaktiv lövhələri mövcuddur və onları konkret tələblərə uyğunlaşdırmaq mümkündür. Lövhələr üçün olan tətbiqi proqramda aşağıdakı avadanlıqlar təklif edilə bilər:
+                            {{__('language.interaktivlovheText')}}
                             <br>
-                            - Sorğu və test sistemi ActivExpression
+                            - {{__('language.interaktivlovhe1')}}
                             <br>
-                            - Sorğu və test sistemi ActiVote
+                            - {{__('language.interaktivlovhe2')}}
                             <br>
-                            - Simsiz planşet ActivSlate
+                            - {{__('language.interaktivlovhe3')}}
                             <br>
-                            - Sənəd-kamera ActiView 324
+                            - {{__('language.interaktivlovhe4')}}
                             <br>
-                            - (Divar dinamikləri olan) akustik sistem ActivSound 200
+                            - {{__('language.interaktivlovhe5')}}
                         </div>
 
                     </div>
@@ -101,8 +101,7 @@
         <div class="hardwareDistributionCategories_body">
             <div class="hardwareDistributionCategories_body_category">
                 <div class="hardwareDistributionCategories_body_category_head">
-                    Qısa və uzun yansımalı projektorlar
-
+                    {{__('language.projektor')}}
                 </div>
                 <div class="hardwareDistributionCategories_body_category_items">
                     <div class="hardwareDistributionCategories_body_category_item">
@@ -117,9 +116,7 @@
 
                             <div class="hardwareDistributionCategories_body_category_item_content_desc">
 
-                                Proyektor-böyük ekranda təsvirin yaradılması üçün nəzərdə tutulmuş optik cihazdır.
-                                Müasir proyektorlar nisbətən yaxın vaxtlarda peyda olub və onlar satışda böyük dövriyyə qazanır, tətbiqin bir çox sahələrində populyarlaşır.
-                                Proyektorlar yalnız təlim slaydlarını göstərmək üçün deyil, həm də ev istifadəsi üçün istifadə olunur.
+                                {{__('language.projektorInfo')}}
 
                             </div>
                             <a href="#" class="hardwareDistributionCategories_body_category_item_content_link">
@@ -130,8 +127,7 @@
             </div>
             <div class="hardwareDistributionCategories_body_category">
                 <div class="hardwareDistributionCategories_body_category_head">
-                    TƏHSİL ROBOTLARI
-
+                    {{__('language.robot')}}
                 </div>
                 <div class="hardwareDistributionCategories_body_category_items">
 
@@ -146,7 +142,7 @@
                         <div class="hardwareDistributionCategories_body_category_item_content">
 
                             <div class="hardwareDistributionCategories_body_category_item_content_desc">
-                                Son illər təhsildə müasir texnologiyaların tətbiqinin dünya standartları səviyyəsinə çatdırılması və informasiya-kommunikasiya texnologiyalarının tədris prosesində geniş və hərtərəfli istifadəsinin təmin olunması məqsədi ilə Təhsil Nazirliyinin Təhsil Sisteminin İnformasiyalaşdırılması İdarəsi (TSİİ) tərəfindən müxtəlif layihələr və tədbirlər hazırlanıb həyata keçirilir.Belə ki, hazırda TSİİ tərəfindən Təhsil Nazirliyinin sifarişinə əsasən, 5 ümumi təhsil müəssisəsi Lego Education Mindstorms EV3  təhsil robotları ilə təmin olunub və əlavə olaraq, 15 ümumi təhsil müəssisəsinə də avadanlıqların paylanılmasına başlanılıb.
+                                {{__('language.robotInfo')}}
                             </div>
                             <a href="#" class="hardwareDistributionCategories_body_category_item_content_link">
                             </a>
@@ -163,7 +159,7 @@
                         <div class="hardwareDistributionCategories_body_category_item_content">
 
                             <div class="hardwareDistributionCategories_body_category_item_content_desc">
-                                Son illər təhsildə müasir texnologiyaların tətbiqinin dünya standartları səviyyəsinə çatdırılması və informasiya-kommunikasiya texnologiyalarının tədris prosesində geniş və hərtərəfli istifadəsinin təmin olunması məqsədi ilə Təhsil Nazirliyinin Təhsil Sisteminin İnformasiyalaşdırılması İdarəsi (TSİİ) tərəfindən müxtəlif layihələr və tədbirlər hazırlanıb həyata keçirilir.Belə ki, hazırda TSİİ tərəfindən Təhsil Nazirliyinin sifarişinə əsasən, 5 ümumi təhsil müəssisəsi Lego Education Mindstorms EV3  təhsil robotları ilə təmin olunub və əlavə olaraq, 15 ümumi təhsil müəssisəsinə də avadanlıqların paylanılmasına başlanılıb.
+                                {{__('language.robotInfo')}}
                             </div>
                             <a href="#" class="hardwareDistributionCategories_body_category_item_content_link">
 
@@ -174,7 +170,7 @@
             </div>
             <div class="hardwareDistributionCategories_body_category">
                 <div class="hardwareDistributionCategories_body_category_head">
-                    3D qələmlər,3D printerlər
+                    {{__('language.3d')}}
 
 
                 </div>
@@ -191,8 +187,7 @@
                         <div class="hardwareDistributionCategories_body_category_item_content">
 
                             <div class="hardwareDistributionCategories_body_category_item_content_desc">
-                                3D printer kompüter sistemi ilə birgə çalışan 3 ölçülü fiziki obyektlər yarada bilən qurğudur. Ənənəvi printerlər kimi 3D printerlər də ilk növbətə rəqəmsal məlumatı qəbul edir.
-                            </div>
+                                {{__('language.3dInfo')}}                            </div>
                             <a href="#" class="hardwareDistributionCategories_body_category_item_content_link">
                             </a>
                         </div>
@@ -206,7 +201,7 @@
             <div class="desingDevelopment_expertise_content expertise_content_none  pd-top150">
                 <div class="expertise_content_item">
                     <div class="expertise_content_item_body">
-                        <h2 class="expertise_content_item_h2">Digər Xidmətlər</h2>
+                        <h2 class="expertise_content_item_h2">{{__('language.digerXidmetler')}}</h2>
                     </div>
                 </div>
                 @foreach($serviceInfo as $key => $val)
@@ -249,7 +244,7 @@
             <div class="service_left display">
                 <div class="service_left_content">
                     <div class="service_left_content_header service_nav_item_clr">
-                        Xidmətlər
+                        {{__('language.xidmetler')}}
                     </div>
                     <ul class="service_left_content_nav">
                         @foreach($serviceInfo as $key => $val)

@@ -4,10 +4,10 @@
         <div class="page_header_top">
               <ul class="page_breadcrumb">
                 <li class="page_breadcrumb_item">
-                    <a href="{{route('index')}}">Ana səhifə</a>
+                    <a href="{{route('index')}}">{{__('language.anasehife')}}</a>
                 </li>
                 <li class="page_breadcrumb_item">
-                    <a href="{{route('service')}}">Xidmətlər</a>
+                    <a href="{{route('service')}}">{{__('language.xidmetler')}}</a>
                 </li>
             </ul>
         </div>
@@ -16,7 +16,7 @@
                 {{$header['header_text'] ?? ''}}
             </p>
             <div class="page_header_desc">
-                <p>Kompleks həllər üçün innovativ yanaşma​</p>
+                <p>{{__('language.servisBashliqText')}}</p>
             </div>
         </div>
     </div>

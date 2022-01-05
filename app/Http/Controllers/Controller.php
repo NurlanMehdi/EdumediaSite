@@ -46,7 +46,7 @@ class Controller extends BaseController
             ->where('deliver_translate.key', '=', App::getLocale())
             ->get();
         $deliverArr = [];
-        $serviceInfo = DB::table('services_first_info')->leftJoin('dashboard_translate', 'dashboard_translate.id', '=', 'services_first_info.services_id')->where('services_id', '!=', $id)->where('services_first_info.key', '=', App::getLocale())->get();
+        $serviceInfo = DB::table('services_first_info')->leftJoin('dashboard_items','dashboard_items.id','=','services_first_info.services_id')->leftJoin('dashboard_translate','dashboard_translate.item_id','=','dashboard_items.id')->where('dashboard_translate.key','=',App::getLocale())->where('services_first_info.key','=',App::getLocale())->where('services_id', '!=', $id)->get();
 
 
         $serviceArray = [];
@@ -61,26 +61,8 @@ class Controller extends BaseController
                 $serviceArray[$val->blog_name][] = $val->name;
 
             }
-
         }
 
-        foreach ($deliverData as $val) {
-
-//            if (!isset($deliverArr['header_name']) || $deliverArr['header_name'] != $val->header_name){
-//                $deliverArr['header_name'] = $val->header_name;
-//            }
-//            $deliverArr['name'][$val->header_name] = ['info_name'=>$val->info_name,'short_info'=>$val->short_info,'img'=>$val->img];
-
-//            $deliverArr  =
-//                [
-//                    'name' => $val->name,
-//                    'header_name'=>$val->header_name,
-//                    $val->header_name =>['info_name'=>$val->info_name,'short_info'=>$val->short_info,'img'=>$val->img],
-//
-//                ];
-        }
-//        echo '<pre>';
-//        var_dump($deliverArr);exit;
         foreach ($data as $item) {
             if ($item->id == $id) {
                 if ($item->url != 'Hardwaredistribution') {

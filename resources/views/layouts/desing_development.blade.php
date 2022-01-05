@@ -14,10 +14,10 @@
 
                     <ul class="page_breadcrumb">
                         <li class="page_breadcrumb_item main_header_head">
-                            <a href="{{route('index')}}">Ana səhifə </a>
+                            <a href="{{route('index')}}">{{__('language.anasehife')}} </a>
                         </li>
                         <li class="page_breadcrumb_item main_header_head">
-                            <a href="{{route('service')}}">Xidmətlər</a>
+                            <a href="{{route('service')}}">{{__('language.xidmetler')}}</a>
                         </li>
                         <li class="page_breadcrumb_item">
                             <a href="desing_development.html"> {{$data->blog_name}}</a>
@@ -30,7 +30,7 @@
                     </p>
                     <div class="page_header_desc page_header_desc_clr">
                         <p>
-                            Strategiya və yaradıcılığa rəqəmsal yanaşma
+                            {{__('language.strategiyaVeYaradiciliq')}}
                         </p>
                     </div>
                     <div alt="scrollBtn" id="button" class="arrow section-down-arrow-wrap scroller">
@@ -63,52 +63,52 @@
     @if($data->url == 'DizaynvəProgramtəminatı')
     <div class="section design_development bgColor fadeUp pd_mobile" data-color="black">
         <div class="desing_development_header" data-aos="fade-up">
-            <h2 class="desing_development_header_head">Xidmətlər</h2>
+            <h2 class="desing_development_header_head">{{__('language.xidmetler')}}</h2>
         </div>
         <div class="desing_development_content" data-aos="fade-up">
             <div class="desing_development_content_item">
                 <div class="desing_development_content_item_desc margin">
                     <div class="desing_development_content_item_desc_body">
-                        <h3 class="desing_development_content_item_desc_head">Proqram təminatı</h3>
+                        <h3 class="desing_development_content_item_desc_head">{{__('language.development')}}</h3>
                         <ul class="desing_development_content_item_desc_acordion">
                             <li class="desing_development_content_item_desc_acordion_card open">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                    Vebsaytlar
+                                    {{__('language.responsiveWebsite')}}
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text" style="display: block;">
-                                    <p>Komandamız tərəfindən hazırlanmış veb səhifələr çevik, dinamik və istənilən müştəri ehtiyacına uyğunlaşdırıla bilən şəkildədir</p>
+                                    <p> {{__('language.responsiveWebsiteInfo')}}</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                    Mobil tətbiqlər
+                                    {{__('language.mobileApps')}}
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Biz sizin biznes və xidmətləriniz üçün xüsusi tapşırıqları yerinə yetirən və müştəri əlaqənizi gücləndirən mobil tətbiqlər hazırlayırıq.</p>
+                                    <p>{{__('language.mobileAppsInfo')}}</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                    Kompleks platformalar
+                                    {{__('language.complexPlatforms')}}
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Komandamızın mürəkkəb strukturlu işlər görmək və çoxfunksiyalı sistemlər qurmaq təcrübəsi var</p>
+                                    <p>{{__('language.complexPlatformsInfo')}}</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                    Bİ sistemləri
+                                    {{__('language.BIsystems')}}
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Biz sizə tətbiq ediyimiz mürəkkəb BI sistemləri tərəfindən təmin edilən dəqiq məlumatlar əsasında təhlil etmək və düzgün qərarlar qəbul etməkdə kömək edirik</p>
+                                    <p>{{__('language.BIsystemsInfo')}}</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                    ERP/CRM sistemləri
+                                    {{__('language.Erp/Crm')}}
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Biz sizin həyatınızı asanlaşdırmağa kömək edən mürəkkəb sistemlər üçün strukturu inkişaf etdiririk</p>
+                                    <p>{{__('language.Erp/CrmInfo')}}</p>
                                 </div>
                             </li>
                             <!-- <li class="desing_development_content_item_desc_acordion_card">
@@ -133,46 +133,46 @@
             <div class="desing_development_content_item flex_direction">
                 <div class="desing_development_content_item_desc margin">
                     <div class="desing_development_content_item_desc_body">
-                        <h3 class="desing_development_content_item_desc_head">Dizayn</h3>
+                        <h3 class="desing_development_content_item_desc_head">{{__('language.design')}}</h3>
                         <ul class="desing_development_content_item_desc_acordion">
                             <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                    UX / UI
+                                    {{__('language.Ux/Ui')}}
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Veb dizaynlarımız istifadəçinin veb sayt xüsusiyyətləri və idarəetmə vasitələri ilə qarşılıqlı əlaqəsinə, həmçinin vebsaytdan istifadə edərkən istifadəçi davranışına və hisslərinə əsaslanır.</p>
+                                    <p>{{__('language.Ux/UiInfo')}}</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                    Loqo dizaynı
+                                    {{__('language.LogoDesign')}}
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Biz sizin şirkətinizi digərlərindən fərqləndirəcək korporativ simanın ən vacib elementlərindən birini yaradırıq</p>
+                                    <p>{{__('language.LogoDesignInfo')}}</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                    Brendinq
+                                    <p>{{__('language.branding')}}</p>
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Biz korporativ simanın bütün zəruri elementlərini yaradaraq brendinizi formalaşdırmağa kömək edirik</p>
+                                    <p> <p>{{__('language.brandingInfo')}}</p></p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                    Çap məhsulları dizaynı
+                                    <p>{{__('language.printDesign')}}</p>
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Flyerlər və jurnallar, xarici reklam və tədbir materialları daxil biz hər bir dizaynı təhlil araşdırma edir, bu sahədə ən yaxşı mütəxəssisləri özündə birləşdirərək ayrıca layihə olaraq nəzərdən keçiririk.</p>
+                                    <p>{{__('language.printDesignInfo')}}</p>
                                 </div>
                             </li>
                             <li class="desing_development_content_item_desc_acordion_card">
                                 <button class="desing_development_content_item_desc_acordion_card_title">
-                                    Sosial media
+                                    {{__('language.socialMedia')}}
                                 </button>
                                 <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Komandamız markanızın sosial media hesablarının və kommunikasiya strategiyalarının daim və dinamik şəkildə dəyişikliklərə uyğunlaşdırmağa və idarə etməyə kömək edir.</p>
+                                    <p>{{__('language.socialMediaInfo')}}</p>
                                 </div>
                             </li>
                         </ul>
@@ -187,8 +187,8 @@
                 </div>
             </div>
         </div>
-    
-      
+
+
         <div class="desing_development_desc" data-aos="fade-up" style="display:none;">
             <div class="desing_development_desc_body">
                 <h3 class="desing_development_desc_body_h3">
@@ -219,13 +219,13 @@
             <div class="desingDevelopment_expertise_content expertise_content_none  pd-top150">
                 <div class="expertise_content_item">
                     <div class="expertise_content_item_body">
-                        <h2 class="expertise_content_item_h2">Digər Xidmətlər</h2>
+                        <h2 class="expertise_content_item_h2">{{__('language.digerXidmetler')}}</h2>
 
                     </div>
                 </div>
                 @foreach($serviceInfo as $key => $val)
 
-                    <a href="{{route('servicePages', $serviceId[$key])}}" class="expertise_content_item">
+                    <a href="{{route('servicePages', $serviceId[$key][0])}}" class="expertise_content_item">
 
                         <div class="expertise_content_item_body">
 
@@ -262,7 +262,7 @@
             <div class="service_left display">
                 <div class="service_left_content">
                     <div class="service_left_content_header service_nav_item_clr">
-                        Xidmətlər
+                        {{__('language.xidmetler')}}
                     </div>
                     <ul class="service_left_content_nav">
                         @foreach($serviceInfo as $key => $val)
