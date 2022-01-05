@@ -7,7 +7,9 @@
                     <a href="{{route('index')}}">{{__('language.anasehife')}}</a>
                 </li>
                 <li class="page_breadcrumb_item">
+
                     <a href="{{route('service')}}">{{__('language.xidmetler')}}</a>
+
                 </li>
             </ul>
         </div>

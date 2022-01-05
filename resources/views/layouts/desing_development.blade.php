@@ -20,7 +20,7 @@
                             <a href="{{route('service')}}">{{__('language.xidmetler')}}</a>
                         </li>
                         <li class="page_breadcrumb_item">
-                            <a href="desing_development.html"> {{$data->blog_name}}</a>
+                            <a> {{$data->blog_name}}</a>
                         </li>
                     </ul>
                 </div>

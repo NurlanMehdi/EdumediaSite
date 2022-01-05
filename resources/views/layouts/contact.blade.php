@@ -7,7 +7,9 @@
                     <a href="{{route('index')}}">{{__('language.anasehife')}}</a>
                 </li>
                 <li class="page_breadcrumb_item page_breadcrumb_item_clr">
+
                     <a href="{{route('contact')}}">{{__('language.elaqe')}}</a>
+
                 </li>
             </ul>
         </div>
@@ -59,7 +61,7 @@
             <div class="contact">
                 <p class="title">{{__('language.elaqe')}}</p>
                 <span>{{($contact->phone_number_status == 0) ? $contact->phone_number : ''}}</span>
-                <a href="#">{{($contact->mail_status == 0) ? $contact->mail : ''}}</a>
+                <a href="mailto::info@edumedia.az">{{($contact->mail_status == 0) ? $contact->mail : ''}}</a>
             </div>
             <div class="find_us">
                 <p class="title">{{__('language.unvan')}}</p>

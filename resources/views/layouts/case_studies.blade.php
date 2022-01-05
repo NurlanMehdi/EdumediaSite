@@ -7,9 +7,10 @@
                     <a href="{{route('index')}}">{{__('language.anasehife')}}</a>
                 </li>
                 <li class="page_breadcrumb_item page_breadcrumb_item_clr">
-                    <a href="{{route('service')}}">{{__('language.layiheler')}}</a>
-                </li>
 
+                    <a href="{{route('service')}}">{{__('language.layiheler')}}</a>
+
+                </li>
             </ul>
         </div>
         <div class="page_header_bottom">

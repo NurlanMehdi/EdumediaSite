@@ -16,7 +16,9 @@
                             <a href="{{route('index')}}">{{__('language.anasehife')}}</a>
                         </li>
                         <li class="page_breadcrumb_item">
+
                             <a href="{{route('careers')}}">{{__('language.karyera')}}</a>
+
                         </li>
                     </ul>
                 </div>

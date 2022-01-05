@@ -762,6 +762,9 @@
     .service_nav_item_clr{
         color: var(--color-ffffff);
     }
+    .project_content{
+        height: 400px;
+    }
     .project_content_desc h2{
         font-size: 36px;
         line-height: 44px;
