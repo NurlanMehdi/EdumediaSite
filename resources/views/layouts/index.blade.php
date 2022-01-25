@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
     <div class="section header bgColor pd_mobile" data-color="black">
-        <img class="section_header_absolute_img" src="{{asset('img/Main 2_6.gif')}}" alt="giff">
+        <img class="section_header_absolute_img" src="{{asset('img/Main 2_6 (2).gif')}}" alt="giff">
         <div class="header_container">
             <div class="header_body">
                 <div class="header_icon">
