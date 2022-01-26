@@ -13,6 +13,7 @@ return [
     'elaqeYaradin' => 'Get in touch',
     'aboutText1' => 'We are constantly curious and driven by the desire to always make things even better.',
     'mushterilerimiz1' => 'Clients',
+    'partners1' => 'Partners',
     'mushterilerimizBashliq1' => 'Our experience allows us to bring our disruptive approach to any sector',
     'ugurluLayihelerimiz' => 'Successful solutions',
     'tecrubemiz' => 'Years of experience',

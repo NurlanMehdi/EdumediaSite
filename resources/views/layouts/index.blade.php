@@ -265,7 +265,7 @@
     <div class="section customers fadeUp bgColor pd_mobile" data-color="white">
         <div class="section_header">
             <div class="section_header_container">
-                <h4 class="black_title">Partners</h4>
+                <h4 class="black_title">{{__('language.partners1')}}</h4>
                 <!-- <p class="section_header_desc">
                     {{__('language.mushterilerimizBashliq1')}}
                 </p> -->
