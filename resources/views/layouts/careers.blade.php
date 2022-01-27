@@ -28,7 +28,7 @@
                     </p>
                     <div class="page_header_desc page_header_desc_clr">
                         <p>
-                        Edumedia-da ilə birlikdə yarat!
+                            {{__('language.birlikdeYarat')}}
                         </p>
                     </div>
                     <div alt="scrollBtn" id="button" class="arrow section-down-arrow-wrap scroller">
@@ -46,7 +46,7 @@
     <div class="section careers_main bgColor fadeUp pd_mobile" data-color="black">
         <div class="careers_main_desc">
             <p>
-                Edumedia peşəkar komandasının üzvü istəyirsiniz? O zaman bir klik ilə hədəfinizə daha yaxın ola bilərsiz.
+                {{__('language.edumediaPeshekarKomandasininUzvu')}}
             </p>
         </div>
         <ul class="careers_main_nav">
@@ -84,8 +84,8 @@
     </div>
     <div class="section cv_job bgColor fadeUp pd_mobile_0" data-color="black">
         <div class="cv_job_content">
-            <h3 class="cv_job_content_title">Bizə qoşulun.</h3>
-            <a href="mailto::info@edumedia.az" class="cv_job_content_desc">Cv əlavə edin</a>
+            <h3 class="cv_job_content_title">{{__('language.joinUs')}}</h3>
+            <a href="mailto::info@edumedia.az" class="cv_job_content_desc">{{__('language.addCv')}}</a>
         </div>
     </div>
     <div class="section careers_photos bgColor fadeUp" data-color="black">

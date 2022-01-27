@@ -53,11 +53,11 @@ class Controller extends BaseController
         $serviceId = [];
         foreach ($serviceInfo as $val) {
             if (!isset($serviceArray[$val->blog_name])) {
-                $serviceId[$val->blog_name][] = $val->id;
+                $serviceId[$val->blog_name][] = $val->services_id;
                 $serviceArray[$val->blog_name][] = $val->name;
 
             } elseif (isset($serviceArray[$val->blog_name]) && $serviceArray[$val->blog_name] != $val->name) {
-                $serviceId[$val->blog_name][] = $val->id;
+                $serviceId[$val->blog_name][] = $val->services_id;
                 $serviceArray[$val->blog_name][] = $val->name;
 
             }

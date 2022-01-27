@@ -66,7 +66,12 @@
             <div class="find_us">
                 <p class="title">{{__('language.unvan')}}</p>
                 <span>
-                    {{($contact->address_status == 0) ? $contact->address : ''}}
+                    @if(app()->getLocale() == 'az')
+                        {{($contact->address_status == 0) ? $contact->address : ''}}
+                    @else
+                        {{__('language.edumediaUnvan')}}
+                    @endif
+                   
                     </span>
                 <div class="mapouter" style="margin: 30px 0px;"><div class="gmap_canvas"><iframe width="100%" height="500px" id="gmap_canvas" src="https://maps.google.com/maps?q=Edumedia&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://getasearch.com/fmovies"></a><br><style>.mapouter{position:relative;text-align:right;height:280px;width:280px;filter: grayscale(1);}</style><a href="https://www.embedgooglemap.net">google map html embed</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:280px;width:280px;}</style></div></div>
             </div>

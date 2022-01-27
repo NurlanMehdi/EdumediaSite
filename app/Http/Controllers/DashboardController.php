@@ -39,7 +39,7 @@ class DashboardController extends Controller
     public function studiesPage()
     {
         $studies = Studies::join('studies_translate','studies_translate.item_id','=','studies_items.id')
-            ->select('studies_items.id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name')->get();
+            ->select('studies_translate.id','studies_items.id as studie_id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name')->get();
 
         $header = PageHeader::where('page_name','=','home')->where('key','=',App::getLocale())->first();
         return view('admin/cocoStudiesPage',['header'=>$header,'studies'=>$studies]);
@@ -48,7 +48,7 @@ class DashboardController extends Controller
 
     public function indexStudieContent($id)
     {
-        $studieContent = DB::table('studie_content')->where('studie_id','=',$id)->first();
+        $studieContent = DB::table('studie_content')->where('id','=',$id)->first();
         return view('admin/indexStudieContent',['id'=>$id,'studieContent'=>$studieContent]);
     }
 
@@ -159,10 +159,11 @@ class DashboardController extends Controller
         $data = [];
         if ($id > 0){
             $data = Studies::join('studies_translate','studies_translate.item_id','=','studies_items.id')
-                ->select('studies_items.id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name','studies_translate.other_info')->where('studies_items.id','=',$id)->first();
+                ->select('studies_translate.id','studies_items.id as studie_id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name','studies_translate.other_info')->where('studies_items.id','=',$id)->first();
         }else{
             $data = [];
         }
+
         $blogs = DashboardTranslater::get();
         return view('admin/studiesPage',['data'=>$data,'blogs'=>$blogs]);
     }
