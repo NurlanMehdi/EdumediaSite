@@ -162,7 +162,12 @@
                     </a>
                     <div class="footer_center_adress">
                         <p>
-                            {{\App\Models\Contact::where('address_status',0)->first()->address ?? ''}}
+                            @if(app()->getLocale() == 'az')
+                                {{\App\Models\Contact::where('address_status',0)->first()->address ?? ''}}
+                            @else
+                                {{__('language.edumediaUnvan')}}
+                            @endif
+
                         </p>
                     </div>
                     <div class="footer_center_contact">

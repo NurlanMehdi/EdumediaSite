@@ -32,7 +32,7 @@
                             <td>{{($studie->status ?? 0) == 1 ? 'Bağlı' : 'Açıq'}} </td>
 
                             <td>
-                                <a href="{{route('edit.studie.page',$studie->id)}}" class="customBtn applyBtn applyBtn-white">
+                                <a href="{{route('edit.studie.page',$studie->studie_id)}}" class="customBtn applyBtn applyBtn-white">
                                     <i class="xin-icon xin-pencil"></i>
                                 </a>
                             </td>                            <td>
@@ -41,7 +41,7 @@
                                 </a>
                             </td>
                             <td>
-                                <a href="{{route('remove.studie.page',$studie->id)}}" class="customBtn applyBtn applyBtn-trash_lang applyBtn-trash" aria-label="silmek buttonu">
+                                <a href="{{route('remove.studie.page',$studie->studie_id)}}" class="customBtn applyBtn applyBtn-trash_lang applyBtn-trash" aria-label="silmek buttonu">
                                     <i class="xin-icon xin-trash"></i>
                                 </a>
                             </td>

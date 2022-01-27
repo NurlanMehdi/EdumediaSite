@@ -21,6 +21,7 @@ Route::get('/service', function () {
         ->where('key','=',App::getLocale())
         ->get();
 
+
     $posts = Post::join('post_translate','post_translate.item_id','=','post_items.id')
         ->select('post_items.id','post_items.status','post_items.img','post_translate.button_name','post_translate.name','post_translate.key','post_translate.header_name')->get();
     $postHeaderName = PostTranslate::first();
