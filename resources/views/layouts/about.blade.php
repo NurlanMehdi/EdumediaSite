@@ -3,7 +3,7 @@
     <div class="section main_header bgColor pd_mobile_0">
         <div class="header_content">
             <div class="header_content_img">
-                <img src="{{asset('img/about_content.png')}}" alt="">
+                <img src="{{asset('img/about_content.jpg')}}" alt="">
             </div>
             <div class="header_content_text">
                 <!-- <div class="header_content_text_body">

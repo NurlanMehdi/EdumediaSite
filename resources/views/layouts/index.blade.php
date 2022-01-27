@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
     <div class="section header bgColor pd_mobile" data-color="black">
-        <img class="section_header_absolute_img" src="{{asset('img/Main 2_6.gif')}}" alt="giff">
+        <img class="section_header_absolute_img" src="{{asset('img/Main 2_6 (2).gif')}}" alt="giff">
         <div class="header_container">
             <div class="header_body">
                 <div class="header_icon">
@@ -230,8 +230,8 @@
                 <a href="https://birlink.az/az" class="customer_content_item_body">
                     <img src="{{asset('img/birlink-logo.svg')}}" alt="birlink">
                 </a>
-                <a href="https://www.khanacademy.org/" class="customer_content_item_body">
-                    <img src="{{asset('img/Logo-vL.png')}}" alt="vl">
+                <a href="https://az.polychallenge.org/" class="customer_content_item_body">
+                    <img src="{{asset('img/Polyup 2.2.svg')}}" alt="vl">
                 </a>
             </div>
             <div class="customer_content_item">
@@ -262,6 +262,82 @@
     </div>
     {{--    @include('layouts.miniPostDashboard')--}}
     @include('layouts.tplAboutAndCareers')
+    <div class="section customers fadeUp bgColor pd_mobile" data-color="white">
+        <div class="section_header">
+            <div class="section_header_container">
+                <h4 class="black_title">{{__('language.partners1')}}</h4>
+                <!-- <p class="section_header_desc">
+                    {{__('language.mushterilerimizBashliq1')}}
+                </p> -->
+            </div>
+            <a href="{{route('about')}}" class="btn btn_bgcolor sectionHeadBtn" style="display:none;">
+                {{__('language.haqqimizda')}}
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
+                    <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
+                        <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="customer_content">
+            <div class="customer_content_item">
+                <a href="https://www.acer.com" class="customer_content_item_body">
+                    <img src="{{asset('img/partner/acer.svg')}}" alt="">
+                </a>
+                <a href="https://www.arduino.cc/" class="customer_content_item_body">
+                    <img src="{{asset('img/partner/arduino.svg')}}" alt="texnologiya">
+                </a>
+                <a href="https://www.benmaker.com/" class="customer_content_item_body">
+                    <img src="{{asset('img/partner/benmaker.svg')}}" alt="texnologiya">
+                </a>
+                <a href="https://www.cisco.com/" class="customer_content_item_body">
+                    <img src="{{asset('img/partner/cisco.svg')}}" alt="tika-logo">
+                </a>
+            </div>
+            <div class="customer_content_item">
+                <a href="https://www.dobot.cc/" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/partner/dobot.svg')}}" alt="transport ministry ">
+                </a>
+                <a href="https://epson.com/usa" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/partner/epson.svg')}}" alt="reqemsal bacariqlar">
+                </a>
+                <a href="https://www.flashforge.com/" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/partner/flashforge-01.svg')}}" alt="mars academy">
+                </a>
+                <a href="https://globisens.net/" class="customer_content_item_body">
+                    <img src="{{asset('img/partner/globisens.svg')}}" alt="az smart">
+                </a>
+            </div>
+            <div class="customer_content_item">
+                <a href="https://isandbox.ru/" class="customer_content_item_body">
+                    <img src="{{asset('img/partner/isanbox.svg')}}" alt="scanex">
+                </a>
+                <a href="https://www.lego.com/en-gb/" class="customer_content_item_body">
+                    <img src="{{asset('img/partner/lego.svg')}}" alt="video edu az">
+                </a>
+                <a href="https://microbit.org/" class="customer_content_item_body">
+                    <img src="{{asset('img/partner/microbit.svg')}}" alt="birlink">
+                </a>
+                <a href="https://www.optoma.com/" class="customer_content_item_body">
+                    <img src="{{asset('img/partner/optoma.svg')}}" alt="vl">
+                </a>
+            </div>
+            <div class="customer_content_item">
+                <a href="https://www.prometheanworld.com/" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/partner/promethean.svg')}}" alt="enginet logo">
+                </a>
+                <a href="https://grants.edu.az/" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/partner/Logo-vL.png')}}" alt="grant edu az">
+                </a>
+                <a href="https://ultimaker.com/" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/partner/ultimaker.svg')}}" alt="tsii logo">
+                </a>
+                <a href="https://www.video-doska.ru/" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/partner/videodoska.svg')}}" alt="tsii logo">
+                </a>
+            </div>
+        </div>
+    </div>
     @include('layouts.projectInMind')
 
 @endsection

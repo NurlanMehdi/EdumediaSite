@@ -14,6 +14,7 @@ return [
     'elaqeYaradin' => 'Əlaqə yaradın',
     'aboutText1' => 'Biz daim özümüzü inkişaf etdirir və hər şeyi daha yaxşı şəkildə etmək arzusu ilə çalışırıq.',
     'mushterilerimiz1' => 'Müştərilərimiz',
+    'partners1' => 'Partnerlərimiz',
     'mushterilerimizBashliq1' => 'Müştərilərə gözləntilərinin üzərində iş vermək bizim əsas devizimizdir!',
     'ugurluLayihelerimiz' => 'Uğurlu layihələrimiz',
     'tecrubemiz' => 'Təcrübəmiz',
