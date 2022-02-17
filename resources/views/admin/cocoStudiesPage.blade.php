@@ -54,29 +54,4 @@
         </div>
     </div>
 @stop
-@section('js')
-    <script>
 
-        $(document).ready(function (){
-            $('#pagesHeaders').on('change',function (){
-                $('[name="header_text"]').val('');
-                let url = "{{route('selected.header.text',':key')}}";
-                url = url.replace(':key', $(this).val());
-
-                $.ajax({
-                    url: url,
-                    type: 'GET',
-                    dataType: 'JSON',
-                    success: function (response) {
-                        $('.headerId').val(response.data.id)
-                    }
-                })
-            });
-            $('.save-header-text').on('click',function (e){
-                e.preventDefault();
-                e.stopPropagation();
-                $('#headerText').get(0).submit();
-            });
-        })
-    </script>
-@endsection

@@ -3,7 +3,7 @@
     <div class="container-lg">
         <div class="page_head">
             <div class="page_head--header page_head--header_after">
-                Blog
+                İşlərimiz
             </div>
             <hr/>
 
@@ -43,6 +43,10 @@
                 <div class="form-group required">
                     <label class="customLabel" for="slug">Ətraflı keçid söz</label>
                     <input class="formControl" value="{{$data['other_info'] ?? ''}}" name="other_info" id="slug" type="text" placeholder="Ətraflı keçid söz" required="">
+                </div>
+                <div class="form-group required">
+                    <label class="customLabel" for="slug">Sıra</label>
+                    <input class="formControl" value="{{$data['row'] ?? ''}}" name="row" id="row" type="number" placeholder="Sıra" required="">
                 </div>
 
                 <div class="form-group required">

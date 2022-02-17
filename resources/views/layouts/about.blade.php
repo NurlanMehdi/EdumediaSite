@@ -28,7 +28,7 @@
                     </p>
                     <div class="page_header_desc page_header_desc_clr">
                         <p>
-                            {{__('language.aboutbashliq')}}
+                            {!! __('language.aboutbashliq') !!}
                         </p>
                     </div>
                     <div alt="scrollBtn" id="button" class="arrow section-down-arrow-wrap scroller">
@@ -73,7 +73,7 @@
     {{--    <div class="section team bgColor fadeUp pd_mobile" data-color="black">--}}
     {{--        <div class="team_body">--}}
     {{--            <div class="team_header">--}}
-    {{--                <h2 class="team_header_title">Komandamız</h2>--}}
+    {{--                <h2 class="team_header_title">Komandam覺z</h2>--}}
     {{--            </div>--}}
     {{--            <div class="team_slideshow">--}}
     {{--                <div class="team_slideshow_item">--}}
@@ -215,14 +215,14 @@
                     {{__('language.mushterilerimizBashliq')}}
                 </p>
             </div>
-{{--            <a href="{{route('about')}}" class="btn btn_bgcolor sectionHeadBtn">--}}
-{{--                {{__('language.haqqimizda')}}--}}
-{{--                <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">--}}
-{{--                    <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">--}}
-{{--                        <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"/>--}}
-{{--                    </g>--}}
-{{--                </svg>--}}
-{{--            </a>--}}
+            {{--            <a href="{{route('about')}}" class="btn btn_bgcolor sectionHeadBtn">--}}
+            {{--                {{__('language.haqqimizda')}}--}}
+            {{--                <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">--}}
+            {{--                    <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">--}}
+            {{--                        <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(0 0)" fill="#00aeef"/>--}}
+            {{--                    </g>--}}
+            {{--                </svg>--}}
+            {{--            </a>--}}
         </div>
         <div class="customer_content">
             <div class="customer_content_item">

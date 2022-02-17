@@ -71,7 +71,7 @@
         <div class="designer_overview_content">
             <h1 class="designer_overview_content_head">
                 @if($key == 'designer')
-                {{__('language.whoGraphicDesigner')}}
+                    {{__('language.whoGraphicDesigner')}}
                 @elseif($key == 'fDeveloper')
                     {{__('language.whoFrontDeveloper')}}
                 @else
@@ -190,8 +190,8 @@
 <script src="./js/main.js"></script>
 </body>
 </html>
-    @include('layouts.tplAboutAndCareers')
-    @include('layouts.projectInMind')
+@include('layouts.tplAboutAndCareers')
+@include('layouts.projectInMind')
 @endsection
 
 

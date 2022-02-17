@@ -24,7 +24,7 @@
                 </div>
                 <div class="page_header_bottom main_header_head">
                     <p class="page_header_topic page_header_topic_clr">
-                       {{$header->header_text ?? ''}}
+                        {{$header->header_text ?? ''}}
                     </p>
                     <div class="page_header_desc page_header_desc_clr">
                         <p>

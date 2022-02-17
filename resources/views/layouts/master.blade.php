@@ -16,7 +16,7 @@
     <meta property="og:image" content="./img/sidebar-icon.png">
     <meta property="og:url" content="edumedia.az">
 
-     <link rel="stylesheet" href="{{asset('css/main.css?version=123')}}">
+    <link rel="stylesheet" href="{{asset('css/main.css?version=123')}}">
     <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
     <link rel="shortcut icon" href="{{asset('img/favicon (2).ico')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('slick/slick.css')}}"/>
@@ -58,7 +58,7 @@
                         ENG
                     </a>
                 </div>
-              <ul class="onclick_sidebar_header">
+                <ul class="onclick_sidebar_header">
                     <li class="onclick_sidebar_header_item">
                         <a href="https://www.facebook.com/edumedia.azerbaijan">Facebook</a>
                     </li>
@@ -175,19 +175,19 @@
                         <a class="footer_center_contact_mail" href="mailto::info@edumedia.az">{{\App\Models\Contact::where('mail_status',0)->first()->mail ?? ''}}</a>
                     </div>
                 </div>
-{{--                <div class="footer_bottom">--}}
-{{--                    <ul class="footer_bottom_nav">--}}
-{{--                        <li class="footer_bottom_nav_item">--}}
-{{--                            <a href="{{route('privacyPolicy')}}">Privacy Policy</a>--}}
-{{--                        </li>--}}
-{{--                        <li class="footer_bottom_nav_item">--}}
-{{--                            <a href="{{route('siteMap')}}">Sitemap</a>--}}
-{{--                        </li>--}}
-{{--                    </ul>--}}
-{{--                    <div class="footer_bottom_right">--}}
-{{--                        <p class="footer_tag">@Edumedia 2021</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
+                {{--                <div class="footer_bottom">--}}
+                {{--                    <ul class="footer_bottom_nav">--}}
+                {{--                        <li class="footer_bottom_nav_item">--}}
+                {{--                            <a href="{{route('privacyPolicy')}}">Privacy Policy</a>--}}
+                {{--                        </li>--}}
+                {{--                        <li class="footer_bottom_nav_item">--}}
+                {{--                            <a href="{{route('siteMap')}}">Sitemap</a>--}}
+                {{--                        </li>--}}
+                {{--                    </ul>--}}
+                {{--                    <div class="footer_bottom_right">--}}
+                {{--                        <p class="footer_tag">@Edumedia 2021</p>--}}
+                {{--                    </div>--}}
+                {{--                </div>--}}
             </div>
         </div>
     </div>
