@@ -24,7 +24,6 @@ class StudiesPageController extends Controller
                 ->where('key','=',App::getLocale())
                 ->orderBy('row','ASC')
                 ->get();
-            dd($posts);
         }
 
 
