@@ -159,7 +159,7 @@ class DashboardController extends Controller
         $data = [];
         if ($id > 0){
             $data = Studies::join('studies_translate','studies_translate.item_id','=','studies_items.id')
-                ->select('studies_translate.id','studies_items.row','studies_items.id as studie_id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name','studies_translate.other_info')->where('studies_items.id','=',$id)->first();
+                ->select('studies_translate.id','studies_items.row','studies_items.id as studie_id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name','studies_translate.other_info')->where('studies_translate.id','=',$id)->first();
         }else{
             $data = [];
         }
