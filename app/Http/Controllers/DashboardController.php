@@ -48,7 +48,7 @@ class DashboardController extends Controller
 
     public function indexStudieContent($id)
     {
-        $studieContent = DB::table('studie_content')->where('id','=',$id)->first();
+        $studieContent = DB::table('studie_content')->where('studie_id','=',$id)->first();
         return view('admin/indexStudieContent',['id'=>$id,'studieContent'=>$studieContent]);
     }
 
