@@ -10,7 +10,7 @@
             <div class="BI_system_header_text">
                 <div class="BI_system_header_text_body">
 
-                                     <h3 class="BI_system_header_text_title">{{$data->header_name ?? ''}}</h3>
+                    <h3 class="BI_system_header_text_title">{{$data->header_name ?? ''}}</h3>
                 </div>
                 <div class="overlay"></div>
             </div>
@@ -60,7 +60,7 @@
             </div>
         </div>
     </div>
-  @include('layouts.tplAboutAndCareers')
+    @include('layouts.tplAboutAndCareers')
     @include('layouts.projectInMind')
 @endsection
 

@@ -178,9 +178,9 @@
         <div class="section_header">
             <div class="section_header_container">
                 <h4 class="black_title">{{__('language.mushterilerimiz1')}}</h4>
-                <p class="section_header_desc">
-                    {{__('language.mushterilerimizBashliq1')}}
-                </p>
+                <!--<p class="section_header_desc">-->
+            <!--    {{__('language.mushterilerimizBashliq1')}}-->
+                <!--</p>-->
             </div>
             <a href="{{route('about')}}" class="btn btn_bgcolor sectionHeadBtn" style="display:none;">
                 {{__('language.haqqimizda')}}
@@ -266,7 +266,7 @@
         <div class="section_header">
             <div class="section_header_container">
                 <h4 class="black_title">{{__('language.partners1')}}</h4>
-                <!-- <p class="section_header_desc">
+            <!-- <p class="section_header_desc">
                     {{__('language.mushterilerimizBashliq1')}}
                 </p> -->
             </div>

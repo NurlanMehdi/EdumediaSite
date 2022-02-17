@@ -18,6 +18,7 @@ class CreateStudiesItems extends Migration
             $table->integer('status')->default(0);
             $table->string('img');
             $table->integer('blog_id');
+            $table->integer('row');
             $table->timestamps();
         });
     }

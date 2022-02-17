@@ -87,7 +87,7 @@ Route::group(['middleware' => 'auth:web'],function (){
     Route::post('/coco/blog-create/', [\App\Http\Controllers\DashboardController::class,'createBlog'])->name('create.blog');
     Route::post('/coco/blog-edit/', [\App\Http\Controllers\DashboardController::class,'editBlog'])->name('edit.blog');
     Route::post('/coco/header-text/', [\App\Http\Controllers\DashboardController::class,'saveHeaderText'])->name('header.text');
-    Route::get('/coco/header-text-show/{key}', [\App\Http\Controllers\DashboardController::class,'headerText'])->name('selected.header.text');
+    Route::get('/coco/header-text-show/{key}/{lang}', [\App\Http\Controllers\DashboardController::class,'headerText'])->name('selected.header.text');
     Route::get('/coco/studies-page', [\App\Http\Controllers\DashboardController::class,'studiesPage'])->name('new.studies.page');
     Route::post('/coco/studies-create/', [\App\Http\Controllers\DashboardController::class,'createStudies'])->name('create.studies');
     Route::post('/coco/studies-edit/', [\App\Http\Controllers\DashboardController::class,'editStudies'])->name('edit.studies');

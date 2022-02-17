@@ -145,4 +145,5 @@ These developers are responsible for creating, maintaining, testing, and debuggi
     'bdResponsibilities5' => 'Experience working with databases',
     'bdResponsibilities6' => 'Team work experience',
     'bdResponsibilities7' => 'Analytical thinking',
+      'all' => 'All',
     ];

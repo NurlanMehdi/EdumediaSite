@@ -2,7 +2,7 @@
 @section('content')
     <div class="section page_header bgColor pd_mobile" data-color="black">
         <div class="page_header_top">
-              <ul class="page_breadcrumb">
+            <ul class="page_breadcrumb">
                 <li class="page_breadcrumb_item">
                     <a href="{{route('index')}}">{{__('language.anasehife')}}</a>
                 </li>
@@ -69,7 +69,7 @@
             </div>
         </div>
     </div>
-{{--    @include('layouts.miniPostDashboard')--}}
+    {{--    @include('layouts.miniPostDashboard')--}}
     @include('layouts.tplAboutAndCareers')
     @include('layouts.projectInMind')
 @endsection

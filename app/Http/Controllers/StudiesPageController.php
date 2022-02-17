@@ -16,12 +16,15 @@ class StudiesPageController extends Controller
                 ->select('studies_items.id','studies_items.status','studies_items.created_at','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name')
                 ->where('blog_id','=',$id)
                 ->where('key','=',App::getLocale())
+                ->orderBy('row','ASC')
                 ->get();
         }else{
             $posts = Studies::join('studies_translate','studies_translate.item_id','=','studies_items.id')
                 ->select('studies_items.id','studies_items.status','studies_items.created_at','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name')
                 ->where('key','=',App::getLocale())
+                ->orderBy('row','ASC')
                 ->get();
+            dd($posts);
         }
 
 

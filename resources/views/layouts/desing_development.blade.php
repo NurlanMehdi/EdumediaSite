@@ -61,158 +61,158 @@
         </div>
     </div>
     @if($data->url == 'DizaynvəProgramtəminatı')
-    <div class="section design_development bgColor fadeUp pd_mobile" data-color="black">
-        <div class="desing_development_header" data-aos="fade-up">
-            <h2 class="desing_development_header_head">{{__('language.xidmetler')}}</h2>
-        </div>
-        <div class="desing_development_content" data-aos="fade-up">
-            <div class="desing_development_content_item">
-                <div class="desing_development_content_item_desc margin">
-                    <div class="desing_development_content_item_desc_body">
-                        <h3 class="desing_development_content_item_desc_head">{{__('language.development')}}</h3>
-                        <ul class="desing_development_content_item_desc_acordion">
-                            <li class="desing_development_content_item_desc_acordion_card open">
-                                <button class="desing_development_content_item_desc_acordion_card_title">
-                                    {{__('language.responsiveWebsite')}}
-                                </button>
-                                <div class="desing_development_content_item_desc_acordion_card_text" style="display: block;">
-                                    <p> {{__('language.responsiveWebsiteInfo')}}</p>
-                                </div>
-                            </li>
-                            <li class="desing_development_content_item_desc_acordion_card">
-                                <button class="desing_development_content_item_desc_acordion_card_title">
-                                    {{__('language.mobileApps')}}
-                                </button>
-                                <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>{{__('language.mobileAppsInfo')}}</p>
-                                </div>
-                            </li>
-                            <li class="desing_development_content_item_desc_acordion_card">
-                                <button class="desing_development_content_item_desc_acordion_card_title">
-                                    {{__('language.complexPlatforms')}}
-                                </button>
-                                <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>{{__('language.complexPlatformsInfo')}}</p>
-                                </div>
-                            </li>
-                            <li class="desing_development_content_item_desc_acordion_card">
-                                <button class="desing_development_content_item_desc_acordion_card_title">
-                                    {{__('language.BIsystems')}}
-                                </button>
-                                <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>{{__('language.BIsystemsInfo')}}</p>
-                                </div>
-                            </li>
-                            <li class="desing_development_content_item_desc_acordion_card">
-                                <button class="desing_development_content_item_desc_acordion_card_title">
-                                    {{__('language.Erp/Crm')}}
-                                </button>
-                                <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>{{__('language.Erp/CrmInfo')}}</p>
-                                </div>
-                            </li>
-                            <!-- <li class="desing_development_content_item_desc_acordion_card">
-                                <button class="desing_development_content_item_desc_acordion_card_title">
-                                    Oyunlar
-                                </button>
-                                <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>Daha yaxşı və müasir oyunların yaradılmasını mümkün etmək üçün daim yeni texnologiyalardan istifadə edirik</p>
-                                </div>
-                            </li> -->
-                        </ul>
+        <div class="section design_development bgColor fadeUp pd_mobile" data-color="black">
+            <div class="desing_development_header" data-aos="fade-up">
+                <h2 class="desing_development_header_head">{{__('language.xidmetler')}}</h2>
+            </div>
+            <div class="desing_development_content" data-aos="fade-up">
+                <div class="desing_development_content_item">
+                    <div class="desing_development_content_item_desc margin">
+                        <div class="desing_development_content_item_desc_body">
+                            <h3 class="desing_development_content_item_desc_head">{{__('language.development')}}</h3>
+                            <ul class="desing_development_content_item_desc_acordion">
+                                <li class="desing_development_content_item_desc_acordion_card open">
+                                    <button class="desing_development_content_item_desc_acordion_card_title">
+                                        {{__('language.responsiveWebsite')}}
+                                    </button>
+                                    <div class="desing_development_content_item_desc_acordion_card_text" style="display: block;">
+                                        <p> {{__('language.responsiveWebsiteInfo')}}</p>
+                                    </div>
+                                </li>
+                                <li class="desing_development_content_item_desc_acordion_card">
+                                    <button class="desing_development_content_item_desc_acordion_card_title">
+                                        {{__('language.mobileApps')}}
+                                    </button>
+                                    <div class="desing_development_content_item_desc_acordion_card_text">
+                                        <p>{{__('language.mobileAppsInfo')}}</p>
+                                    </div>
+                                </li>
+                                <li class="desing_development_content_item_desc_acordion_card">
+                                    <button class="desing_development_content_item_desc_acordion_card_title">
+                                        {{__('language.complexPlatforms')}}
+                                    </button>
+                                    <div class="desing_development_content_item_desc_acordion_card_text">
+                                        <p>{{__('language.complexPlatformsInfo')}}</p>
+                                    </div>
+                                </li>
+                                <li class="desing_development_content_item_desc_acordion_card">
+                                    <button class="desing_development_content_item_desc_acordion_card_title">
+                                        {{__('language.BIsystems')}}
+                                    </button>
+                                    <div class="desing_development_content_item_desc_acordion_card_text">
+                                        <p>{{__('language.BIsystemsInfo')}}</p>
+                                    </div>
+                                </li>
+                                <li class="desing_development_content_item_desc_acordion_card">
+                                    <button class="desing_development_content_item_desc_acordion_card_title">
+                                        {{__('language.Erp/Crm')}}
+                                    </button>
+                                    <div class="desing_development_content_item_desc_acordion_card_text">
+                                        <p>{{__('language.Erp/CrmInfo')}}</p>
+                                    </div>
+                                </li>
+                                <!-- <li class="desing_development_content_item_desc_acordion_card">
+                                    <button class="desing_development_content_item_desc_acordion_card_title">
+                                        Oyunlar
+                                    </button>
+                                    <div class="desing_development_content_item_desc_acordion_card_text">
+                                        <p>Daha yaxşı və müasir oyunların yaradılmasını mümkün etmək üçün daim yeni texnologiyalardan istifadə edirik</p>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="desing_development_content_item_photo margin">
+                        <div class="desing_development_content_item_img box">
+                            <div class="desing_development_content_item_img_body box_item">
+                                <img src="{{asset('./img/arif-riyanto-G1N9kDHqBrQ-unsplash.png')}}" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="desing_development_content_item_photo margin">
-                    <div class="desing_development_content_item_img box">
-                        <div class="desing_development_content_item_img_body box_item">
-                            <img src="{{asset('./img/arif-riyanto-G1N9kDHqBrQ-unsplash.png')}}" alt="">
+                <div class="desing_development_content_item flex_direction">
+                    <div class="desing_development_content_item_desc margin">
+                        <div class="desing_development_content_item_desc_body">
+                            <h3 class="desing_development_content_item_desc_head">{{__('language.design')}}</h3>
+                            <ul class="desing_development_content_item_desc_acordion">
+                                <li class="desing_development_content_item_desc_acordion_card">
+                                    <button class="desing_development_content_item_desc_acordion_card_title">
+                                        {{__('language.Ux/Ui')}}
+                                    </button>
+                                    <div class="desing_development_content_item_desc_acordion_card_text">
+                                        <p>{{__('language.Ux/UiInfo')}}</p>
+                                    </div>
+                                </li>
+                                <li class="desing_development_content_item_desc_acordion_card">
+                                    <button class="desing_development_content_item_desc_acordion_card_title">
+                                        {{__('language.LogoDesign')}}
+                                    </button>
+                                    <div class="desing_development_content_item_desc_acordion_card_text">
+                                        <p>{{__('language.LogoDesignInfo')}}</p>
+                                    </div>
+                                </li>
+                                <li class="desing_development_content_item_desc_acordion_card">
+                                    <button class="desing_development_content_item_desc_acordion_card_title">
+                                        <p>{{__('language.branding')}}</p>
+                                    </button>
+                                    <div class="desing_development_content_item_desc_acordion_card_text">
+                                        <p> <p>{{__('language.brandingInfo')}}</p></p>
+                                    </div>
+                                </li>
+                                <li class="desing_development_content_item_desc_acordion_card">
+                                    <button class="desing_development_content_item_desc_acordion_card_title">
+                                        <p>{{__('language.printDesign')}}</p>
+                                    </button>
+                                    <div class="desing_development_content_item_desc_acordion_card_text">
+                                        <p>{{__('language.printDesignInfo')}}</p>
+                                    </div>
+                                </li>
+                                <li class="desing_development_content_item_desc_acordion_card">
+                                    <button class="desing_development_content_item_desc_acordion_card_title">
+                                        {{__('language.socialMedia')}}
+                                    </button>
+                                    <div class="desing_development_content_item_desc_acordion_card_text">
+                                        <p>{{__('language.socialMediaInfo')}}</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="desing_development_content_item_photo margin">
+                        <div class="desing_development_content_item_img box">
+                            <div class="desing_development_content_item_img_body box_item">
+                                <img src="{{asset('./img/photo-1506097425191-7ad538b29cef.jpg')}}" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="desing_development_content_item flex_direction">
-                <div class="desing_development_content_item_desc margin">
-                    <div class="desing_development_content_item_desc_body">
-                        <h3 class="desing_development_content_item_desc_head">{{__('language.design')}}</h3>
-                        <ul class="desing_development_content_item_desc_acordion">
-                            <li class="desing_development_content_item_desc_acordion_card">
-                                <button class="desing_development_content_item_desc_acordion_card_title">
-                                    {{__('language.Ux/Ui')}}
-                                </button>
-                                <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>{{__('language.Ux/UiInfo')}}</p>
-                                </div>
-                            </li>
-                            <li class="desing_development_content_item_desc_acordion_card">
-                                <button class="desing_development_content_item_desc_acordion_card_title">
-                                    {{__('language.LogoDesign')}}
-                                </button>
-                                <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>{{__('language.LogoDesignInfo')}}</p>
-                                </div>
-                            </li>
-                            <li class="desing_development_content_item_desc_acordion_card">
-                                <button class="desing_development_content_item_desc_acordion_card_title">
-                                    <p>{{__('language.branding')}}</p>
-                                </button>
-                                <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p> <p>{{__('language.brandingInfo')}}</p></p>
-                                </div>
-                            </li>
-                            <li class="desing_development_content_item_desc_acordion_card">
-                                <button class="desing_development_content_item_desc_acordion_card_title">
-                                    <p>{{__('language.printDesign')}}</p>
-                                </button>
-                                <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>{{__('language.printDesignInfo')}}</p>
-                                </div>
-                            </li>
-                            <li class="desing_development_content_item_desc_acordion_card">
-                                <button class="desing_development_content_item_desc_acordion_card_title">
-                                    {{__('language.socialMedia')}}
-                                </button>
-                                <div class="desing_development_content_item_desc_acordion_card_text">
-                                    <p>{{__('language.socialMediaInfo')}}</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+
+
+            <div class="desing_development_desc" data-aos="fade-up" style="display:none;">
+                <div class="desing_development_desc_body">
+                    <h3 class="desing_development_desc_body_h3">
+                        Biz sadəcə kodlaşdırmırıq, həm də Müştərilərimizə tətbiq əhatəsini sadələşdirməyə kömək edirik, həmçinin strateji texnologiyalar toplusu üzrə məsləhətləşirik.
+                    </h3>
                 </div>
-                <div class="desing_development_content_item_photo margin">
-                    <div class="desing_development_content_item_img box">
-                        <div class="desing_development_content_item_img_body box_item">
-                            <img src="{{asset('./img/photo-1506097425191-7ad538b29cef.jpg')}}" alt="">
-                        </div>
-                    </div>
+                <div class="desing_development_desc_body">
+                    <p>
+                        Yaxşı dizayn hədəf auditoriyanızın brendiniz və biznesinizlə qarşılıqlı əlaqəsini dəyişə bilər. Seminarlara, istifadəçi araşdırmalarına və təhlillərə əsaslanan anlayışlara istinadən, hədəf və məqsədinizə çatmağınıza əminik. Hədəf qrupu üçün uyğun və mənalı, aydın və effektiv konsepsiya yaratmağa diqqət yetirməklə, təcrübəlrimizə əsasən dəyər yaradacağımıza təminat veririk.
+                    </p>
+                    <br>
+                    <p>
+                        Uğurlu həllə aparan yol həmişə sizinlə sıx əməkdaşlıqla əldə edilir, çünki işinizi sizdən yaxşı bilən yoxdur.
+                    </p>
+                    <br>
+                    <p>
+
+
+                        İstər rəqəmsal strategiyaya ehtiyacınız olsun, istərsə də mövcud həlldə yenilik tətbiq etməyə kömək edin, məqsəd həmişə tapşırığı istəklərinizə, prioritetlərinizə və büdcənizə cavab verəcək şəkildə yaxşı həll etməkdir.
+                    </p>
                 </div>
             </div>
         </div>
-
-
-        <div class="desing_development_desc" data-aos="fade-up" style="display:none;">
-            <div class="desing_development_desc_body">
-                <h3 class="desing_development_desc_body_h3">
-                    Biz sadəcə kodlaşdırmırıq, həm də Müştərilərimizə tətbiq əhatəsini sadələşdirməyə kömək edirik, həmçinin strateji texnologiyalar toplusu üzrə məsləhətləşirik.
-                </h3>
-            </div>
-            <div class="desing_development_desc_body">
-                <p>
-                    Yaxşı dizayn hədəf auditoriyanızın brendiniz və biznesinizlə qarşılıqlı əlaqəsini dəyişə bilər. Seminarlara, istifadəçi araşdırmalarına və təhlillərə əsaslanan anlayışlara istinadən, hədəf və məqsədinizə çatmağınıza əminik. Hədəf qrupu üçün uyğun və mənalı, aydın və effektiv konsepsiya yaratmağa diqqət yetirməklə, təcrübəlrimizə əsasən dəyər yaradacağımıza təminat veririk.
-                </p>
-                <br>
-                <p>
-                    Uğurlu həllə aparan yol həmişə sizinlə sıx əməkdaşlıqla əldə edilir, çünki işinizi sizdən yaxşı bilən yoxdur.
-                </p>
-                <br>
-                <p>
-
-
-                    İstər rəqəmsal strategiyaya ehtiyacınız olsun, istərsə də mövcud həlldə yenilik tətbiq etməyə kömək edin, məqsəd həmişə tapşırığı istəklərinizə, prioritetlərinizə və büdcənizə cavab verəcək şəkildə yaxşı həll etməkdir.
-                </p>
-            </div>
-        </div>
-    </div>
-        @endif
+    @endif
 
     <div class="section expertise bgColor fadeUp pd_mobile" data-color="white">
         <div class="expertise_container">

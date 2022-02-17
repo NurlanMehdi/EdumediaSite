@@ -23,7 +23,7 @@ class DashboardController extends Controller
         $blogs = Dashboard::join('dashboard_translate','dashboard_translate.item_id','=','dashboard_items.id')
             ->select('dashboard_items.id','dashboard_items.status','dashboard_items.img','dashboard_translate.button_name','dashboard_translate.names','dashboard_translate.blog_button_other','dashboard_translate.key','dashboard_translate.blog_name','dashboard_translate.short_info')->get();
 
-        $header = PageHeader::where('page_name','=','home')->where('key','=',App::getLocale())->first();
+        $header = PageHeader::where('page_name','=','home')->where('key','=','az')->first();
         return view('admin/dashboard',['blogs'=>$blogs,'header'=>$header]);
     }
 
@@ -159,7 +159,7 @@ class DashboardController extends Controller
         $data = [];
         if ($id > 0){
             $data = Studies::join('studies_translate','studies_translate.item_id','=','studies_items.id')
-                ->select('studies_translate.id','studies_items.id as studie_id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name','studies_translate.other_info')->where('studies_items.id','=',$id)->first();
+                ->select('studies_translate.id','studies_items.row','studies_items.id as studie_id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name','studies_translate.other_info')->where('studies_items.id','=',$id)->first();
         }else{
             $data = [];
         }
@@ -179,7 +179,7 @@ class DashboardController extends Controller
     {
         $blog = Studies::where('id',$id)->delete();
         $blog_translate = StudiesTranslater::whereIn('item_id',[$id])->delete();
-        return $this->dashboardPage();
+        return $this->studiesPage();
     }
 
     public function editBlog()
@@ -287,7 +287,8 @@ class DashboardController extends Controller
             'lang' => 'required|string',
             'header_name' => 'required|string',
             'button_name' => 'required|string',
-            'studiesId' => 'required|integer'
+            'studiesId' => 'required|integer',
+            'row' => 'required|integer',
         ]);
 
         if ($validator->fails()){
@@ -299,9 +300,11 @@ class DashboardController extends Controller
                 'status' => request()->get('status'),
                 'blog_id' => request()->get('blog_id'),
                 'img' => $input['info_img'],
+                'row' => $input['row'],
             ]);
 
-            $blog_translate = StudiesTranslater::where('item_id', request()->get('studiesId'));
+            $blog_translate = StudiesTranslater::where('item_id', request()->get('studiesId'))->where('key','=',request()->get('lang'));
+
             $blog_translate->update([
                 'key' => request()->get('lang'),
                 'name' => request()->get('names'),
@@ -310,7 +313,7 @@ class DashboardController extends Controller
                 'button_name' => request()->get('button_name'),
             ]);
 
-            DB::table('studies_translate')->update(array('name'=>request()->get('names'),'button_name'=>request()->get('button_name')));
+            DB::table('studies_translate')->where('key','=',request()->get('lang'))->update(array('name'=>request()->get('names'),'button_name'=>request()->get('button_name')));
         }
 
         return $this->studiesPage();
@@ -323,7 +326,8 @@ class DashboardController extends Controller
             'names' => 'required|string',
             'lang' => 'required|string',
             'header_name' => 'required|string',
-            'button_name' => 'required|string'
+            'button_name' => 'required|string',
+            'row' => 'required|integer',
         ]);
 
 
@@ -334,6 +338,7 @@ class DashboardController extends Controller
             $blog = new Studies();
             $blog->status = request()->get('status');
             $blog->blog_id = request()->get('blog_id');
+            $blog->row = request()->get('row');
 
             $blog->img = $input['info_img'];
             $blog->save();
@@ -359,6 +364,7 @@ class DashboardController extends Controller
         $validator = validator(request()->all(),[
             'page_name' => 'required|string',
             'header_text' => 'required|string',
+            'lang' => 'required|string',
         ]);
 
         if ($validator->fails()){
@@ -367,13 +373,13 @@ class DashboardController extends Controller
             if (request()->get('headerId') > 0){
                 $header = PageHeader::where('id',request()->get('headerId'));
                 $header->update([
-                    'key'=> 'az',
+                    'key'=> request()->get('lang'),
                     'page_name'=> request()->get('page_name'),
                     'header_text'=> request()->get('header_text'),
                 ]);
             }else{
                 $header = new PageHeader();
-                $header->key = 'az';
+                $header->key = request()->get('lang');
                 $header->page_name = request()->get('page_name');
                 $header->header_text = request()->get('header_text');
                 $header->save();
@@ -382,12 +388,12 @@ class DashboardController extends Controller
         return $this->dashboardPage();
     }
 
-    public function headerText($key)
+    public function headerText($key,$lang)
     {
         $data = [];
 
         if ($key != ''){
-            $data = PageHeader::where('page_name','=',$key)->where('key','=',App::getLocale())->first();
+            $data = PageHeader::where('page_name','=',$key)->where('key','=',$lang)->first();
         }else{
             $data = [];
         }
