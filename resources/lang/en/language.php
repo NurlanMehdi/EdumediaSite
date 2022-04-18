@@ -4,7 +4,7 @@ return [
     'edumediaUnvan' => 'Khatai ave.34, Luxen Plaza, Baku, Azerbaijan, AZ1008',
     'anasehife' => 'Home',
     'xidmetler' => 'Services',
-    'layiheler' => 'Case Studies',
+    'layiheler' => 'Projects',
     'haqqimizda' => 'About Us',
     'karyera' => 'Careers',
     'mushterimizOl' => 'Our customer',
