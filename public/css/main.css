@@ -131,6 +131,7 @@ li {
     line-height: 20px;
     letter-spacing: 0.26px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 .black_title {
     color: var(--color-ffffff);
@@ -138,6 +139,7 @@ li {
     line-height: 20px;
     letter-spacing: 0.26px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 .positionSticky{
     position: sticky !important;
@@ -489,7 +491,7 @@ li {
     text-align: left;
 }
 .onclick_sidebar_header_item a:hover {
-    color: #FFFFFF;
+    color: #00AEEF;
     transition: all .3s;
 }
 /* .onclick_sidebar_footer {
@@ -569,7 +571,7 @@ li {
 .btn {
     display: inline-block;
     border: 1px solid var(--color-303030);
-    padding: 10px;
+    padding: 15px 28px;
     color: var(--color-ffffff);
     /* background-color: #151515; */
     font-weight: lighter;
@@ -730,7 +732,7 @@ li {
 }
 .banner_content_item_numb::before {
     counter-increment: section;
-    content: "0"counter(section);
+    content: "0" counter(section);
     font-size: 36px;
     font-family: AvenirNext Azeri Bold;
     color: var(--color-00aeef);
@@ -861,7 +863,7 @@ li {
 }
 .banner_content_mobile_item_numb::after {
     counter-increment: section_mobile;
-    content: "0"counter(section_mobile);
+    content: "0" counter(section_mobile);
     font-size: 36px;
     line-height: 105px;
     color: #00AEEF;
@@ -937,7 +939,6 @@ li {
     font-size: 14px;
     line-height: 16px;
     color: var(--color-b9b9b9);
-    padding: 20px 0px 12px 0px;
     text-transform: uppercase;
 }
 .case_studies_content_item_desc p {
@@ -945,6 +946,7 @@ li {
     line-height: 29px;
     font-weight: lighter;
     color: var(--color-ffffff);
+    padding: 20px 0px 12px 0px;
 }
 /* .case_studies_content_item_desc er {
     color: var(--color-00aeef);
@@ -2445,7 +2447,7 @@ select option {
     color: #B9B9B9;
 }
 textarea {
-    height: 128px;
+    min-height: 130px;
     resize: vertical;
 }
 select {
