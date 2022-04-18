@@ -45,7 +45,7 @@
     </div>
     @include('layouts.tplAboutAndCareers')
     @include('layouts.projectInMind')
-    @stop
+@stop
 @section('js')
     <script>
         $(document).ready(function (){

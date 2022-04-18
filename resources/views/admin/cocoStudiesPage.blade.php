@@ -32,7 +32,7 @@
                             <td>{{($studie->status ?? 0) == 1 ? 'Bağlı' : 'Açıq'}} </td>
 
                             <td>
-                                <a href="{{route('edit.studie.page',$studie->studie_id)}}" class="customBtn applyBtn applyBtn-white">
+                                <a href="{{route('edit.studie.page',$studie->id)}}" class="customBtn applyBtn applyBtn-white">
                                     <i class="xin-icon xin-pencil"></i>
                                 </a>
                             </td>                            <td>
@@ -54,29 +54,4 @@
         </div>
     </div>
 @stop
-@section('js')
-    <script>
 
-        $(document).ready(function (){
-            $('#pagesHeaders').on('change',function (){
-                $('[name="header_text"]').val('');
-                let url = "{{route('selected.header.text',':key')}}";
-                url = url.replace(':key', $(this).val());
-
-                $.ajax({
-                    url: url,
-                    type: 'GET',
-                    dataType: 'JSON',
-                    success: function (response) {
-                        $('.headerId').val(response.data.id)
-                    }
-                })
-            });
-            $('.save-header-text').on('click',function (e){
-                e.preventDefault();
-                e.stopPropagation();
-                $('#headerText').get(0).submit();
-            });
-        })
-    </script>
-@endsection

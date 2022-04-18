@@ -10,7 +10,7 @@
             <div class="BI_system_header_text">
                 <div class="BI_system_header_text_body">
 
-                                     <h3 class="BI_system_header_text_title">{{$data->header_name ?? ''}}</h3>
+                    <h3 class="BI_system_header_text_title">{{$data->header_text ?? ''}}</h3>
                 </div>
                 <div class="overlay"></div>
             </div>
@@ -23,19 +23,21 @@
             </p>
             <p class="BI_system_desc_text" data-aos="fade-up">
                 {{$studieInfo->first_text ?? ''}}
+                <br/>
+                 <br/>
+                   {!!$studieInfo->footer_text ?? ''!!}
             </p>
-            <h6> {{$studieInfo->header_name ?? ''}}</h6>
+         
+    
             <div class="BI_system_desc_img" data-aos="fade-up">
                 @if(($studieInfo->img ?? '') != '')
                     <img src="{{asset('storage/app/img/'.$studieInfo->img)}}" alt="">
                 @endif
 
             </div>
-            <p class="BI_system_desc_text" data-aos="fade-up">
-                {{$studieInfo->footer_text ?? ''}}
-            </p>
+
             <div class="BI_system_desc_link" data-aos="fade-up">
-                <a href="{{route('case_studies')}}" class="btn">
+                <a href="{{$studieInfo->other_info ?? ''}}" class="btn">
                     {{__('language.viewWebsite')}}
                     <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
                         <g id="noun_Left_1920800" transform="translate(17.967 23.407) rotate(180)">
@@ -60,7 +62,7 @@
             </div>
         </div>
     </div>
-  @include('layouts.tplAboutAndCareers')
+    @include('layouts.tplAboutAndCareers')
     @include('layouts.projectInMind')
 @endsection
 

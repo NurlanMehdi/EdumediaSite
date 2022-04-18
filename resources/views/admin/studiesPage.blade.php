@@ -3,7 +3,7 @@
     <div class="container-lg">
         <div class="page_head">
             <div class="page_head--header page_head--header_after">
-                Blog
+                İşlərimiz
             </div>
             <hr/>
 
@@ -22,9 +22,10 @@
                 <div class="form-group required">
                     <label class="customLabel" for="blog_name">Blog</label>
 
+
                     <select class="customSelect" name="blog_id" id="blogName" required="" title="Status">
                         @foreach($blogs as $blog)
-                            <option value="{{$blog->item_id ?? ''}}" value="1">{{$blog->blog_name ?? ''}}</option>
+                            <option value="{{$blog->item_id ?? ''}}" {{($blog->item_id == $data['blog_id']) ? 'selected' : ''}}>{{$blog->blog_name ?? ''}}</option>
                         @endforeach
                     </select>
                 </div>
@@ -43,6 +44,10 @@
                 <div class="form-group required">
                     <label class="customLabel" for="slug">Ətraflı keçid söz</label>
                     <input class="formControl" value="{{$data['other_info'] ?? ''}}" name="other_info" id="slug" type="text" placeholder="Ətraflı keçid söz" required="">
+                </div>
+                <div class="form-group required">
+                    <label class="customLabel" for="slug">Sıra</label>
+                    <input class="formControl" value="{{$data['row'] ?? ''}}" name="row" id="row" type="number" placeholder="Sıra" required="">
                 </div>
 
                 <div class="form-group required">
@@ -85,8 +90,9 @@
                 e.preventDefault();
                 e.stopPropagation();
 
+
                 if({{$data['id'] ?? 0}} > 0){
-                    $('#studiesInfo').append('<input type="hidden" name="studiesId" value="{{$data['id'] ?? 0}}">');
+                    $('#studiesInfo').append('<input type="hidden" name="studiesId" value="{{$data['studie_id'] ?? 0}}">');
                     $('#studiesInfo').append('<input type="hidden" name="info_img" value="{{$data['img'] ?? ''}}">');
                 }
 

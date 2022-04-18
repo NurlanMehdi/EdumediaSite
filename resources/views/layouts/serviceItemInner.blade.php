@@ -160,7 +160,7 @@
         </div>
     </div>
 
-{{--    @include('layouts.miniPostDashboard')--}}
+    {{--    @include('layouts.miniPostDashboard')--}}
     @include('layouts.tplAboutAndCareers')
     @include('layouts.projectInMind')
 

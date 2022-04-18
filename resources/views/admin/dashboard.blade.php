@@ -11,6 +11,13 @@
                     Əsas başlıq
                 </div>
                 <div class="form-group required">
+                    <label class="customLabel" for="cateqory_language">Dil</label>
+                    <select class="customSelect" name="lang" id="cateqory_language" required="" title="Dil" >
+                        <option value="az" selected>Azərbaycanca</option>
+                        <option value="en">İngiliscə</option>
+                    </select>
+                </div>
+                <div class="form-group required">
                     <label class="customLabel" for="page_name">Səhifə</label>
                     <select class="customSelect" name="page_name" id="pagesHeaders" required="" title="Dil" >
                         <option value="home" selected>Home</option>
@@ -25,7 +32,7 @@
                 <div class="form-group required">
                     <input type="hidden" class="headerId" name="headerId" value="{{$header['id'] ?? 0}}">
                     <label class="customLabel" for="title">Başlıq</label>
-                    <input class="formControl" name="header_text" value="{{$header['header_text'] ?? ''}}"  id="title" type="text" placeholder="Başlıq" required="">
+                    <input class="formControl" name="header_text" value="{{$header['header_text'] ?? ''}}"  id="header_text" type="text" placeholder="Başlıq" required="">
                 </div>
                 <button type="button" class="customBtn quickBtn save-header-text">
                     Redaktə et
@@ -94,15 +101,20 @@
         $(document).ready(function (){
             $('#pagesHeaders').on('change',function (){
                 $('[name="header_text"]').val('');
-                let url = "{{route('selected.header.text',':key')}}";
+                let url = "{{route('selected.header.text',[':key',':lang'])}}";
                 url = url.replace(':key', $(this).val());
+                url = url.replace(':lang', $('#cateqory_language').val());
+
 
                 $.ajax({
                     url: url,
                     type: 'GET',
                     dataType: 'JSON',
                     success: function (response) {
+                        console.log(response)
+
                         $('.headerId').val(response.data.id)
+                        $('#header_text').val(response.data.header_text)
                     }
                 })
             });
