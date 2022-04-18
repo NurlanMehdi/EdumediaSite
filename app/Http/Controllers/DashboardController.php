@@ -129,8 +129,9 @@ class DashboardController extends Controller
             ->get();
 
         $studies = Studies::join('studies_translate','studies_translate.item_id','=','studies_items.id')
-            ->select('studies_items.id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.other_info','studies_translate.key','studies_translate.header_name')
+            ->select('studies_items.id as item_id','studies_translate.id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.other_info','studies_translate.key','studies_translate.header_name')
             ->where('key','=',App::getLocale())
+            ->orderBy('studies_items.row','ASC')
             ->get();
 
         $posts = Post::join('post_translate','post_translate.item_id','=','post_items.id')
@@ -159,12 +160,12 @@ class DashboardController extends Controller
         $data = [];
         if ($id > 0){
             $data = Studies::join('studies_translate','studies_translate.item_id','=','studies_items.id')
-                ->select('studies_translate.id','studies_items.row','studies_items.id as studie_id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name','studies_translate.other_info')->where('studies_translate.id','=',$id)->first();
+                ->select('studies_translate.id','studies_items.row','studies_items.blog_id','studies_items.id as studie_id','studies_items.status','studies_items.img','studies_translate.button_name','studies_translate.name','studies_translate.key','studies_translate.header_name','studies_translate.other_info')->where('studies_translate.id','=',$id)->first();
         }else{
             $data = [];
         }
 
-        $blogs = DashboardTranslater::get();
+        $blogs = DashboardTranslater::where('key','az')->get();
         return view('admin/studiesPage',['data'=>$data,'blogs'=>$blogs]);
     }
 
@@ -215,7 +216,7 @@ class DashboardController extends Controller
                 'short_info'=> request()->get('short_info'),
             ]);
 
-            DB::table('dashboard_translate')->update(array('names'=>request()->get('names'),'button_name'=>request()->get('button_name'),'blog_button_other'=>request()->get('blog_button_other')));
+            DB::table('dashboard_translate')->where('key','=',request()->get('lang'))->update(array('names'=>request()->get('names'),'button_name'=>request()->get('button_name'),'blog_button_other'=>request()->get('blog_button_other')));
         }
 
         return $this->dashboardPage();
@@ -250,7 +251,7 @@ class DashboardController extends Controller
             $blogtranslate->blog_name = request()->get('blog_name');
             $blogtranslate->short_info = request()->get('short_info');
             $blogtranslate->save();
-            DB::table('dashboard_translate')->update(array('names'=>request()->get('names'),'blog_button_other'=>request()->get('blog_button_other'),'button_name'=>request()->get('button_name')));
+            DB::table('dashboard_translate')->where('key','=',request()->get('lang'))->update(array('names'=>request()->get('names'),'blog_button_other'=>request()->get('blog_button_other'),'button_name'=>request()->get('button_name')));
         }
 
         return $this->dashboardPage();
@@ -302,16 +303,29 @@ class DashboardController extends Controller
                 'img' => $input['info_img'],
                 'row' => $input['row'],
             ]);
+       
 
             $blog_translate = StudiesTranslater::where('item_id', request()->get('studiesId'))->where('key','=',request()->get('lang'));
 
-            $blog_translate->update([
+            if($blog_translate->doesntExist()){
+                           $blogtranslate = new StudiesTranslater();
+            $blogtranslate->item_id = request()->get('studiesId');
+            $blogtranslate->key = request()->get('lang');
+            $blogtranslate->name = request()->get('names');
+            $blogtranslate->header_name = request()->get('header_name');
+            $blogtranslate->other_info = request()->get('other_info');
+            $blogtranslate->button_name = request()->get('button_name');
+            $blogtranslate->save();
+            }else{
+                      $blog_translate->update([
                 'key' => request()->get('lang'),
                 'name' => request()->get('names'),
                 'header_name' => request()->get('header_name'),
                 'other_info' => request()->get('other_info'),
                 'button_name' => request()->get('button_name'),
             ]);
+            }
+      
 
             DB::table('studies_translate')->where('key','=',request()->get('lang'))->update(array('name'=>request()->get('names'),'button_name'=>request()->get('button_name')));
         }

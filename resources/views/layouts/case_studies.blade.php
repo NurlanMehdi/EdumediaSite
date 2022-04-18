@@ -15,26 +15,26 @@
         </div>
         <div class="page_header_bottom">
             <p class="page_header_topic page_header_topic_clr">
-                {{$header['header_text'] ?? ''}}
+              {{__('language.layiheler')}}
             </p>
 
         </div>
     </div>
     <div class="section filter bgColor pd_mobile" data-color="white">
-        <div class="filter_header">
-            <ul class="filter_header_nav">
-                <li class="filter_header_nav_item">
-                    <a id="0" class="filter_header_nav_item_link filter_header_nav_item_link_clr blog-name all-blogs">{{__('language.all')}}</a>
-                </li>
-                @foreach($blogItems as $item)
-                    <li class="filter_header_nav_item">
-                        <a class="filter_header_nav_item_link filter_header_nav_item_link_clr blog-name" id="{{$item->item_id ?? ''}}">{{$item->blog_name ?? ''}}</a>
-                    </li>
-                @endforeach
+        <!--<div class="filter_header">-->
+        <!--    <ul class="filter_header_nav">-->
+        <!--        <li class="filter_header_nav_item">-->
+        <!--            <a id="0" class="filter_header_nav_item_link filter_header_nav_item_link_clr blog-name all-blogs">{{__('language.all')}}</a>-->
+        <!--        </li>-->
+        <!--        @foreach($blogItems as $item)-->
+        <!--            <li class="filter_header_nav_item">-->
+        <!--                <a class="filter_header_nav_item_link filter_header_nav_item_link_clr blog-name" id="{{$item->item_id ?? ''}}">{{$item->blog_name ?? ''}}</a>-->
+        <!--            </li>-->
+        <!--        @endforeach-->
 
 
-            </ul>
-        </div>
+        <!--    </ul>-->
+        <!--</div>-->
         <select class="custom_select section_blog_item_categories_select">
             <option class="blog-name" id="0">All</option>
             @foreach($blogItems as $item)
@@ -50,12 +50,12 @@
 @section('js')
     <script>
         $(document).ready(function (){
-            setTimeout(function(){ $('.all-blogs').trigger('click'); },100);
-
-            $('.blog-name').on('click',function (){
-                var id = $(this).attr('id');
+            // setTimeout(function(){ $('.all-blogs').trigger('click'); },100);
+                           var id = 0;
+              
                 let url = "{{route('post.selected.from.studies',':id')}}";
                 url = url.replace(':id',id);
+       
                 $('.filter_content').html('');
                 $.ajax({
                     url: url,
@@ -63,20 +63,51 @@
                     dataType: 'JSON',
                     success: function (response) {
                         $.each( response, function( key, value ) {
+                            console.log(value)
                             var date    = new Date(value.created_at),
                                 yr      = date.getFullYear(),
                                 month   = date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth(),
                                 day     = date.getDate()  < 10 ? '0' + date.getDate()  : date.getDate(),
                                 newDate = day + '-' + month + '-' + yr;
-                            let infoUrl = "{{route('blogItemInner',':itemId')}}";
-                            infoUrl = infoUrl.replace(':itemId',value.id);
+                            let infoUrl = "{{route('blogItemInner',[':id',':itemId'])}}";
+                            infoUrl = infoUrl.replace(':id',value.id);
+                            infoUrl = infoUrl.replace(':itemId',value.item_id);
                             var post = ' <a href="'+infoUrl+'" class="flex_25 filter_content_item"><div class="filter_content_item_body"><div class="box pd-top100"> <div class="box_item"> <img class="filter_content_item_img" src="'+'/storage/app/img/'+value.img+'" alt=""> </div> </div> <div class="filter_content_item_desc"> <small  class="filter_content_item_desc_top"></small> <p class="filter_content_item_desc_bottom filter_content_item_desc_bottom_clr">'+value.header_name+'</p></div></div></a>';
 
                             $('.filter_content').append(post);
                         });
                     }
                 })
-            })
+
+            // $('.blog-name').on('click',function (){
+            //     var id = $(this).attr('id');
+              
+            //     let url = "{{route('post.selected.from.studies',':id')}}";
+            //     url = url.replace(':id',id);
+       
+            //     $('.filter_content').html('');
+            //     $.ajax({
+            //         url: url,
+            //         type: 'GET',
+            //         dataType: 'JSON',
+            //         success: function (response) {
+            //             $.each( response, function( key, value ) {
+            //                 console.log(value)
+            //                 var date    = new Date(value.created_at),
+            //                     yr      = date.getFullYear(),
+            //                     month   = date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth(),
+            //                     day     = date.getDate()  < 10 ? '0' + date.getDate()  : date.getDate(),
+            //                     newDate = day + '-' + month + '-' + yr;
+            //                 let infoUrl = "{{route('blogItemInner',[':id',':itemId'])}}";
+            //                 infoUrl = infoUrl.replace(':id',value.id);
+            //                 infoUrl = infoUrl.replace(':itemId',value.item_id);
+            //                 var post = ' <a href="'+infoUrl+'" class="flex_25 filter_content_item"><div class="filter_content_item_body"><div class="box pd-top100"> <div class="box_item"> <img class="filter_content_item_img" src="'+'/storage/app/img/'+value.img+'" alt=""> </div> </div> <div class="filter_content_item_desc"> <small  class="filter_content_item_desc_top"></small> <p class="filter_content_item_desc_bottom filter_content_item_desc_bottom_clr">'+value.header_name+'</p></div></div></a>';
+
+            //                 $('.filter_content').append(post);
+            //             });
+            //         }
+            //     })
+            // })
         })
 
     </script>

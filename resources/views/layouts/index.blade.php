@@ -123,7 +123,7 @@
 
                         <div class="case_studies_silder_item">
                             <div>
-                                <a href="{{route('blogItemInner',$row->id)}}" class="case_studies_content_item">
+                                <a href="{{route('blogItemInner',[$row->id,$row->item_id])}}" class="case_studies_content_item">
                                     <div class="case_studies_content_item_body">
                                         <div class="box pd-top50">
                                             <div class="box_item">
@@ -133,8 +133,8 @@
 
                                     </div>
                                     <div class="case_studies_content_item_desc">
-                                        <small>{{$row->header_name}}</small>
-                                        <p>{{$row->other_info}}</p>
+                                        <p>{{$row->header_name}}</p>
+                                        <small>{{$row->other_info}}</small>
                                     </div>
                                 </a>
                             </div>
@@ -199,7 +199,7 @@
                 <a href="https://www.ite.az/" class="customer_content_item_body">
                     <img src="{{asset('img/inovativ texnalogiyalar.png')}}" alt="texnologiya">
                 </a>
-                <a href="https://www.etwinning.net/en/pub/index.htm" class="customer_content_item_body">
+                <a href="https://www.etwinningplus.edu.az/" class="customer_content_item_body">
                     <img src="{{asset('img/e-twinning.svg')}}" alt="texnologiya">
                 </a>
                 <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
@@ -224,7 +224,7 @@
                 <a href="https://www.scanex.az/" class="customer_content_item_body">
                     <img src="{{asset('img/scanex.png')}}" alt="scanex">
                 </a>
-                <a href="https://video.edu.az/s" class="customer_content_item_body">
+                <a href="https://video.edu.az/" class="customer_content_item_body">
                     <img src="{{asset('img/video-edu-az.png')}}" alt="video edu az">
                 </a>
                 <a href="https://birlink.az/az" class="customer_content_item_body">

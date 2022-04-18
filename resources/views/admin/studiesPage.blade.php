@@ -22,9 +22,10 @@
                 <div class="form-group required">
                     <label class="customLabel" for="blog_name">Blog</label>
 
+
                     <select class="customSelect" name="blog_id" id="blogName" required="" title="Status">
                         @foreach($blogs as $blog)
-                            <option value="{{$blog->item_id ?? ''}}" value="1">{{$blog->blog_name ?? ''}}</option>
+                            <option value="{{$blog->item_id ?? ''}}" {{($blog->item_id == $data['blog_id']) ? 'selected' : ''}}>{{$blog->blog_name ?? ''}}</option>
                         @endforeach
                     </select>
                 </div>
@@ -89,8 +90,9 @@
                 e.preventDefault();
                 e.stopPropagation();
 
+
                 if({{$data['id'] ?? 0}} > 0){
-                    $('#studiesInfo').append('<input type="hidden" name="studiesId" value="{{$data['id'] ?? 0}}">');
+                    $('#studiesInfo').append('<input type="hidden" name="studiesId" value="{{$data['studie_id'] ?? 0}}">');
                     $('#studiesInfo').append('<input type="hidden" name="info_img" value="{{$data['img'] ?? ''}}">');
                 }
 

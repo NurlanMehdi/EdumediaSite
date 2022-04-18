@@ -57,7 +57,7 @@ Route::get('/serviceItemInner', function () {
     return view('layouts/serviceItemInner',['posts'=>$posts]);
 })->name('serviceItemInner');
 
-Route::get('/blogItemInner/{id}',[\App\Http\Controllers\StudiesPageController::class,'BlogItemsData'])->name('blogItemInner');
+Route::get('/blogItemInner/{id}/{item_id}',[\App\Http\Controllers\StudiesPageController::class,'BlogItemsData'])->name('blogItemInner');
 
 Route::get('/privacyPolicy', function () {
     return view('layouts/privacyPolicy');
