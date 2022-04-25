@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 
 class Controller extends BaseController
@@ -72,5 +74,20 @@ class Controller extends BaseController
                 }
             }
         }
+    }
+
+    public function mail(Request $request)
+    {
+        $body = $request->body;
+        $name = $request->name;
+        $number = $request->number;
+        $email = $request->email;
+        $interested = $request->interested;
+
+
+        Mail::send('mail',['interested'=>$interested,'number'=>$number,'body'=>$body],function ($message) use ($email,$name){
+            $message->to($email)->subject($name);
+        });
+        return redirect()->back();
     }
 }
