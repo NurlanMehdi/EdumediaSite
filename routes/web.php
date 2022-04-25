@@ -1,6 +1,15 @@
 <?php
 
+use App\Http\Controllers\AboutCareersController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\BlogPageController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LocalizationController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\StudiesPageController;
 use App\Models\Dashboard;
 use App\Models\Post;
 use App\Models\PostTranslate;
@@ -9,10 +18,10 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 
-Route::get('/', [\App\Http\Controllers\DashboardController::class,'publicDashboardPage'])->name('index');
-Route::get('/specialty/{key}',[\App\Http\Controllers\Controller::class,'indexSpecialty'])->name('specialty');
-Route::get('/contact', [\App\Http\Controllers\ContactController::class,'contactDashboardPage'])->name('contact');
-Route::get('/about',[\App\Http\Controllers\AboutController::class,'indexAbout'])->name('about');
+Route::get('/', [DashboardController::class,'publicDashboardPage'])->name('index');
+Route::get('/specialty/{key}',[Controller::class,'indexSpecialty'])->name('specialty');
+Route::get('/contact', [ContactController::class,'contactDashboardPage'])->name('contact');
+Route::get('/about',[AboutController::class,'indexAbout'])->name('about');
 Route::get('/service', function () {
     $header = \App\Models\PageHeader::where('page_name','=','services')->where('key','=',App::getLocale())->first();
 
@@ -35,7 +44,7 @@ Route::get('/case_studies', function () {
     return view('layouts/case_studies',['header'=>$header,'blogItems'=>$blogItems]);
 })->name('case_studies');
 
-Route::get('/coco/post-selected-from-studies/{id}',[\App\Http\Controllers\StudiesPageController::class,'studiesFromBlog'])->name('post.selected.from.studies');
+Route::get('/coco/post-selected-from-studies/{id}',[StudiesPageController::class,'studiesFromBlog'])->name('post.selected.from.studies');
 
 Route::get('/blog', function () {
     $header = \App\Models\PageHeader::where('page_name','=','blog')->where('key','=',App::getLocale())->first();
@@ -74,59 +83,63 @@ Route::group(['middleware' => 'auth:web'],function (){
         return view('admin/index');
     })->name('adminIndex');
 
-    Route::get('/coco/contact', [\App\Http\Controllers\ContactController::class,'contactPage'])->name('contactPage');
-    Route::post('/coco/contact-info', [\App\Http\Controllers\ContactController::class,'saveContact'])->name('save.contact');
-    Route::get('/coco/dashboard', [\App\Http\Controllers\DashboardController::class,'dashboardPage'])->name('dashboardPage');
-    Route::get('/coco/posts', [\App\Http\Controllers\DashboardController::class,'cocoPostPage'])->name('cocoPostPage');
-    Route::get('/coco/studies', [\App\Http\Controllers\DashboardController::class,'studiesPage'])->name('cocoStudiesPage');
-    Route::get('/coco/about-us', [\App\Http\Controllers\DashboardController::class,'aboutUsPage'])->name('aboutUsPage');
+    Route::get('/coco/contact', [ContactController::class,'contactPage'])->name('contactPage');
+    Route::post('/coco/contact-info', [ContactController::class,'saveContact'])->name('save.contact');
+    Route::get('/coco/dashboard', [DashboardController::class,'dashboardPage'])->name('dashboardPage');
+    Route::get('/coco/posts', [DashboardController::class,'cocoPostPage'])->name('cocoPostPage');
+    Route::get('/coco/studies', [DashboardController::class,'studiesPage'])->name('cocoStudiesPage');
+    Route::get('/coco/about-us', [DashboardController::class,'aboutUsPage'])->name('aboutUsPage');
 
 
-    Route::get('/coco/blog-create-page/{id}', [\App\Http\Controllers\DashboardController::class,'createBlogPage'])->name('create.blog.page');
-    Route::get('/coco/remove-blog/{id}', [\App\Http\Controllers\DashboardController::class,'removeBlogPage'])->name('remove.blog.page');
-    Route::post('/coco/blog-create/', [\App\Http\Controllers\DashboardController::class,'createBlog'])->name('create.blog');
-    Route::post('/coco/blog-edit/', [\App\Http\Controllers\DashboardController::class,'editBlog'])->name('edit.blog');
-    Route::post('/coco/header-text/', [\App\Http\Controllers\DashboardController::class,'saveHeaderText'])->name('header.text');
-    Route::get('/coco/header-text-show/{key}/{lang}', [\App\Http\Controllers\DashboardController::class,'headerText'])->name('selected.header.text');
-    Route::get('/coco/studies-page', [\App\Http\Controllers\DashboardController::class,'studiesPage'])->name('new.studies.page');
-    Route::post('/coco/studies-create/', [\App\Http\Controllers\DashboardController::class,'createStudies'])->name('create.studies');
-    Route::post('/coco/studies-edit/', [\App\Http\Controllers\DashboardController::class,'editStudies'])->name('edit.studies');
-    Route::get('/coco/edit-studie-page/{id}', [\App\Http\Controllers\DashboardController::class,'createStudiePage'])->name('edit.studie.page');
-    Route::get('/coco/remove-studie/{id}', [\App\Http\Controllers\DashboardController::class,'removeStudiePage'])->name('remove.studie.page');
+    Route::get('/coco/blog-create-page/{id}', [DashboardController::class,'createBlogPage'])->name('create.blog.page');
+    Route::get('/coco/remove-blog/{id}', [DashboardController::class,'removeBlogPage'])->name('remove.blog.page');
+    Route::post('/coco/blog-create/', [DashboardController::class,'createBlog'])->name('create.blog');
+    Route::post('/coco/blog-edit/', [DashboardController::class,'editBlog'])->name('edit.blog');
+    Route::post('/coco/header-text/', [DashboardController::class,'saveHeaderText'])->name('header.text');
+    Route::get('/coco/header-text-show/{key}/{lang}', [DashboardController::class,'headerText'])->name('selected.header.text');
+    Route::get('/coco/studies-page', [DashboardController::class,'studiesPage'])->name('new.studies.page');
+    Route::post('/coco/studies-create/', [DashboardController::class,'createStudies'])->name('create.studies');
+    Route::post('/coco/studies-edit/', [DashboardController::class,'editStudies'])->name('edit.studies');
+    Route::get('/coco/edit-studie-page/{id}', [DashboardController::class,'createStudiePage'])->name('edit.studie.page');
+    Route::get('/coco/remove-studie/{id}', [DashboardController::class,'removeStudiePage'])->name('remove.studie.page');
 
     //layihelerin contenti
-    Route::get('/coco/content-studie/{id}', [\App\Http\Controllers\DashboardController::class,'indexStudieContent'])->name('content.studie');
-    Route::post('/coco/create-content-studie/{id}', [\App\Http\Controllers\DashboardController::class,'createStudieContent'])->name('create.studie.content');
-    Route::post('/coco/edit-content-studie/{id}', [\App\Http\Controllers\DashboardController::class,'editStudieContent'])->name('edit.studie.content');
+    Route::get('/coco/content-studie/{id}', [DashboardController::class,'indexStudieContent'])->name('content.studie');
+    Route::post('/coco/create-content-studie/{id}', [DashboardController::class,'createStudieContent'])->name('create.studie.content');
+    Route::post('/coco/edit-content-studie/{id}', [DashboardController::class,'editStudieContent'])->name('edit.studie.content');
 
-    Route::get('/coco/post-page/{id}', [\App\Http\Controllers\DashboardController::class,'postPage'])->name('new.post.page');
-    Route::post('/coco/post-create/', [\App\Http\Controllers\DashboardController::class,'createPost'])->name('create.post');
-    Route::post('/coco/post-edit/', [\App\Http\Controllers\DashboardController::class,'editPost'])->name('edit.post');
-    Route::get('/coco/remove-post/{id}', [\App\Http\Controllers\DashboardController::class,'removePostPage'])->name('remove.post.page');
+    Route::get('/coco/post-page/{id}', [DashboardController::class,'postPage'])->name('new.post.page');
+    Route::post('/coco/post-create/', [DashboardController::class,'createPost'])->name('create.post');
+    Route::post('/coco/post-edit/', [DashboardController::class,'editPost'])->name('edit.post');
+    Route::get('/coco/remove-post/{id}', [DashboardController::class,'removePostPage'])->name('remove.post.page');
 
-    Route::get('/coco/post-selected-from-blog/{id}',[\App\Http\Controllers\BlogPageController::class,'postFromBlog'])->name('post.selected.from.blog');
+    Route::get('/coco/post-selected-from-blog/{id}',[BlogPageController::class,'postFromBlog'])->name('post.selected.from.blog');
 
-    Route::get('/coco/about-and-careers/',[\App\Http\Controllers\AboutCareersController::class,'aboutAndCareers'])->name('about.and.careers');
-    Route::post('/coco/create-about-careers/', [\App\Http\Controllers\AboutCareersController::class,'createAboutOrCareers'])->name('create.about.careers');
-    Route::post('/coco/edit-about-careers/', [\App\Http\Controllers\AboutCareersController::class,'editAboutOrCareers'])->name('edit.about.careers');
+    Route::get('/coco/about-and-careers/',[AboutCareersController::class,'aboutAndCareers'])->name('about.and.careers');
+    Route::post('/coco/create-about-careers/', [AboutCareersController::class,'createAboutOrCareers'])->name('create.about.careers');
+    Route::post('/coco/edit-about-careers/', [AboutCareersController::class,'editAboutOrCareers'])->name('edit.about.careers');
 
-    Route::get('/coco/service-content/{id}', [\App\Http\Controllers\ServicesController::class,'serviceContent'])->name('services.content');
-    Route::get('/coco/first-info/{id}/{serviceId}', [\App\Http\Controllers\ServicesController::class,'firstInfoPage'])->name('service.first.info');
-    Route::post('/coco/first-info-save/', [\App\Http\Controllers\ServicesController::class,'createServicesFirstInfo'])->name('create.services.first.info');
+    Route::get('/coco/service-content/{id}', [ServicesController::class,'serviceContent'])->name('services.content');
+    Route::get('/coco/first-info/{id}/{serviceId}', [ServicesController::class,'firstInfoPage'])->name('service.first.info');
+    Route::post('/coco/first-info-save/', [ServicesController::class,'createServicesFirstInfo'])->name('create.services.first.info');
 
-    Route::get('/coco/remove-post/{table}/{id}', [\App\Http\Controllers\ServicesController::class,'deleteRowFromDatabase'])->name('remove.info');
-    Route::post('/coco/edit-service-info/{id}', [\App\Http\Controllers\ServicesController::class,'editServiceInfo'])->name('edit.services.first.info');
+    Route::get('/coco/remove-post/{table}/{id}', [ServicesController::class,'deleteRowFromDatabase'])->name('remove.info');
+    Route::post('/coco/edit-service-info/{id}', [ServicesController::class,'editServiceInfo'])->name('edit.services.first.info');
 
-    Route::get('/coco/service-deliver/{id}/{serviceId}', [\App\Http\Controllers\ServicesController::class,'serviceDeliverPage'])->name('service.deliver');
-    Route::post('/coco/deliver-save/', [\App\Http\Controllers\ServicesController::class,'createServicesDeliver'])->name('create.services.deliver');
+    Route::get('/coco/service-deliver/{id}/{serviceId}', [ServicesController::class,'serviceDeliverPage'])->name('service.deliver');
+    Route::post('/coco/deliver-save/', [ServicesController::class,'createServicesDeliver'])->name('create.services.deliver');
 });
 
-Route::post('/login', [\App\Http\Controllers\LoginController::class,'handleLogin'])->name('login.handle')->middleware('guest');
-Route::get('/logout', [\App\Http\Controllers\LoginController::class,'handleLogout'])->name('logout.handle');
+Route::post('/login', [LoginController::class,'handleLogin'])->name('login.handle')->middleware('guest');
+Route::get('/logout', [LoginController::class,'handleLogout'])->name('logout.handle');
 Route::view('/coco', '/admin/auth/login')->name('login')->middleware('guest');
 
 Route::get('/lang/{locale}',[
     LocalizationController::class,
     'index'
 ])->name('changeLang');
+
+//MAIL
+
+Route::post('/mail',[Controller::class,'mail'])->name('mail');
 
