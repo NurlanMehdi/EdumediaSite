@@ -224,62 +224,106 @@
             <!--{{--                </svg>--}}-->
             <!--{{--            </a>--}}-->
         </div>
-   <div class="customer_content">
+        <div class="customer_content">
             <div class="customer_content_item">
-                <a href="https://edu.gov.az/" class="customer_content_item_body">
+                <div class="customer_content_item_body">
                     <img src="{{asset('img/Layer 2.png')}}" alt="">
-                </a>
-                <a href="https://www.ite.az/" class="customer_content_item_body">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
                     <img src="{{asset('img/inovativ texnalogiyalar.png')}}" alt="texnologiya">
-                </a>
-                <a href="https://www.etwinning.net/en/pub/index.htm" class="customer_content_item_body">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
                     <img src="{{asset('img/e-twinning.svg')}}" alt="texnologiya">
-                </a>
-                <a href="https://www.tkta.edu.az/" class="customer_content_item_body">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
                     <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
-                </a>
+                </div>
             </div>
             <div class="customer_content_item">
-                <a href="https://www.mfa.gov.az/" class="customer_content_item_body js_content_end">
+                <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/logo (2).svg')}}" alt="transport ministry ">
-                </a>
-                <a href="https://www.azsmart.az/" class="customer_content_item_body js_content_end">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/reqemsal-logo.svg')}}" alt="reqemsal bacariqlar">
-                </a>
-                <a href="https://marsacademy.az/" class="customer_content_item_body js_content_end">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/MA-logo.svg')}}" alt="mars academy">
-                </a>
-                <a href="https://www.azsmart.az/" class="customer_content_item_body">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
                     <img src="{{asset('img/az smart.png')}}" alt="az smart">
-                </a>
+                </div>
             </div>
             <div class="customer_content_item">
-                <a href="https://www.scanex.az/" class="customer_content_item_body">
+                <div class="customer_content_item_body">
                     <img src="{{asset('img/scanex.png')}}" alt="scanex">
-                </a>
-                <a href="https://video.edu.az/s" class="customer_content_item_body">
-                    <img src="{{asset('img/video-edu-az.png')}}" alt="video edu az">
-                </a>
-                <a href="https://birlink.az/az" class="customer_content_item_body">
-                    <img src="{{asset('img/birlink-logo.svg')}}" alt="birlink">
-                </a>
-                <a href="https://az.polychallenge.org/" class="customer_content_item_body">
-                    <img src="{{asset('img/Polyup 2.2.svg')}}" alt="vl">
-                </a>
+                </div>
             </div>
             <div class="customer_content_item">
-                <a href="http://enginet.az/index.php/az/" class="customer_content_item_body js_content_end">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/video-edu-az.png')}}" alt="video edu az">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/birlink-logo.svg')}}" alt="birlink">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/Polyup 2.2.svg')}}" alt="vl">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/enginet logo.png')}}" alt="enginet logo">
-                </a>
-                <a href="https://grants.edu.az/" class="customer_content_item_body js_content_end">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/qrant_logo-mono.svg')}}" alt="grant edu az">
-                </a>
-                <a href="https://ict.edu.az/" class="customer_content_item_body js_content_end">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/tsii.svg')}}" alt="tsii logo">
-                </a>
-                <a href="https://bsu-uni.edu.az/" class="customer_content_item_body js_content_end">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/uni.png')}}" alt="tsii logo">
-                </a>
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/azsoft.svg')}}" alt="azsoft logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/ilm.svg')}}" alt="ilm svg">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/pts.svg')}}" alt="pts logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/tt.svg')}}" alt="tt logo">
+                </div>
             </div>
         </div>
     </div>

@@ -196,12 +196,18 @@
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/Layer 2.png')}}" alt="">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/inovativ texnalogiyalar.png')}}" alt="texnologiya">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/e-twinning.svg')}}" alt="texnologiya">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
                 </div>
@@ -210,12 +216,18 @@
                 <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/logo (2).svg')}}" alt="transport ministry ">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/reqemsal-logo.svg')}}" alt="reqemsal bacariqlar">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/MA-logo.svg')}}" alt="mars academy">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/az smart.png')}}" alt="az smart">
                 </div>
@@ -224,12 +236,18 @@
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/scanex.png')}}" alt="scanex">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/video-edu-az.png')}}" alt="video edu az">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/birlink-logo.svg')}}" alt="birlink">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/Polyup 2.2.svg')}}" alt="vl">
                 </div>
@@ -238,14 +256,40 @@
                 <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/enginet logo.png')}}" alt="enginet logo">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/qrant_logo-mono.svg')}}" alt="grant edu az">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/tsii.svg')}}" alt="tsii logo">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/uni.png')}}" alt="tsii logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/azsoft.svg')}}" alt="azsoft logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/ilm.svg')}}" alt="ilm svg">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/pts.svg')}}" alt="pts logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/tt.svg')}}" alt="tt logo">
                 </div>
             </div>
         </div>
@@ -284,12 +328,18 @@
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/partner/acer.svg')}}" alt="">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/partner/arduino.svg')}}" alt="texnologiya">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/partner/benmaker.svg')}}" alt="texnologiya">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/partner/cisco.svg')}}" alt="tika-logo">
                 </div>
@@ -298,12 +348,18 @@
                 <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/partner/dobot.svg')}}" alt="transport ministry ">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/partner/epson.svg')}}" alt="reqemsal bacariqlar">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/partner/flashforge-01.svg')}}" alt="mars academy">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/partner/globisens.svg')}}" alt="az smart">
                 </div>
@@ -312,12 +368,18 @@
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/partner/isanbox.svg')}}" alt="scanex">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/partner/lego.svg')}}" alt="video edu az">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/partner/microbit.svg')}}" alt="birlink">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body">
                     <img src="{{asset('img/partner/optoma.svg')}}" alt="vl">
                 </div>
@@ -326,12 +388,18 @@
                 <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/partner/promethean.svg')}}" alt="enginet logo">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/partner/Logo-vL.png')}}" alt="grant edu az">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/partner/ultimaker.svg')}}" alt="tsii logo">
                 </div>
+            </div>
+            <div class="customer_content_item">
                 <div class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/partner/videodoska.svg')}}" alt="tsii logo">
                 </div>
