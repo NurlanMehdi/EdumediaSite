@@ -363,6 +363,7 @@
     }
     .customer_content_item{
         flex: 0 0 50%;
+        max-width: 50%;
     }
     .customer_content_item_body{
         justify-content: unset;
@@ -569,7 +570,7 @@
         margin-left: 40px;
     } */
     .team_info_group_item_numb{
-        font-size: 59px;
+        font-size: 50px;
         line-height: 52px;
     }
     .team_info_group_item_title {
