@@ -215,6 +215,7 @@
 /* index.html start */
 
 @media screen and (max-width:992px) {
+
     .pd_mobile{
         padding: 0px 15px;
     }
@@ -986,6 +987,15 @@
     .hardwareDistribution_content_right_body_slide .slick-dots{
         bottom: -10px;
     }
+      /* Modal */
+      .modal-btn{
+        flex-direction: column;
+    }
+    .modal-heading{
+        font-size: 38px;
+
+    }
+    
 }
 @media screen and (max-width:992px){
     .hardwareDistribution{
@@ -1031,6 +1041,7 @@
         padding-bottom: 60px;
     }
 
+
 }
 
 /*  */
@@ -1050,3 +1061,4 @@
         width: 80%;
     }
 }
+
