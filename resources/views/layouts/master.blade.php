@@ -17,13 +17,51 @@
     <meta property="og:url" content="edumedia.az">
 
     <link rel="stylesheet" href="{{asset('css/main.css?version=123')}}">
-    <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
+    <link rel="stylesheet" href="{{asset('css/responsive.css?version=12')}}">
     <link rel="shortcut icon" href="{{asset('img/favicon (2).ico')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('slick/slick.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('slick/slick-theme.css')}}"/>
 </head>
 <body>
 <div class="app">
+<div class="modal">
+    <div class="modal-back-frame modal-toggle"></div>
+    <div class="modal-wrapper">
+      <div class="modal-header">
+        <button class="modal-close modal-toggle">╳</button>
+      </div>
+      <div class="modal-body">
+   <div class="modal-content">
+        <h2 class="modal-heading">Hesabatlar</h2>
+        <div class="modal-btn">
+            <a href="" download>
+                2021 Hesabat
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve" fill="currentColor"> 
+                            <g>
+                                <path d="M245,0c-9.5,0-17.2,7.7-17.2,17.2v331.2L169,289.6c-6.7-6.7-17.6-6.7-24.3,0s-6.7,17.6,0,24.3l88.1,88.1     c3.3,3.3,7.7,5,12.1,5c4.4,0,8.8-1.7,12.1-5l88.1-88.1c6.7-6.7,6.7-17.6,0-24.3c-6.7-6.7-17.6-6.7-24.3,0L262,348.4V17.1     C262.1,7.6,254.5,0,245,0z"/>
+                                <path d="M462.1,472.9v-99.7c0-9.5-7.7-17.2-17.2-17.2s-17.2,7.7-17.2,17.2v82.6H62.2v-82.6c0-9.5-7.7-17.2-17.1-17.2     s-17.2,7.7-17.2,17.2v99.7c0,9.5,7.7,17.1,17.2,17.1h399.8C454.4,490,462.1,482.4,462.1,472.9z"/>
+                            </g>
+                </svg>
+            </a>
+            <a href="" download>
+                2022 Hesabat
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve" fill="currentColor"> 
+                  
+                            <g>
+                                <path d="M245,0c-9.5,0-17.2,7.7-17.2,17.2v331.2L169,289.6c-6.7-6.7-17.6-6.7-24.3,0s-6.7,17.6,0,24.3l88.1,88.1     c3.3,3.3,7.7,5,12.1,5c4.4,0,8.8-1.7,12.1-5l88.1-88.1c6.7-6.7,6.7-17.6,0-24.3c-6.7-6.7-17.6-6.7-24.3,0L262,348.4V17.1     C262.1,7.6,254.5,0,245,0z"/>
+                                <path d="M462.1,472.9v-99.7c0-9.5-7.7-17.2-17.2-17.2s-17.2,7.7-17.2,17.2v82.6H62.2v-82.6c0-9.5-7.7-17.2-17.1-17.2     s-17.2,7.7-17.2,17.2v99.7c0,9.5,7.7,17.1,17.2,17.1h399.8C454.4,490,462.1,482.4,462.1,472.9z"/>
+                            </g>
+                
+                </svg>
+            </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
     <div id="sidebar" class="sidebar {{Request::is('/') ||  Request::is('service') || Request::is('blog') ||  Request::is('careers') ? 'sidebar_bg_dark' : 'sidebar_bg_light' }}">
         <div class="sidebar_body">
             <div class="sidebar_btn" title="Toggle button" id="open_menu_btn">
@@ -67,6 +105,9 @@
                     </li>
                     <li class="onclick_sidebar_header_item">
                         <a href="https://www.instagram.com/edumediaaz/">Instagram</a>
+                    </li>
+                    <li class="onclick_sidebar_header_item">
+                        <a href="" class="modal-toggle">Göstəricilər</a>
                     </li>
                 </ul>
             </div>
@@ -115,6 +156,8 @@
         </div>
     </div>
     <div class="container" id="container">
+
+
         @yield('content')
         <div class="section footer pd_mobile">
             <div class="footer_content">
@@ -145,6 +188,16 @@
                             <li class="footer_explore_nav_item">
                                 <a href="{{\App\Models\Contact::where('instagram_status',0)->first()->instagram ?? ''}}">
                                     Instagram
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
+                                        <g id="noun_Left_1920800" transform="translate(9.967 23.407) rotate(180)">
+                                            <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(-8 0)"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer_explore_nav_item">
+                                <a href="" class="modal-toggle">
+                                    Göstəricilər
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15.467" height="9.707" viewBox="0 0 15.467 9.707">
                                         <g id="noun_Left_1920800" transform="translate(9.967 23.407) rotate(180)">
                                             <path id="Path_19" data-name="Path 19" d="M7.354,23.407,8,22.752,4.252,19.008H17.966V18.1H4.252L8,14.355,7.354,13.7,2.5,18.554Z" transform="translate(-8 0)"></path>
@@ -193,8 +246,19 @@
     </div>
 
 </div>
-
 <script src="{{asset('admin/assets/vendor/jQuery/jquery-3.6.0.min.js')}}"></script>
+
+<script>
+$('.modal-toggle').on('click', function(e) {
+  e.preventDefault();
+  $('.modal').toggleClass('is-visible');
+  if($('.is-visible')[0]){
+    $("body").css("overflow", "hidden");    
+  }else{
+    $("body").css("overflow", "auto");
+  }
+});
+</script>
 <script type="text/javascript" src="{{asset('slick/slick.min.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
 @yield('js')
