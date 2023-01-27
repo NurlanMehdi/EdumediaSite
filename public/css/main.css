@@ -1016,6 +1016,11 @@ li {
     width: 100%;
     height: auto;
     max-width: 110px;
+    filter: grayscale(1);
+}
+.customer_content_item_body img:hover {
+    filter: grayscale(0);
+    transition: all 0.2s;
 }
 .mobile_section_footer_btn{
     display: none;

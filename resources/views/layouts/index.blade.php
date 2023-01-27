@@ -192,105 +192,190 @@
             </a>
         </div>
         <div class="customer_content">
-            <div class="customer_content_item">
+            {{-- <div class="customer_content_item">
                 <div class="customer_content_item_body">
-                    <img src="{{asset('img/Layer 2.png')}}" alt="">
+                    <img src="{{asset('img/clients/tehsil-nazirliyi-logo.png')}}" alt="tehsil nazirliyi logo">
                 </div>
             </div>
             <div class="customer_content_item">
                 <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/ite-logo.png')}}" alt="ite logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/e-twinning-logo.png')}}" alt="e-twinning logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/tkta-logo.png')}}" alt="tkta-logo logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/xin-logo.png')}}" alt="xin logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/rb-edu-az-logo.png')}}" alt="reqemsal bacariqlar logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/mars-logo.png')}}" alt="mars logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/az-smart-logo.png')}}" alt="az-smart-logo logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/scannex-logo.png')}}" alt="scannex-logo logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/video-edu-az-logo.png')}}" alt="video-edu-az-logo logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/birlink-logo.png')}}" alt="birlink-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/polyup-logo.png')}}" alt="polyup-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/enginet-logo.png')}}" alt="enginet-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/az-soft-logo.png')}}" alt="az-soft-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/ipc-logo.png')}}" alt="ipc-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/vet-edu-az-logo.png')}}" alt="vet-edu-az-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/clients/tt-technologies-logo.png')}}" alt="tt-technologies-logo">
+                </div>
+            </div> --}}
+            <div class="customer_content_item">
+                <a href="http://edu.gov.az/" target="_blank" class="customer_content_item_body">
+                    <img src="{{asset('img/Layer 2.png')}}" alt="texnologiya">
+                </a>
+            </div>
+            <div class="customer_content_item">
+                <a href="https://www.ite.az/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/inovativ texnalogiyalar.png')}}" alt="texnologiya">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body">
+                <a href="http://etwinningplus.edu.az/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/e-twinning.svg')}}" alt="texnologiya">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body">
+                <a href="https://www.tkta.edu.az/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/tkta-logo_with_text.svg')}}" alt="tika-logo">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="https://mfa.gov.az/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/logo (2).svg')}}" alt="transport ministry ">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="https://rb.edu.az/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/reqemsal-logo.svg')}}" alt="reqemsal bacariqlar">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="https://marsacademy.az/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/MA-logo.svg')}}" alt="mars academy">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body">
+                <a href="https://www.azsmart.az/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/az smart.png')}}" alt="az smart">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body">
+                <a href="https://scanex.az/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/scanex.png')}}" alt="scanex">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body">
+                <a href="https://video.edu.az/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/video-edu-az.png')}}" alt="video edu az">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body">
+                <a href="https://birlink.az/en/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/birlink-logo.svg')}}" alt="birlink">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body">
+                <a href="https://az.polychallenge.org/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/Polyup 2.2.svg')}}" alt="vl">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="http://enginet.az/index.php/az/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/enginet logo.png')}}" alt="enginet logo">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="https://grants.edu.az/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/qrant_logo-mono.svg')}}" alt="grant edu az">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="https://ict.edu.az/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/tsii.svg')}}" alt="tsii logo">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/uni.png')}}" alt="tsii logo">
-                </div>
+                <a href="https://bsu-uni.edu.az/" target="_blank" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/uni.png')}}" alt="bsu">
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="https://azsoftware.az/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/azsoft.svg')}}" alt="azsoft logo">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="http://www.ipc.az/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/ilm.svg')}}" alt="ilm svg">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
-                    <img src="{{asset('img/pts.svg')}}" alt="pts logo">
-                </div>
+                <a href="https://vet.edu.gov.az/" target="_blank" class="customer_content_item_body js_content_end">
+                    <img src="{{asset('img/pts.svg')}}" alt="vet edu az">
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="https://www.tttechnologies.az/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/tt.svg')}}" alt="tt logo">
-                </div>
+                </a>
             </div>
         </div>
         <div class="section_footer">
@@ -324,85 +409,165 @@
             </a>
         </div>
         <div class="customer_content">
-            <div class="customer_content_item">
+            {{-- <div class="customer_content_item">
                 <div class="customer_content_item_body">
-                    <img src="{{asset('img/partner/acer.svg')}}" alt="">
+                    <img src="{{asset('img/partners/acer-logo.png')}}" alt="acer logo">
                 </div>
             </div>
             <div class="customer_content_item">
                 <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/cisco-logo.png')}}" alt="cisco-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/ben-maker-logo.png')}}" alt="ben-maker-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/cisco-logo.png')}}" alt="cisco-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/dobot-logo.png')}}" alt="dobot-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/epson-logo.png')}}" alt="epson-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/flashforge-logo.png')}}" alt="flashforge-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/globiser-logo.png')}}" alt="globiser-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/isand-box-logo.png')}}" alt="isand-box-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/education-logo.png')}}" alt="education-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/micro-bit-logo.png')}}" alt="micro-bit-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/optomo-logo.png')}}" alt="optomo-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/promethean-logo.png')}}" alt="promethean-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/khan-academy-logo.png')}}" alt="khan-academy-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/ultimaker-logo.png')}}" alt="ultimaker-logo">
+                </div>
+            </div>
+            <div class="customer_content_item">
+                <div class="customer_content_item_body">
+                    <img src="{{asset('img/partners/video-disko-logo.png')}}" alt="video-disko-logo">
+                </div>
+            </div> --}}
+            <div class="customer_content_item">
+                <a href="https://www.acer.com/us-en" target="_blank" class="customer_content_item_body">
+                    <img src="{{asset('img/partner/acer.svg')}}" alt="texnologiya">
+                </a>
+            </div>
+            <div class="customer_content_item">
+                <a href="https://www.arduino.cc/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/partner/arduino.svg')}}" alt="texnologiya">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body">
+                <a href="https://www.benmaker.com/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/partner/benmaker.svg')}}" alt="texnologiya">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body">
+                <a href="https://www.cisco.com/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/partner/cisco.svg')}}" alt="tika-logo">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="https://en.dobot.cn/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/partner/dobot.svg')}}" alt="transport ministry ">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="https://epson.com/usa" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/partner/epson.svg')}}" alt="reqemsal bacariqlar">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="https://flashforge-usa.com/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/partner/flashforge-01.svg')}}" alt="mars academy">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body">
+                <a href="https://globisens.net/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/partner/globisens.svg')}}" alt="az smart">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body">
+                <a href="https://isandbox.nl/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/partner/isanbox.svg')}}" alt="scanex">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body">
+                <a href="https://education.lego.com/en-us/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/partner/lego.svg')}}" alt="video edu az">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body">
+                <a href="https://microbit.org/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/partner/microbit.svg')}}" alt="birlink">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body">
+                <a href="https://www.optomaeurope.com/AppError.aspx?aspxerrorpath=/" target="_blank" class="customer_content_item_body">
                     <img src="{{asset('img/partner/optoma.svg')}}" alt="vl">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="https://www.prometheanworld.com/en/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/partner/promethean.svg')}}" alt="enginet logo">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="https://az.khanacademy.org/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/partner/Logo-vL.png')}}" alt="grant edu az">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="https://ultimaker.com/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/partner/ultimaker.svg')}}" alt="tsii logo">
-                </div>
+                </a>
             </div>
             <div class="customer_content_item">
-                <div class="customer_content_item_body js_content_end">
+                <a href="https://www.video-doska.ru/" target="_blank" class="customer_content_item_body js_content_end">
                     <img src="{{asset('img/partner/videodoska.svg')}}" alt="tsii logo">
-                </div>
+                </a>
             </div>
         </div>
     </div>
